@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "13.4.10",
     "html-entities": "^2.4.0",
     "react-mailchimp-form": "^1.0.2",
     "react-mailchimp-subscribe": "^2.1.3",
