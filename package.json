@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "predeploy": "npm install --force react-mailchimp-form",
     "start": "next start",
     "lint": "next lint"
   },
