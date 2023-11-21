@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import Header from './Header';
 import LoopingText from './LoopingText';
 import ImageTop from './ImageTop';
@@ -12,6 +13,9 @@ const formatDate = (inputDate) => {
 const TemplatePost = (props) => {
   return (
     <>
+      <Head>
+        <title>{props.postData.title} | The Prompt Master</title>
+      </Head>
       <Header color={props.postData.color} />
       <ImageTop title='THE PROMPT MASTER'
         color='light'

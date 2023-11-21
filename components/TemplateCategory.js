@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 import PostTile from '@/components/PostTile';
 import LoopingText from '@/components/LoopingText';
@@ -23,6 +24,9 @@ const TemplateCategory = (props) => {
   return (
 
     <>
+    <Head>
+      <title>{props.category.toUpperCase().replace(/\-+/g, ' ')} | The Prompt Master</title>
+    </Head>
       <Header color='dark' />
       <div className='headMargin'>
         <div className="strip">
@@ -35,7 +39,7 @@ const TemplateCategory = (props) => {
         </div>
         <div className="strip">
           <LoopingText
-            text={`${props.category}: Tutto quello che c'è da sapere`}
+            text={`${props.category.toUpperCase().replace(/\-+/g, ' ')}: Tutto quello che c'è da sapere`}
             size='small'
             velocity={0.08}
             color='dark'

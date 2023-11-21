@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 import React, { useState } from 'react';
 import PostTile from '@/components/PostTile';
 import LoopingText from '@/components/LoopingText';
@@ -21,6 +22,9 @@ export default function Blog({ allPostsData }) {
   let paginated = allPostsData.slice(2, pagination);
   return (
     <>
+      <Head>
+        <title>The Prompt Master - Prompt Design, AI Updates e tool sull'intelligenza artificiale</title>
+      </Head>
       <Header color='dark' />
       <div className='headMargin'>
         <div className="strip">
