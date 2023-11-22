@@ -3,6 +3,7 @@ import Script from 'next/script';
 
 export default function App({ Component, pageProps }) {
   return (<>
+
     <Script
       src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"
       strategy="afterInteractive"

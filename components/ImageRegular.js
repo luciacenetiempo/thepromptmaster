@@ -7,10 +7,8 @@ const ImageRegular = (props) => {
     <div className='content rich-text-block'>
       <figure className="w-richtext-align-fullwidth w-richtext-figure-type-image">
         <div>
-          <Image
+          <img
             src={props.src}
-            width={500}
-            height={500}
             className={`${styles.imageTop}`}
             alt={props.alt}
           />
