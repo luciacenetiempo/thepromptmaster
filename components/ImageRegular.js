@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 import styles from '@/styles/Components.module.css';
 
 const ImageRegular = (props) => {
@@ -6,11 +7,17 @@ const ImageRegular = (props) => {
     <div className='content rich-text-block'>
       <figure className="w-richtext-align-fullwidth w-richtext-figure-type-image">
         <div>
-          <img src={props.src} className={`${styles.imageTop}`} alt={props.alt}/>
+          <Image
+            src={props.src}
+            width={500}
+            height={500}
+            className={`${styles.imageTop}`}
+            alt={props.alt}
+          />
         </div>
         {
-        props.caption ? (<>
-          <figcaption>{props.caption}</figcaption>
+          props.caption ? (<>
+            <figcaption>{props.caption}</figcaption>
           </>) : (
             ''
           )

@@ -6,6 +6,7 @@ const ImageTop = ({ title, url, color }) => {
   return (
     <div className={`${styles.sectionImageTop} ${styles.wfSection}`}>
       <Image
+        priority
         src={url}
         width={500}
         height={500}
