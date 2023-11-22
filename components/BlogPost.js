@@ -7,8 +7,8 @@ import CodeBlock from './CodeBlock';
 import Quote from './Quote';
 import Button from './Button';
 import Gallery from './Gallery';
-import Text from './Text';
 import Twitter from './Twitter';
+import NewsletterStrip from './NewsletterStrip';
 
 // Mappatura dei componenti
 const COMPONENT_MAP = {
@@ -20,7 +20,8 @@ const COMPONENT_MAP = {
   Quote: Quote,
   Button: Button,
   Gallery: Gallery,
-  Twitter: Twitter
+  Twitter: Twitter,
+  NewsletterStrip: NewsletterStrip
 };
 
 function parseProps(propString) {
@@ -54,7 +55,7 @@ function renderPart(part, index) {
     }
   }
   if(part.length > 1){
-    return <div className='content rich-text-block' dangerouslySetInnerHTML={{ __html: `${part.startsWith("<") ? part : `<p>${part}</p>`}` }} />;
+    return <div key={index} className='content rich-text-block' dangerouslySetInnerHTML={{ __html: `${part.startsWith("<") ? part : `<p>${part}</p>`}` }} />;
   }
 }
 

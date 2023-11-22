@@ -8,9 +8,9 @@ subtitle: >
   Dall'intelligenza artificiale conversazionale a nuove frontiere con GPT-5.
 incipit: >
   OpenAI, con il suo ChatGPT, ha stabilito nuovi standard nell'IA conversazionale rendendolo molto più di uno strumento, ma è GPT-5 a suscitare le aspettative più elevate. 
-categories: ["OpenAI", "ChatGPT", "News AI"]
+categories: ["OpenAI", "ChatGPT", "AI Updates"]
 cover: /images/openai-gpt5-nuova-era-intelligenza-artificiale-cover.png
-relatedPosts: ["2023-11-16-openai-gpt5-nuova-era-intelligenza-artificiale", "2023-11-20-sam-altman-greg-brockman-entrano-in-microsoft-openai", "2023-11-07-openai-lancia-i-gpts"]
+relatedPosts: ["2023-11-07-openai-lancia-i-gpts", "2023-11-20-sam-altman-greg-brockman-entrano-in-microsoft-openai"]
 author: 'Lucia Cenetiempo'
 color: light
 ---

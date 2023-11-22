@@ -10,7 +10,6 @@ const CodeBlock = (props) => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000); // Reset copied state after 2 seconds
     } catch (err) {
-      console.error('Failed to copy!', err);
     }
   };
 

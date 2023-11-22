@@ -393,6 +393,14 @@ a:hover {
   height: 0.6em;
 }
 
+.strip .strip-block:hover .text-strip {
+  animation-play-state: running;
+  animation-name: colorchangetext;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .post-info {
   display: -webkit-box;
   display: -webkit-flex;
@@ -879,6 +887,14 @@ a:hover {
   width: 150px;
 }
 
+.brand svg:hover {
+  animation-play-state: running;
+  animation-name: colorchange;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .logo {
   height: 1.5em;
 }
@@ -913,6 +929,15 @@ a:hover {
   font-size: 0.85em;
   line-height: 1.3em;
   font-variation-settings: "wdth" 100, "wght" 600;
+}
+
+.nav-text:hover {
+  animation-play-state: running;
+  animation-name: colorchangetext;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  text-decoration: underline;
 }
 
 .nav-text.absolute {
@@ -1151,6 +1176,76 @@ a:hover {
   fill: white;
 }
 
+.section--newsletter {
+  border-top: 1px solid #e0e0e0;
+  background: #f4f4f4;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0em;
+  grid-row-gap: 0em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin-top: -1px;
+}
+
+.newsletter-strip {
+  align-self: center;
+  padding: 2.5em;
+  font-size: 0.92em;
+  line-height: 1.6em;
+}
+
+form.field-newsletter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+form.field-newsletter input[type="email"] {
+  border: 1px solid var(--border-color);
+  color: #000;
+  padding: 0.8em 1.5em;
+  width: 100%;
+  font-size: 1.3em;
+  font-weight: 100;
+  font-family: "Mona Sans", sans-serif;
+  letter-spacing: 0.01em;
+  border-radius: 0;
+  box-shadow: 0px 20px 20px rgba(148, 148, 148, 0.18);
+}
+
+form.field-newsletter button {
+  padding: 1.6em 2.3em;
+  background-color: #000;
+  transition: background-color 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  color: #fff;
+  font-size: 0.85em;
+  line-height: 1.3em;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0px 20px 20px rgba(148, 148, 148, 0.18);
+}
+
+form.field-newsletter button:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+form.field-newsletter .msg-alert {
+  position: absolute;
+  bottom: -30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -1354,5 +1449,55 @@ a:hover {
   }
   .text-strip {
     font-size: 3.2em;
+  }
+  .section--newsletter {
+    grid-template-columns: 1fr;
+  }
+  .section--newsletter .newsletter-strip--newsletter {
+    padding-top: 0;
+  }
+  form.field-newsletter {
+    flex-flow: column;
+  }
+  form.field-newsletter input[type="email"] {
+    letter-spacing: 0.01em;
+  }
+  form.field-newsletter button {
+    margin-top: 2em;
+    border: 1px solid #000;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+  }
+  25% {
+    fill: #D727A7;
+  }
+  50% {
+    fill: #310793;
+  }
+  75% {
+    color: #D727A7;
+  }
+  100% {
+    fill: #310793;
+  }
+}
+
+@keyframes colorchangetext {
+  0% {
+  }
+  25% {
+    color: #D727A7;
+  }
+  50% {
+    color: #310793;
+  }
+  75% {
+    color: #D727A7;
+  }
+  100% {
+    color: #310793;
   }
 }

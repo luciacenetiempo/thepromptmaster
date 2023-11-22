@@ -5,6 +5,7 @@ import LoopingText from './LoopingText';
 import ImageTop from './ImageTop';
 import BlogPost from './BlogPost';
 import Related from './Related';
+import NewsletterStrip from './NewsletterStrip';
 
 const formatDate = (inputDate) => {
   const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
@@ -15,6 +16,10 @@ const TemplatePost = (props) => {
     <>
       <Head>
         <title>{props.postData.title} | The Prompt Master</title>
+        <meta name="description" content={props.postData.incipit} />
+        <meta name="keywords" content={props.postData.keywords} />
+        <meta name="author" content={props.postData.author} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Header color={props.postData.color} />
       <ImageTop title='THE PROMPT MASTER'
@@ -32,10 +37,9 @@ const TemplatePost = (props) => {
       <div className='section-content'>
         <div className='content rich-text-block'>
           <div className="post-info">
-            {props.postData.categories.map(category => (
-              
+            {props.postData.categories.map((category, index) => (
               <>
-                <a href={`/blog/${category.toLowerCase().replace(/\s+/g, '-')}`} className="link-category w-inline-block">
+                <a key={index} href={`/blog/${category.toLowerCase().replace(/\s+/g, '-')}`} className="link-category w-inline-block">
                   <div className="category">{category}</div>
                 </a>
                 <div className="post-circle"></div>
@@ -45,9 +49,8 @@ const TemplatePost = (props) => {
         </div>
         <BlogPost content={props.postData.contentHtml} />
       </div>
-
+      <NewsletterStrip />
       <>
-
         <Related posts={props.postData.myrelatedPostsData} />
       </>
     </>

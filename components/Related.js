@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PostTile from './PostTile';
-
 const formatDate = (inputDate) => {
   const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
   return new Date(inputDate).toLocaleDateString('it-IT', options);

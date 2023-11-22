@@ -8,9 +8,9 @@ subtitle: >
   Un'analisi approfondita sulle cause e le implicazioni del rinvio di Gemini da parte di Google
 incipit: >
   In un panorama tecnologico che si evolve a velocità sorprendente, Google ha recentemente annunciato il posticipo del lancio di Gemini, il suo avanzato sistema di intelligenza artificiale, al primo trimestre del 2024.
-categories: ["AI Tools", "Meta AI", "AI Updates"]
+categories: ["AI Tools", "Google AI", "AI Updates"]
 cover: /images/google-gemini-rinvio-strategico-competizione-ia-cover.png
-relatedPosts: ["post-2", "post-1"]
+relatedPosts: ["2023-11-21-meta-presenta-emu-video-ai-generativa"]
 author: 'Lucia Cenetiempo'
 color: light
 ---

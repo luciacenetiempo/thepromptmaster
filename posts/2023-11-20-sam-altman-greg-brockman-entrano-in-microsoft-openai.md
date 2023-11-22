@@ -8,9 +8,9 @@ subtitle: >
   Le figure chiave di OpenAI si uniscono a Microsoft: un futuro innovativo per l'intelligenza artificiale.
 incipit: >
   In un mondo dove l'innovazione tecnologica non dorme mai, Sam Altman, fondatore di OpenAI, ci ha regalato un'altra delle sue mosse sorprendenti.
-categories: ["OpenAI", "ChatGPT", "News AI"]
+categories: ["OpenAI", "ChatGPT", "AI Updates"]
 cover: /images/sam-altman-greg-brockman-entrano-in-microsoft-openai-cover.png
-relatedPosts: ["post-2", "post-1"]
+relatedPosts: ["2023-11-16-openai-gpt5-nuova-era-intelligenza-artificiale","2023-11-07-openai-lancia-i-gpts"]
 author: 'Lucia Cenetiempo'
 color: light
 ---

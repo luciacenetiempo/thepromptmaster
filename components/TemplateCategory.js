@@ -5,9 +5,9 @@ import Link from 'next/link';
 import PostTile from '@/components/PostTile';
 import LoopingText from '@/components/LoopingText';
 import Header from '@/components/Header';
+import NewsletterStrip from './NewsletterStrip';
 
 const TemplateCategory = (props) => {
-  console.log(props)
   const [pagination, setPagination] = useState(10);
   const [prev_pagination, setPrevPagination] = useState(null);
   const loadMore = async () => {
@@ -24,9 +24,12 @@ const TemplateCategory = (props) => {
   return (
 
     <>
-    <Head>
-      <title>{props.category.toUpperCase().replace(/\-+/g, ' ')} | The Prompt Master</title>
-    </Head>
+      <Head>
+        <title>{props.category.toUpperCase().replace(/\-+/g, ' ')} | The Prompt Master</title>
+        <meta name="description" content={props.category.toUpperCase().replace(/\-+/g, ' ') + "Tutto quello che c'è da sapere sul mondo dell'intelligenza artificiale"} />
+        <meta name="keywords" content={props.postData.keywords + ", intelligenza artificiale, AI, IA, Artificial Intelligence"} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <Header color='dark' />
       <div className='headMargin'>
         <div className="strip">
@@ -61,6 +64,7 @@ const TemplateCategory = (props) => {
           ))}
         </div>
       </div>
+      <NewsletterStrip />
     </>
   );
 };

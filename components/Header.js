@@ -35,6 +35,7 @@ const Header = ({ color }) => {
             <Link
               href={'/'}
               className="nav-link w-inline-block"
+              key='home'
             >
               <div className="nav-text-block">
                 <div
@@ -58,9 +59,11 @@ const Header = ({ color }) => {
               </div>
             </Link>
 
+            <div className="nav-circle"></div>
             <Link
               href={'/blog/ai-updates'}
               className="nav-link w-inline-block"
+              key='ai-updates'
             >
               <div className="nav-text-block">
                 <div
@@ -84,9 +87,11 @@ const Header = ({ color }) => {
               </div>
             </Link>
 
-            {/* <Link
-              href={'/blog/prompt-design'}
+            <div className="nav-circle"></div>
+            <Link
+              href={'/blog/prompt-engineering'}
               className="nav-link w-inline-block"
+              key='prompt-design'
             >
               <div className="nav-text-block">
                 <div
@@ -96,7 +101,7 @@ const Header = ({ color }) => {
                     transformStyle: 'preserve-3d'
                   }}
                 >
-                  Prompt Design
+                  Prompt Engineering
                 </div>
                 <div
                   className="nav-text absolute"
@@ -105,14 +110,17 @@ const Header = ({ color }) => {
                     transformStyle: 'preserve-3d'
                   }}
                 >
-                  Prompt Design
+                  Prompt Engineering
                 </div>
               </div>
-            </Link> */}
+            </Link> 
+            <div className="nav-circle"></div>
+           
 
             <Link
               href={'/blog/ai-tools'}
               className="nav-link w-inline-block"
+              key='ai-tools'
             >
               <div className="nav-text-block">
                 <div
@@ -142,6 +150,7 @@ const Header = ({ color }) => {
               href={'https://www.instagram.com/the_prompt_master/'}
               className="nav-link w-inline-block"
               target="_blank"
+              key='instagram'
             >
               <div className="nav-text-block">
                 <div className="nav-text">Instagram</div>
@@ -154,6 +163,7 @@ const Header = ({ color }) => {
               href={'https://twitter.com/t_prompt_master'}
               className="nav-link w-inline-block"
               target="_blank"
+              key='twitter'
             >
               <div className="nav-text-block">
                 <div className="nav-text">Twitter</div>
@@ -166,13 +176,13 @@ const Header = ({ color }) => {
               href={'https://www.linkedin.com/in/luciacenetiempo/'}
               className="nav-link w-inline-block"
               target="_blank"
+              key='linkedin'
             >
               <div className="nav-text-block">
                 <div className="nav-text">Linkedin</div>
                 <div className="nav-text absolute">Linkedin</div>
               </div>
             </Link>
-            <div className="nav-circle"></div>
           </div>
           {/* <div className="nav-circle"></div> */}
         </nav>
