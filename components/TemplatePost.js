@@ -6,6 +6,7 @@ import ImageTop from './ImageTop';
 import BlogPost from './BlogPost';
 import Related from './Related';
 import NewsletterStrip from './NewsletterStrip';
+import Footer from './Footer';
 
 const formatDate = (inputDate) => {
   const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
@@ -50,9 +51,18 @@ const TemplatePost = (props) => {
         <BlogPost content={props.postData.contentHtml} />
       </div>
       <NewsletterStrip />
-      <>
-        <Related posts={props.postData.myrelatedPostsData} />
-      </>
+
+      <div className="strip paddingBoth">
+        <LoopingText
+          text='potrebbe interessarti anche'
+          size='smallBold'
+          velocity={0.08}
+          color='dark'
+        />
+      </div>
+
+      <Related posts={props.postData.myrelatedPostsData} />
+      <Footer />
     </>
   );
 };

@@ -6,6 +6,7 @@ import PostTile from '@/components/PostTile';
 import LoopingText from '@/components/LoopingText';
 import Header from '@/components/Header';
 import NewsletterStrip from './NewsletterStrip';
+import Footer from './Footer';
 
 const TemplateCategory = (props) => {
   const [pagination, setPagination] = useState(10);
@@ -65,6 +66,7 @@ const TemplateCategory = (props) => {
         </div>
       </div>
       <NewsletterStrip />
+      <Footer />
     </>
   );
 };

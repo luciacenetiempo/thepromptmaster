@@ -46,7 +46,7 @@ const LoopingText = ({ text, size, velocity, color }) => {
 
   return (
     <div className={`strip-block ${'strip-block--'+size}`} ref={selfRef}>
-      {[...Array(size == 'small' ? 2 : 2)].map((_, i) => (
+      {[...Array(2)].map((_, i) => (
         <div className={`text-strip ${color}`} key={`${i}`}>{text}</div>
       ))}
     </div>

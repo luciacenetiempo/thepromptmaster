@@ -379,6 +379,22 @@ a {
         height: 0.6em;
       }
     }
+    &--smallBold {
+      .text-strip {
+        font-size: 5em;
+        line-height: 1.05em;
+        font-weight: 700;
+        font-variation-settings: "wdth" 125, "wght" 700;
+        &::after {
+          content: "●";
+          font-size: 0.3em;
+        }
+      }
+      .circle {
+        width: 0.6em;
+        height: 0.6em;
+      }
+    }
     &:hover{
       .text-strip{       
       animation-play-state: running;
@@ -798,6 +814,10 @@ a {
   align-items: center;
   background-color: transparent;
   z-index: 10;
+  &--footer{
+    position: relative;
+    padding: 2.5em 2em;
+  }
 }
 
 .block-navbar {
@@ -1133,6 +1153,10 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  p{
+    font-size: 0.7em;
+    text-align: center;
+  }
 }
 
 .navbar--light {
@@ -1154,6 +1178,7 @@ a {
   // padding: 1.1em 2em;
   &--newsletter {
     border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
     background: #f4f4f4;
     display: grid;
     grid-auto-columns: 1fr;
@@ -1169,6 +1194,13 @@ a {
   padding: 2.5em;
   font-size: 0.92em;
   line-height: 1.6em;
+  display: flex;
+  &__col{
+    img{
+      max-width: 50px;
+      margin-right: 2em;
+    }
+  }
 }
 form.field-newsletter {
   width: 100%;
@@ -1215,6 +1247,10 @@ form.field-newsletter {
     font-size: 13px;
     font-weight: 600;
   }
+}
+
+.paddingBoth{
+  padding: 2em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1457,6 +1493,21 @@ form.field-newsletter {
   .text-strip {
     font-size: 3.2em;
 
+  }
+
+  .navbar--footer{
+    padding: 2em 1.5em;
+    .block-navbar{
+      flex-flow: column;
+    }
+    .w-nav-menu{
+      display: flex;
+      border: 0;
+      flex-flow: column;
+    }
+    .nav-page p{
+      font-size: 1em;
+    }
   }
 
   .section {

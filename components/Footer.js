@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Header = ({ color }) => {
+const Footer = () => {
   return (
-    <div className={`navbar w-nav navbar--${color}`}>
+    <footer className={`navbar navbar--footer w-nav`}>
       <div className="block-navbar">
         <div className="nav">
           <a href="/" className="brand w-nav-brand w--current" aria-label="home">
@@ -30,119 +30,8 @@ const Header = ({ color }) => {
           </a>
         </div>
         <nav role="navigation" className="nav-menu w-nav-menu">
-          <div className="nav-page">
-
-            <Link
-              href={'/'}
-              className="nav-link w-inline-block"
-              key='home'
-            >
-              <div className="nav-text-block">
-                <div
-                  className="nav-text"
-                  style={{
-                    transform: 'translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                    transformStyle: 'preserve-3d'
-                  }}
-                >
-                  Home
-                </div>
-                <div
-                  className="nav-text absolute"
-                  style={{
-                    transform: 'translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                    transformStyle: 'preserve-3d'
-                  }}
-                >
-                  Home
-                </div>
-              </div>
-            </Link>
-
-            <div className="nav-circle"></div>
-            <Link
-              href={'/blog/ai-updates'}
-              className="nav-link w-inline-block"
-              key='ai-updates'
-            >
-              <div className="nav-text-block">
-                <div
-                  className="nav-text"
-                  style={{
-                    transform: 'translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                    transformStyle: 'preserve-3d'
-                  }}
-                >
-                  AI updates
-                </div>
-                <div
-                  className="nav-text absolute"
-                  style={{
-                    transform: 'translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                    transformStyle: 'preserve-3d'
-                  }}
-                >
-                  AI updates
-                </div>
-              </div>
-            </Link>
-
-            <div className="nav-circle"></div>
-            <Link
-              href={'/blog/prompt-engineering'}
-              className="nav-link w-inline-block"
-              key='prompt-design'
-            >
-              <div className="nav-text-block">
-                <div
-                  className="nav-text"
-                  style={{
-                    transform: 'translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                    transformStyle: 'preserve-3d'
-                  }}
-                >
-                  Prompt Engineering
-                </div>
-                <div
-                  className="nav-text absolute"
-                  style={{
-                    transform: 'translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                    transformStyle: 'preserve-3d'
-                  }}
-                >
-                  Prompt Engineering
-                </div>
-              </div>
-            </Link> 
-            <div className="nav-circle"></div>
-           
-
-            <Link
-              href={'/blog/ai-tools'}
-              className="nav-link w-inline-block"
-              key='ai-tools'
-            >
-              <div className="nav-text-block">
-                <div
-                  className="nav-text"
-                  style={{
-                    transform: 'translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                    transformStyle: 'preserve-3d'
-                  }}
-                >
-                  AI Tools
-                </div>
-                <div
-                  className="nav-text absolute"
-                  style={{
-                    transform: 'translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                    transformStyle: 'preserve-3d'
-                  }}
-                >
-                  AI Tools
-                </div>
-              </div>
-            </Link>
+        <div className="nav-page">
+            <p>Prompt Design, Prompt Engineering, AI Updates e tool sull'intelligenza artificiale.<br/>Tutto quello che c'è da sapere sul mondo dell'intelligenza artificiale<br/></p>
           </div>
           <div className="nav-social">
 
@@ -199,8 +88,8 @@ const Header = ({ color }) => {
         </div>
       </div>
       <div className="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
-    </div>
+    </footer>
   );
 };
 
-export default Header;
+export default Footer;

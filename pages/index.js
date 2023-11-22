@@ -6,6 +6,7 @@ import LoopingText from '@/components/LoopingText';
 import Header from '@/components/Header';
 import { getSortedPostsData } from '../lib/posts';
 import NewsletterStrip from '@/components/NewsletterStrip';
+import Footer from '@/components/Footer';
 
 export default function Home({ allPostsData }) {
   const [pagination, setPagination] = useState(10);
@@ -25,7 +26,7 @@ export default function Home({ allPostsData }) {
     <>
       <Head>
         <title>The Prompt Master - Prompt Design, AI Updates e tool sull'intelligenza artificiale</title>
-        <meta name="description" content="Prompt Design, AI Updates e tool sull'intelligenza artificiale. Tutto quello che c'è da sapere sul mondo dell'intelligenza artificiale" />
+        <meta name="description" content="Prompt Design, Prompt Engineering, AI Updates e tool sull'intelligenza artificiale. Tutto quello che c'è da sapere sul mondo dell'intelligenza artificiale" />
         <meta name="keywords" content="blog ai, blog intelligenza artificiale, prompt engineering, prompt design, prompt engineer, intelligenza artificiale, AI, IA, Artificial Intelligence, tool AI, tool IA, come scrivere prompt, corso prompt engineer, corso prompt engineering, corso prompt design" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
@@ -65,6 +66,7 @@ export default function Home({ allPostsData }) {
       </div>
       <NewsletterStrip />
       {/* <button onClick={loadMore}>LOAD MORE</button> */}
+      <Footer />
     </>
   );
 }
