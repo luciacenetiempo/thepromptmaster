@@ -780,6 +780,10 @@ a {
   margin-top: 10em;
   margin-bottom: 4em;
 }
+.headMarginSmall {
+  margin-top: 6em;
+  margin-bottom: 1.5em;
+}
 .content-wide {
   width: 100%;
   max-width: 80em;
@@ -1253,6 +1257,39 @@ form.field-newsletter {
   padding: 2em;
 }
 
+.boxLink {
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+  h5{
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  p{
+    margin-bottom: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .CTA{
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 11px;
+  }
+}
+.spacer {
+  width: 80%;
+  height: 1px;
+  background: #cccccc;
+  margin: 2em 10%;
+}
 @media (prefers-color-scheme: dark) {
   &:root {
     --foreground-rgb: 255, 255, 255;
@@ -1544,6 +1581,9 @@ form.field-newsletter {
   }
 }
 
+.section-content--links{
+  padding-top: 0.5em;
+}
 @keyframes colorchange {
   0%{
   }

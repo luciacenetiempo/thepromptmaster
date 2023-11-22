@@ -9,7 +9,7 @@ export default function Newsletter() {
         <title>The Prompt Master - Newsletter Italiana sull'intelligenza artificiale</title>
       </Head>
       <HeaderPlain />
-      <div className='headMargin'>
+      <div className='headMarginSmall'>
         <div className="strip">
           <LoopingText
             text='THE PROMPT MASTER'
