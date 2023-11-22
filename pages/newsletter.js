@@ -6,7 +6,7 @@ export default function Newsletter() {
   return (
     <>
       <Head>
-        <title>The Prompt Master - Newsletter Italiana sull'intelligenza artificiale</title>
+        <title>Newsletter - The Prompt Master - Newsletter Italiana sull'intelligenza artificiale</title>
       </Head>
       <HeaderPlain />
       <div className='headMarginSmall'>

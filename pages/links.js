@@ -10,7 +10,7 @@ export default function Links({ allPostsData }) {
   return (
     <>
       <Head>
-        <title>The Prompt Master - L'intelligenza artificiale come non la immaginavi</title>
+        <title>Links - The Prompt Master - L'intelligenza artificiale come non la immaginavi</title>
       </Head>
       <HeaderPlain />
       <div className='headMarginSmall'>
