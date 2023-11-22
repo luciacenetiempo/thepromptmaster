@@ -1275,7 +1275,7 @@ form.field-newsletter button:hover {
 
 form.field-newsletter .msg-alert {
   position: absolute;
-  bottom: -30px;
+  bottom: -50px;
   font-size: 13px;
   font-weight: 600;
 }
@@ -1296,6 +1296,12 @@ form.field-newsletter .msg-alert {
 @media screen and (max-width: 479px) {
   body {
     font-size: 14px;
+  }
+  p {
+    font-size: 1.2;
+  }
+  .rich-text-block--newsletter p strong {
+    font-size: 1.2em;
   }
   h1 {
     font-size: 2.4em;
@@ -1515,8 +1521,14 @@ form.field-newsletter .msg-alert {
     letter-spacing: 0.01em;
   }
   form.field-newsletter button {
-    margin-top: 2em;
+    margin-top: 3em;
     border: 1px solid #000;
+  }
+  form.field-newsletter .msg-alert {
+    position: absolute;
+    bottom: 50px;
+    font-size: 10px;
+    font-weight: 600;
   }
 }
 

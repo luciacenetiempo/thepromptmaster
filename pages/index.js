@@ -18,7 +18,7 @@ export default function Home({ allPostsData }) {
       setPrevPagination(paginationStatusPrev);
       setPagination(paginationStatusNext + 8);
     } catch (err) {
-    }
+    } 
   };
   let featured = allPostsData.slice(0, 2);
   let paginated = allPostsData.slice(2, pagination);
