@@ -27,7 +27,7 @@ const TemplateCategory = (props) => {
       <Head>
         <title>{props.category.toUpperCase().replace(/\-+/g, ' ')} | The Prompt Master</title>
         <meta name="description" content={props.category.toUpperCase().replace(/\-+/g, ' ') + "Tutto quello che c'è da sapere sul mondo dell'intelligenza artificiale"} />
-        <meta name="keywords" content={props.postData.keywords + ", intelligenza artificiale, AI, IA, Artificial Intelligence"} />
+        <meta name="keywords" content={props.category.toUpperCase().replace(/\-+/g, ' ') + ", intelligenza artificiale, AI, IA, Artificial Intelligence"} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Header color='dark' />
