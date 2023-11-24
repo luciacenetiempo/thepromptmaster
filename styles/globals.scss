@@ -241,6 +241,8 @@ a {
   display: inline-block;
   color: white;
   text-decoration: none;
+  border:0;
+  cursor: pointer;
   &:hover {
     background-color: $background-color_3;
     color: white;
@@ -395,13 +397,13 @@ a {
         height: 0.6em;
       }
     }
-    &:hover{
-      .text-strip{       
-      animation-play-state: running;
-      animation-name: colorchangetext;
-      animation-duration: 1000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
+    &:hover {
+      .text-strip {
+        animation-play-state: running;
+        animation-name: colorchangetext;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
       }
     }
   }
@@ -818,7 +820,7 @@ a {
   align-items: center;
   background-color: transparent;
   z-index: 10;
-  &--footer{
+  &--footer {
     position: relative;
     padding: 2.5em 2em;
   }
@@ -925,7 +927,7 @@ a {
   font-size: 0.85em;
   line-height: 1.3em;
   font-variation-settings: "wdth" 100, "wght" 600;
-  &:hover{
+  &:hover {
     animation-play-state: running;
     animation-name: colorchangetext;
     animation-duration: 1500ms;
@@ -1157,7 +1159,7 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  p{
+  p {
     font-size: 0.7em;
     text-align: center;
   }
@@ -1199,8 +1201,8 @@ a {
   font-size: 0.92em;
   line-height: 1.6em;
   display: flex;
-  &__col{
-    img{
+  &__col {
+    img {
       max-width: 50px;
       margin-right: 2em;
     }
@@ -1253,7 +1255,7 @@ form.field-newsletter {
   }
 }
 
-.paddingBoth{
+.paddingBoth {
   padding: 2em;
 }
 
@@ -1265,19 +1267,19 @@ form.field-newsletter {
   display: flex;
   flex-flow: column;
   text-decoration: none;
-  h5{
+  h5 {
     margin: 0;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  p{
+  p {
     margin-bottom: 0px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  .CTA{
+  .CTA {
     text-decoration: underline;
     text-transform: uppercase;
     color: #000;
@@ -1303,11 +1305,11 @@ form.field-newsletter {
   body {
     font-size: 14px;
   }
-  p{
+  p {
     font-size: 1.2;
   }
-  .rich-text-block--newsletter{
-    p strong{
+  .rich-text-block--newsletter {
+    p strong {
       font-size: 1.2em;
     }
   }
@@ -1536,20 +1538,19 @@ form.field-newsletter {
 
   .text-strip {
     font-size: 3.2em;
-
   }
 
-  .navbar--footer{
+  .navbar--footer {
     padding: 2em 1.5em;
-    .block-navbar{
+    .block-navbar {
       flex-flow: column;
     }
-    .w-nav-menu{
+    .w-nav-menu {
       display: flex;
       border: 0;
       flex-flow: column;
     }
-    .nav-page p{
+    .nav-page p {
       font-size: 1em;
     }
   }
@@ -1569,7 +1570,7 @@ form.field-newsletter {
       letter-spacing: 0.01em;
     }
     button {
-      margin-top:3em;
+      margin-top: 3em;
       border: 1px solid #000;
     }
   }
@@ -1581,20 +1582,20 @@ form.field-newsletter {
   }
 }
 
-.section-content--links{
+.section-content--links {
   padding-top: 0.5em;
 }
 @keyframes colorchange {
-  0%{
+  0% {
   }
   25% {
-    fill: #D727A7;
+    fill: #d727a7;
   }
   50% {
     fill: #310793;
   }
   75% {
-    color: #D727A7;
+    color: #d727a7;
   }
   100% {
     fill: #310793;
@@ -1602,18 +1603,100 @@ form.field-newsletter {
 }
 
 @keyframes colorchangetext {
-  0%{
+  0% {
   }
   25% {
-    color: #D727A7;
+    color: #d727a7;
   }
   50% {
     color: #310793;
   }
   75% {
-    color: #D727A7;
+    color: #d727a7;
   }
   100% {
     color: #310793;
+  }
+}
+
+/*TABLE*/
+
+.table-auto {
+  table-layout: auto;
+  border: 1px solid #e5e7eb;
+  .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  &.w-full {
+    width: 100%;
+  }
+  .border {
+    border: 1px solid #e5e7eb;
+  }
+}
+table {
+  border-collapse: collapse;
+}
+table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+/*COOKIE*/
+.cookie-banner-overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.35);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  .cookie-banner {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background: white;
+    padding: 30px;
+    width: 50vw;
+    display: flex;
+    flex-flow: column;
+    font-size: 14px;
+    @media screen and (max-width: 479px) {
+      width: calc(100vw - 50px);
+    }
+    .close-banner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: black;
+      width: 30px;
+      height: 30px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .button{
+      padding: 1.3em 1.5em;
+      margin-top: 20px;
+    }
+    button.button.buttonGestisci,
+    button.button.buttonRifiuta {
+      background: none;
+      border: none;
+      color: black;
+      font-weight: 400;
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 }
