@@ -18,10 +18,12 @@ export default function Home({ allPostsData }) {
       setPrevPagination(paginationStatusPrev);
       setPagination(paginationStatusNext + 8);
     } catch (err) {
-    } 
+    }
   };
   let featured = allPostsData.slice(0, 2);
   let paginated = allPostsData.slice(2, pagination);
+  let promptEngineering = allPostsData.filter(post => post.categories.includes('Prompt Engineering'));
+  let promptTips = allPostsData.slice(2, pagination);
   return (
     <>
       <Head>
@@ -49,13 +51,41 @@ export default function Home({ allPostsData }) {
           />
         </div>
       </div>
-
       <div className="collection-list-wrapper-top">
         <div role="list" className="collection-list-top">
           {featured.map((post, index) => (
             <PostTile post={post} key={index} />
           ))}
         </div>
+      </div>
+        <div className="strip paddingVertical">
+          <LoopingText
+            text='PROMPT ENGINEERING - TUTTO QUELLO CHE DEVI SAPERE'
+            size='big'
+            velocity={0.08}
+            color='dark'
+          />
+        </div>
+      <div class="collection-list-wrapper collection-list-wrapper-title paddingVertical noBorder">
+        <h2>Tutto quello che devi sapere sul mondo del Prompt Engineering</h2>
+      </div>
+      <div className="collection-list-wrapper">
+        <div role="list" className="collection-list">
+          {promptEngineering.map((post, index) => (
+            <PostTile post={post} key={index} />
+          ))}
+        </div>
+      </div>
+      <div className="strip paddingVertical">
+        <LoopingText
+          text='ALTRE NEWS DAL MONDO AI'
+          size='big'
+          velocity={0.08}
+          color='dark'
+        />
+      </div>
+      <div class="collection-list-wrapper collection-list-wrapper-title paddingVertical noBorder">
+        <h2>Altre news dal mondo dell'intelligenza artificiale</h2>
       </div>
       <div className="collection-list-wrapper">
         <div role="list" className="collection-list">

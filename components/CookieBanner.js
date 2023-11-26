@@ -10,13 +10,13 @@ const CookieBanner = () => {
     const cookieAccepted = getCookie('CookieAccepted');
     if (cookieAccepted === null || cookieAccepted == 'false' ) {
       setAnonymous(true);
-      disableBodyScroll();
+      // disableBodyScroll();
     } else if (cookieAccepted === 'true') {
       // Il cookie è accettato, nascondi il banner e sblocca lo scroll
       setAnonymous(false);
       setGestisci(false);
       setRifiuta(false);
-      enableBodyScroll();
+      // enableBodyScroll();
     }
   }, []);
 
@@ -44,7 +44,7 @@ const CookieBanner = () => {
     setAnonymous(false);
     setGestisci(false);
     setRifiuta(false);
-    enableBodyScroll(); // Sblocca lo scroll quando l'utente acconsente
+    // enableBodyScroll(); // Sblocca lo scroll quando l'utente acconsente
   };
 
   const handleGestisciClick = () => {
@@ -65,7 +65,7 @@ const CookieBanner = () => {
     setAnonymous(false);
     setGestisci(false);
     setRifiuta(false);
-    enableBodyScroll(); // Sblocca lo scroll quando l'utente chiude il banner
+    // enableBodyScroll(); // Sblocca lo scroll quando l'utente chiude il banner
   };
 
   // Funzione per bloccare lo scroll del corpo della pagina

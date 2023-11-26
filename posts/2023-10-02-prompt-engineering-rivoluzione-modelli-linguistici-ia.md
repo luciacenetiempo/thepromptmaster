@@ -1,6 +1,6 @@
 ---
 id: 2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia
-date: 2023-10-01
+date: 2023-10-02
 keywords: prompt engineering, modelli linguistici, Large Language Models, intelligenza artificiale, applicazioni AI
 title: > 
   Il prompt engineering: una nuova frontiera nell'utilizzo dei modelli linguistici
@@ -14,6 +14,8 @@ relatedPosts: ["2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia
 author: 'Lucia Cenetiempo'
 color: light
 ---
+
+#### Lezione 2
 
 # Il prompt engineering: una nuova frontiera nell'utilizzo dei modelli linguistici
 

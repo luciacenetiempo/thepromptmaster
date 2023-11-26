@@ -241,7 +241,7 @@ a {
   display: inline-block;
   color: white;
   text-decoration: none;
-  border:0;
+  border: 0;
   cursor: pointer;
   &:hover {
     background-color: $background-color_3;
@@ -1259,6 +1259,12 @@ form.field-newsletter {
   padding: 2em;
 }
 
+.paddingVertical {
+  padding: 2em;
+}
+.noBorder {
+  border: 0px solid transparent;
+}
 .boxLink {
   border-radius: 8px;
   border: 1px solid #cccccc;
@@ -1685,7 +1691,7 @@ table {
       align-items: center;
       cursor: pointer;
     }
-    .button{
+    .button {
       padding: 1.3em 1.5em;
       margin-top: 20px;
     }
@@ -1698,5 +1704,48 @@ table {
       text-decoration: underline;
       cursor: pointer;
     }
+  }
+}
+/**POST LIST**/
+.post-tile-row {
+  position: relative;
+  overflow: visible;
+  padding-left: 120px;
+  .post-tile-listing {
+    text-decoration: none;
+    .post-tile-row--row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-color);
+      align-items: center;
+      figure {
+        width: 36%;
+        flex-shrink: 1;
+      }
+      .post-tile-row--content {
+        flex-shrink: 1;
+        width: 60%;
+      }
+      .goTo{
+        font-size: 1em;
+        text-decoration: underline;
+      }
+    }
+  }
+  span.number {
+    position: absolute;
+    top: 50%;
+    background: black;
+    color: white;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    transform: translate(0%, -50%);
+    font-size: 2.0em;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
   }
 }

@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
 
   return hasCookie ? (
     <>
-      <Script
+      {/* <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"
         strategy="afterInteractive"
       />
@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }) {
          
            gtag('config', 'G-QXT3DWCP13');
         `}
-      </Script>
+      </Script> */}
       <Component {...pageProps} />
     </>
   ) : (

@@ -7,6 +7,7 @@ import LoopingText from '@/components/LoopingText';
 import Header from '@/components/Header';
 import NewsletterStrip from './NewsletterStrip';
 import Footer from './Footer';
+import PostTileRow from './PostTileRow';
 
 const TemplateCategory = (props) => {
   const [pagination, setPagination] = useState(10);
@@ -50,21 +51,42 @@ const TemplateCategory = (props) => {
           />
         </div>
       </div>
+      {
+        props.category == 'prompt-engineering' ? (
 
-      <div className="collection-list-wrapper-top">
-        <div role="list" className="collection-list-top">
-          {featured.map((post, index) => (
-            <PostTile post={post} key={index} />
-          ))}
-        </div>
-      </div>
-      <div className="collection-list-wrapper">
-        <div role="list" className="collection-list">
-          {paginated.map((post, index) => (
-            <PostTile post={post} key={index} />
-          ))}
-        </div>
-      </div>
+
+          <div className='section-content'>
+            <div className="collection-list-wrapper-top noBorder">
+              <div role="list" className="content-wide rich-text-block">
+                {props.posts.reverse().map((post, index) => (
+                  <div className='post-tile-row'>
+                    <span className='number'>{index+1}.</span>
+                    <PostTileRow post={post} key={index} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ) : ( 
+          <>
+            <div className="collection-list-wrapper-top">
+              <div role="list" className="collection-list-top">
+                {featured.map((post, index) => (
+                  <PostTile post={post} key={index} />
+                ))}
+              </div>
+            </div>
+            <div className="collection-list-wrapper">
+              <div role="list" className="collection-list">
+                {paginated.map((post, index) => (
+                  <PostTile post={post} key={index} />
+                ))}
+              </div>
+            </div>
+          </>
+        )
+      }
+
       <NewsletterStrip />
       <Footer />
     </>
