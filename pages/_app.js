@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
 
   return hasCookie ? (
     <>
-      {/* <Script
+      <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"
         strategy="afterInteractive"
       />
@@ -25,6 +25,7 @@ export default function App({ Component, pageProps }) {
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2302004936713476"
         crossorigin="anonymous"
       />
+      
       <Script id="google-analytics" strategy="afterInteractive">
         {`
            window.dataLayer = window.dataLayer || [];
@@ -33,7 +34,7 @@ export default function App({ Component, pageProps }) {
          
            gtag('config', 'G-QXT3DWCP13');
         `}
-      </Script> */}
+      </Script>
       <Component {...pageProps} />
     </>
   ) : (
