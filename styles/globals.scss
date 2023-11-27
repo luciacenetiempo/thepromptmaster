@@ -1711,6 +1711,9 @@ table {
   position: relative;
   overflow: visible;
   padding-left: 120px;
+  @media screen and (max-width: 479px) {
+    padding-left: 0px;
+  }
   .post-tile-listing {
     text-decoration: none;
     .post-tile-row--row {
@@ -1718,15 +1721,33 @@ table {
       justify-content: space-between;
       border-bottom: 1px solid var(--border-color);
       align-items: center;
+      @media screen and (max-width: 479px) {
+        flex-flow: column;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+      }
       figure {
         width: 36%;
         flex-shrink: 1;
+        position: relative;
+        height: 240px;
+
+        @media screen and (max-width: 479px) {
+          width: 100%;
+          margin: 0;
+          height: 190px;
+        }
       }
       .post-tile-row--content {
         flex-shrink: 1;
         width: 60%;
+
+        @media screen and (max-width: 479px) {
+          width: 100%;
+          margin: 0;
+        }
       }
-      .goTo{
+      .goTo {
         font-size: 1em;
         text-decoration: underline;
       }
@@ -1741,11 +1762,14 @@ table {
     height: 80px;
     left: 0;
     transform: translate(0%, -50%);
-    font-size: 2.0em;
+    font-size: 2em;
     line-height: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
+    @media screen and (max-width: 479px) {
+      display: none;
+    }
   }
 }

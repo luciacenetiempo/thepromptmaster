@@ -6,7 +6,7 @@ const formatDate = (inputDate) => {
   return new Date(inputDate).toLocaleDateString('it-IT', options);
 };
 
-const PostTileRow = ({ post }) => {
+const PostTileRow = ({ post, index }) => {
   return (
     <Link
       href={'/blog/' + post.slug}
@@ -16,11 +16,13 @@ const PostTileRow = ({ post }) => {
       <figure>
         <Image
           src={post.cover}
-          width={500}
-          height={500}
+          // width={350}
+          // height={250}
+          fill
         />
       </figure>
       <div className='post-tile-row--content'>
+        <h6>Lezione {index + 1}</h6>
         <h4 className="post-heading">
           {post.title}
         </h4>

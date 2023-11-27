@@ -61,7 +61,7 @@ const TemplateCategory = (props) => {
                 {props.posts.reverse().map((post, index) => (
                   <div className='post-tile-row'>
                     <span className='number'>{index+1}.</span>
-                    <PostTileRow post={post} key={index} />
+                    <PostTileRow post={post} index={index} key={index} />
                   </div>
                 ))}
               </div>

@@ -7,7 +7,8 @@ title: >
 subtitle: >
   Unisciti al corso che rivoluzionerà il tuo modo di interagire con l'AI
 incipit: >
-  In un mondo in cui l'intelligenza artificiale si sta evolvendo rapidamente, il prompt engineering emerge come una disciplina cruciale. Questo campo relativamente nuovo sta ridefinendo il modo in cui interagiamo con i modelli linguistici, sbloccando potenzialità prima inimmaginabili.
+  Il prompt engineering emerge come la competenza fondamentale nell'universo dell'intelligenza artificiale, diventando indispensabile per chiunque desideri interagire efficacemente con modelli di linguaggio avanzati come GPT.
+
 categories: ["Prompt Engineering"]
 cover: /images/2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai-cover.png
 relatedPosts: ["2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia"]
