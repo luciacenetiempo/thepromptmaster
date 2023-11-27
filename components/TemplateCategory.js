@@ -23,6 +23,7 @@ const TemplateCategory = (props) => {
   };
   let featured = props.posts.slice(0, 2);
   let paginated = props.posts.slice(2, pagination);
+  let reverse = props.posts.reverse();
   return (
 
     <>
@@ -53,15 +54,13 @@ const TemplateCategory = (props) => {
       </div>
       {
         props.category == 'prompt-engineering' ? (
-
-
           <div className='section-content'>
             <div className="collection-list-wrapper-top noBorder">
               <div role="list" className="content-wide rich-text-block">
-                {props.posts.reverse().map((post, index) => (
-                  <div className='post-tile-row'>
+                {reverse.map((post, index) => (
+                  <div className='post-tile-row' key={index}>
                     <span className='number'>{index+1}.</span>
-                    <PostTileRow post={post} index={index} key={index} />
+                    <PostTileRow post={post} index={index} />
                   </div>
                 ))}
               </div>

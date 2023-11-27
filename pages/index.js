@@ -66,7 +66,7 @@ export default function Home({ allPostsData }) {
             color='dark'
           />
         </div>
-      <div class="collection-list-wrapper collection-list-wrapper-title paddingVertical noBorder">
+      <div className="collection-list-wrapper collection-list-wrapper-title paddingVertical noBorder">
         <h2>Tutto quello che devi sapere sul mondo del Prompt Engineering</h2>
       </div>
       <div className="collection-list-wrapper">
@@ -84,7 +84,7 @@ export default function Home({ allPostsData }) {
           color='dark'
         />
       </div>
-      <div class="collection-list-wrapper collection-list-wrapper-title paddingVertical noBorder">
+      <div className="collection-list-wrapper collection-list-wrapper-title paddingVertical noBorder">
         <h2>Altre news dal mondo dell'intelligenza artificiale</h2>
       </div>
       <div className="collection-list-wrapper">
