@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 const Header = ({ color }) => {
+  const [opened, setOpened] = useState(false);
+  const openMenu = async () => {
+    console.log('opened',opened);
+    console.log('!opened',!opened);
+    setOpened(!opened)
+  };
+
+
   return (
     <div className={`navbar w-nav navbar--${color}`}>
       <div className="block-navbar">
-        <div className="nav">
+        <div className="nav nav--logo">
           <a href="/" className="brand w-nav-brand w--current" aria-label="home">
             <svg xmlns="http://www.w3.org/2000/svg" id="uuid-276052b2-2fc8-4a97-b8e4-993c0ddce8a3" viewBox="0 0 463.95 105">
               <g id="uuid-5a6d9eac-1cfc-4ee7-8f3c-ea4ac44a6cde">
@@ -29,7 +37,7 @@ const Header = ({ color }) => {
             </svg>
           </a>
         </div>
-        <nav role="navigation" className="nav-menu w-nav-menu">
+        <nav role="navigation" className={`nav-menu w-nav-menu ${opened ? 'open' : ''}`}>
           <div className="nav-page">
 
             <Link
@@ -187,18 +195,15 @@ const Header = ({ color }) => {
           {/* <div className="nav-circle"></div> */}
         </nav>
 
-        <div className="nav">
-          <div
-            className="menu-button w-nav-button"
-            aria-label="menu"
-            role="button"
-            tabIndex="0"
-          >
-            <div className="menu-icon w-icon-nav-menu"></div>
-          </div>
+        <div className={`nav-mobile ${opened ? 'open' : ''}`} onClick={openMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-      <div className="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
     </div>
   );
 };
