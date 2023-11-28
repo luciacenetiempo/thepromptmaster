@@ -14,7 +14,8 @@ export default function App({ Component, pageProps }) {
     }
   }, [cookies]);
 
-  return hasCookie ? (
+  return (
+
     <>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"
@@ -36,12 +37,8 @@ export default function App({ Component, pageProps }) {
         `}
       </Script>
       <Component {...pageProps} />
-    </>
-  ) : (
-    
-    <>
-      <CookieBanner />
-      <Component {...pageProps} />
+      {hasCookie ? (<CookieBanner />) : ('')}
     </>
   )
+  
 }
