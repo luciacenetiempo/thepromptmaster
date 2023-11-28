@@ -11,7 +11,7 @@ const Header = ({ color }) => {
 
 
   return (
-    <div className={`navbar w-nav navbar--${color}`}>
+    <header className={`navbar w-nav navbar--${color}`}>
       <div className="block-navbar">
         <div className="nav nav--logo">
           <a href="/" className="brand w-nav-brand w--current" aria-label="home">
@@ -211,7 +211,7 @@ const Header = ({ color }) => {
           <span></span>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 const formatDate = (inputDate) => {
   const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
   return new Date(inputDate).toLocaleDateString('it-IT', options);
@@ -16,6 +17,13 @@ const PostTile = ({ post }) => {
           backgroundImage: `url('${post.cover}')`
         }}
       >
+        <figure className="mobileOnly">
+          <Image
+            src={post.cover}
+            width={350}
+            height={250}
+          />
+        </figure>
         <div className="post-block">
           <div className="post-text">
             <div className="post-info">

@@ -550,6 +550,19 @@ a:hover {
   height: 100%;
 }
 
+.post-link .mobileOnly {
+  display: none;
+  width: 100%;
+  height: 250px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.post-link .mobileOnly img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .post-link:hover {
   box-shadow: inset 0 0 0 0em #fff, inset 0 200px 150px -80px rgba(0, 0, 0, 0.2);
 }
@@ -1432,25 +1445,28 @@ form.field-newsletter .msg-alert {
     grid-template-columns: 1fr;
   }
   .post-link {
-    min-height: 18em;
+    min-height: 17em;
     border-right-style: none;
     box-shadow: none;
+    flex-direction: column;
   }
   .collection-list-top {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+  .collection-list-top .mobileOnly {
+    display: flex;
+    margin: 0;
+  }
   .collection-list-top .post-link {
-    margin-bottom: 5em;
+    margin-bottom: 0.9em;
     padding-bottom: 0em;
     border-bottom: 0 solid #e0e0e0;
-    box-shadow: 1px -10px 30px #000000;
+    box-shadow: 1px -10px 15px #000000;
+    background-image: none !important;
   }
   .collection-list-top .post-link .post-block .post-background {
     height: 50%;
-  }
-  .collection-list-top .post-link .post-block {
-    padding-bottom: 80%;
   }
   .navbar {
     padding-right: 1.5em;
@@ -1839,7 +1855,15 @@ table {
 }
 
 /**NAV MOBILE**/
-.nav-mobile {
+header.w-nav .w-nav-menu.open {
+  display: flex;
+}
+
+header.navbar--dark .nav-mobile span {
+  background-color: #000;
+}
+
+header.navbar .nav-mobile {
   width: 60px;
   height: 45px;
   position: relative;
@@ -1862,7 +1886,7 @@ table {
   z-index: 13;
 }
 
-.nav-mobile span {
+header.navbar .nav-mobile span {
   display: block;
   position: absolute;
   height: 9px;
@@ -1879,82 +1903,86 @@ table {
   transition: 0.25s ease-in-out;
 }
 
-.nav-mobile span:nth-child(even) {
+header.navbar .nav-mobile span:nth-child(even) {
   left: 50%;
   border-radius: 0 9px 9px 0;
 }
 
-.nav-mobile span:nth-child(odd) {
+header.navbar .nav-mobile span:nth-child(odd) {
   left: 0px;
   border-radius: 9px 0 0 9px;
 }
 
-.nav-mobile span:nth-child(1), .nav-mobile span:nth-child(2) {
+header.navbar .nav-mobile span:nth-child(1), header.navbar .nav-mobile span:nth-child(2) {
   top: 0px;
 }
 
-.nav-mobile span:nth-child(3), .nav-mobile span:nth-child(4) {
+header.navbar .nav-mobile span:nth-child(3), header.navbar .nav-mobile span:nth-child(4) {
   top: 18px;
 }
 
-.nav-mobile span:nth-child(5), .nav-mobile span:nth-child(6) {
+header.navbar .nav-mobile span:nth-child(5), header.navbar .nav-mobile span:nth-child(6) {
   top: 36px;
 }
 
-.nav-mobile.open span:nth-child(1), .nav-mobile.open span:nth-child(6) {
+header.navbar .nav-mobile.open span:nth-child(1), header.navbar .nav-mobile.open span:nth-child(6) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.nav-mobile.open span:nth-child(2), .nav-mobile.open span:nth-child(5) {
+header.navbar .nav-mobile.open span:nth-child(2), header.navbar .nav-mobile.open span:nth-child(5) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-.nav-mobile.open span:nth-child(1) {
+header.navbar .nav-mobile.open span:nth-child(1) {
   left: 5px;
   top: 7px;
 }
 
-.nav-mobile.open span:nth-child(2) {
+header.navbar .nav-mobile.open span:nth-child(2) {
   left: calc(50% - 5px);
   top: 7px;
 }
 
-.nav-mobile.open span:nth-child(3) {
+header.navbar .nav-mobile.open span:nth-child(3) {
   left: -50%;
   opacity: 0;
 }
 
-.nav-mobile.open span:nth-child(4) {
+header.navbar .nav-mobile.open span:nth-child(4) {
   left: 100%;
   opacity: 0;
 }
 
-.nav-mobile.open span:nth-child(5) {
+header.navbar .nav-mobile.open span:nth-child(5) {
   left: 5px;
   top: 29px;
 }
 
-.nav-mobile.open span:nth-child(6) {
+header.navbar .nav-mobile.open span:nth-child(6) {
   left: calc(50% - 5px);
   top: 29px;
 }
 
 @media screen and (max-width: 479px) {
-  .nav-mobile {
+  header.navbar .nav-mobile {
     display: block;
   }
 }
 
-.w-nav .w-nav-menu.open {
-  display: flex;
-}
-
-.navbar--dark .nav-mobile span {
-  background-color: #000;
+@media screen and (max-width: 479px) {
+  footer.w-nav .nav {
+    position: relative;
+    z-index: 12;
+    top: 0;
+  }
+  footer.w-nav .w-nav-menu {
+    position: relative;
+    width: 100%;
+  }
 }
