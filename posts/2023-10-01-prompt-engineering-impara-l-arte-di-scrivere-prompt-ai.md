@@ -11,7 +11,7 @@ incipit: >
 
 categories: ["Prompt Engineering"]
 cover: /images/2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai-cover.png
-relatedPosts: ["2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia"]
+relatedPosts: ["2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai", "2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia", "2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale"]
 author: 'Lucia Cenetiempo'
 color: light
 ---

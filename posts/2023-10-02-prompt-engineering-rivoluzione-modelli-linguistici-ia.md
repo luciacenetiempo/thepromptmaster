@@ -10,7 +10,7 @@ incipit: >
   In un mondo in cui l'intelligenza artificiale si sta evolvendo rapidamente, il prompt engineering emerge come una disciplina cruciale. Questo campo relativamente nuovo sta ridefinendo il modo in cui interagiamo con i modelli linguistici, sbloccando potenzialità prima inimmaginabili.
 categories: ["Prompt Engineering"]
 cover: /images/2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia-cover.png
-relatedPosts: ["2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia"]
+relatedPosts: ["2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai", "2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia", "2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale"]
 author: 'Lucia Cenetiempo'
 color: light
 ---
@@ -74,3 +74,5 @@ Il prompt engineering è fondamentale nel rendere l'IA più accessibile e compre
 Inoltre, questa disciplina sta guidando l'innovazione verso modelli AI più responsivi e personalizzati, capaci di adattarsi alle esigenze specifiche degli utenti. Questo livello di personalizzazione significa che le applicazioni AI potranno fornire assistenza più accurata e contestualmente rilevante, dalle raccomandazioni personalizzate nelle piattaforme di shopping online, fino al supporto personalizzato nella gestione della salute e del benessere.
 
 La prospettiva futura del prompt engineering è estremamente promettente, con potenziali applicazioni che potrebbero rivoluzionare settori come l'istruzione, la sanità e l'intrattenimento. Man mano che i modelli linguistici diventano più avanzati, la nostra capacità di interagire con loro in modi sempre più sofisticati e significativi cresce, portandoci verso un futuro in cui **l'intelligenza artificiale sarà un elemento onnipresente e indispensabile nella vita quotidiana.**
+
+#### [Vai alla lezione 3](/blog/2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale)
