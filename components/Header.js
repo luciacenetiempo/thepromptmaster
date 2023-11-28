@@ -44,6 +44,7 @@ const Header = ({ color }) => {
               href={'/'}
               className="nav-link w-inline-block"
               key='home'
+              onClick={openMenu}
             >
               <div className="nav-text-block">
                 <div
@@ -72,6 +73,7 @@ const Header = ({ color }) => {
               href={'/blog/ai-updates'}
               className="nav-link w-inline-block"
               key='ai-updates'
+              onClick={openMenu}
             >
               <div className="nav-text-block">
                 <div
@@ -99,7 +101,8 @@ const Header = ({ color }) => {
             <Link
               href={'/blog/prompt-engineering'}
               className="nav-link w-inline-block"
-              key='prompt-design'
+              key='prompt-engineering'
+              onClick={openMenu}
             >
               <div className="nav-text-block">
                 <div
@@ -129,6 +132,7 @@ const Header = ({ color }) => {
               href={'/blog/ai-tools'}
               className="nav-link w-inline-block"
               key='ai-tools'
+              onClick={openMenu}
             >
               <div className="nav-text-block">
                 <div
@@ -159,6 +163,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               target="_blank"
               key='instagram'
+              onClick={openMenu}
             >
               <div className="nav-text-block">
                 <div className="nav-text">Instagram</div>
@@ -172,6 +177,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               target="_blank"
               key='twitter'
+              onClick={openMenu}
             >
               <div className="nav-text-block">
                 <div className="nav-text">Twitter</div>
@@ -185,6 +191,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               target="_blank"
               key='linkedin'
+              onClick={openMenu}
             >
               <div className="nav-text-block">
                 <div className="nav-text">Linkedin</div>
