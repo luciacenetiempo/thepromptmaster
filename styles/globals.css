@@ -1860,7 +1860,7 @@ header.w-nav .w-nav-menu.open {
 }
 
 header.navbar--dark .nav-mobile span {
-  background-color: #000;
+  background-color: #000 !important;
 }
 
 header.navbar .nav-mobile {
