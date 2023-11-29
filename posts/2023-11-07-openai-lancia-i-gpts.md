@@ -10,7 +10,7 @@ incipit: >
   OpenAI riaccende la Silicon Valley, centro dell'innovazione tecnologica. Una mossa sorprendente che è seguita all'annuncio al Dev Day è stata la guida geniale di Sam Altman che ha portato alla luce il GPT Store.
 categories: ["OpenAI", "ChatGPT", "AI Updates"]
 cover: /images/openai-lancia-i-gpts-cover.webp
-relatedPosts: ["2023-11-16-openai-gpt5-nuova-era-intelligenza-artificiale", "2023-11-20-sam-altman-greg-brockman-entrano-in-microsoft-openai"]
+relatedPosts: ["2023-11-16-openai-gpt5-nuova-era-intelligenza-artificiale", "2023-11-20-sam-altman-greg-brockman-entrano-in-microsoft-openai","2023-11-28-gpt-store-rivoluzione-monetizzazione-intelligenza-artificiale","2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai"]
 author: 'Lucia Cenetiempo'
 color: light
 ---

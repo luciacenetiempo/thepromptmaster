@@ -10,7 +10,7 @@ incipit: >
   In un mondo dove l'innovazione tecnologica non dorme mai, Sam Altman, fondatore di OpenAI, ci ha regalato un'altra delle sue mosse sorprendenti.
 categories: ["OpenAI", "ChatGPT", "AI Updates"]
 cover: /images/sam-altman-greg-brockman-entrano-in-microsoft-openai-cover.webp
-relatedPosts: ["2023-11-16-openai-gpt5-nuova-era-intelligenza-artificiale","2023-11-07-openai-lancia-i-gpts"]
+relatedPosts: ["2023-11-07-openai-lancia-i-gpts", "2023-11-16-openai-gpt5-nuova-era-intelligenza-artificiale","2023-11-28-gpt-store-rivoluzione-monetizzazione-intelligenza-artificiale","2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai"]
 author: 'Lucia Cenetiempo'
 color: light
 ---

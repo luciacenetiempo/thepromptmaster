@@ -10,7 +10,7 @@ incipit: >
   OpenAI, con il suo ChatGPT, ha stabilito nuovi standard nell'IA conversazionale rendendolo molto più di uno strumento, ma è GPT-5 a suscitare le aspettative più elevate. 
 categories: ["OpenAI", "ChatGPT", "AI Updates"]
 cover: /images/openai-gpt5-nuova-era-intelligenza-artificiale-cover.webp
-relatedPosts: ["2023-11-07-openai-lancia-i-gpts", "2023-11-20-sam-altman-greg-brockman-entrano-in-microsoft-openai"]
+relatedPosts: ["2023-11-07-openai-lancia-i-gpts", "2023-11-20-sam-altman-greg-brockman-entrano-in-microsoft-openai","2023-11-28-gpt-store-rivoluzione-monetizzazione-intelligenza-artificiale","2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai"]
 author: 'Lucia Cenetiempo'
 color: light
 ---
@@ -29,7 +29,7 @@ Il mondo della tecnologia è in fervida attesa per GPT-5, il prossimo grande ril
 
 La speculazione su GPT-5 suggerisce che OpenAI potrebbe aver **espanso enormemente il set di dati di addestramento**, puntando a un'intelligenza artificiale con una **precisione ancor più umana** nelle sue risposte. Ma secondo me è importante ricordare che più dati non sempre equivalgono a innovazioni rivoluzionarie. Se le voci si rivelassero vere, GPT-5 potrebbe **ridefinire i confini tra intelligenza umana e macchina**.
 
-[[ImageRegular props-src=/images/openai-gpt5-nuova-era-intelligenza-artificiale-2.webp props-alt=GPT-5 espande i confini dell'Intelligenza Artificiale props-caption=GPT-5 espande i confini dell'Intelligenza Artificiale]]
+[[ImageWide props-src=/images/openai-gpt5-nuova-era-intelligenza-artificiale-2.webp props-alt=GPT-5 espande i confini dell'Intelligenza Artificiale props-caption=GPT-5 espande i confini dell'Intelligenza Artificiale]]
 
 ### Oltre la conversazione: l'impatto di gpt-5
 

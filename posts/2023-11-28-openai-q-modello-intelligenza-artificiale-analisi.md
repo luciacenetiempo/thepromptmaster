@@ -18,7 +18,7 @@ color: light
 
 L'annuncio di OpenAI riguardo al suo nuovo modello Q* ha scatenato un vivace dibattito nel mondo tecnologico. Questa nuova frontiera dell'intelligenza artificiale però solleva una questione: siamo davvero di fronte a un passo avanti verso l'Intelligenza Artificiale Generale (AGI) o è solo l'ennesima esagerazione mediatica?
 
-[[ImageRegular props-src=/images/2023-11-28-openai-q-modello-intelligenza-artificiale-analisi-1.webp props-alt=Model di OpenAI: la prossima rivoluzione dell’intelligenza artificiale? props-caption=Model di OpenAI: la prossima rivoluzione dell’intelligenza artificiale?]]
+[[ImageWide props-src=/images/2023-11-28-openai-q-modello-intelligenza-artificiale-analisi-1.webp props-alt=Model di OpenAI: la prossima rivoluzione dell’intelligenza artificiale? props-caption=Model di OpenAI: la prossima rivoluzione dell’intelligenza artificiale?]]
 
 
 ### Capacità nell'analisi matematica: un indicatore chiave per l'intelligenza artificiale
@@ -30,7 +30,7 @@ La **capacità nell'analisi matematica** è spesso vista come una pietra miliare
 Nonostante l'avanzamento delle **reti neurali** e dell'**apprendimento profondo** nell'interpretazione di pattern e schemi, la matematica pone sfide uniche che richiedono un livello superiore di ragionamento e comprensione. Attualmente, questi aspetti rimangono al di fuori della portata dell'intelligenza artificiale moderna. L'introduzione del modello **Q***, però, segnala un potenziale progresso verso il miglioramento nelle capacità di **pianificazione e ragionamento astratto** dell'IA.  
 Questi sviluppi sono fondamentali per avvicinarsi a una forma di intelligenza artificiale che può effettivamente comprendere e manipolare concetti astratti, un passo cruciale verso il raggiungimento di una vera Intelligenza Artificiale Generale (AGI).
 
-[[ImageRegular props-src=/images/2023-11-28-openai-q-modello-intelligenza-artificiale-analisi-2.webp props-alt=Ragionamento e comprensione: le frontiere attuali dell'intelligenza artificiale props-caption=Ragionamento e comprensione: le frontiere attuali dell'intelligenza artificiale]]
+[[ImageWide props-src=/images/2023-11-28-openai-q-modello-intelligenza-artificiale-analisi-2.webp props-alt=Ragionamento e comprensione: le frontiere attuali dell'intelligenza artificiale props-caption=Ragionamento e comprensione: le frontiere attuali dell'intelligenza artificiale]]
 
 ### Le vastissime applicazioni di un'intelligenza artificiale versata in matematica
 
@@ -40,7 +40,7 @@ L'**impiego di un'intelligenza artificiale** in grado di gestire calcoli e teore
 
 Ogni lancio di un **nuovo modello di intelligenza artificiale** sembra inevitabilmente generare un'ondata di eccitazione intorno all'idea dell'**Intelligenza Artificiale Generale (AGI)**. Un esempio è stato il modello Gato di Google DeepMind, che, nonostante le sue impressionanti capacità, non ha ancora realizzato il sogno dell'AGI. È fondamentale, quindi, ponderare se questo continuo ciclo di hype e successive delusioni porti effettivamente progresso nel campo dell'**IA**. Una riflessione critica su queste dinamiche può aiutare a distinguere i veri traguardi tecnologici dalle semplici esagerazioni mediatiche, indirizzando meglio le energie verso lo sviluppo di intelligenze artificiali che rispondano a esigenze reali e immediate.
 
-[[ImageRegular props-src=/images/2023-11-28-openai-q-modello-intelligenza-artificiale-analisi-3.webp props-alt=Al di là dell'euforia: valutando il vero impatto dei nuovi modelli IA props-caption=Al di là dell'euforia: valutando il vero impatto dei nuovi modelli IA]]
+[[ImageWide props-src=/images/2023-11-28-openai-q-modello-intelligenza-artificiale-analisi-3.webp props-alt=Al di là dell'euforia: valutando il vero impatto dei nuovi modelli IA props-caption=Al di là dell'euforia: valutando il vero impatto dei nuovi modelli IA]]
 
 ### Le sfide etiche e di sicurezza nel mondo dell'intelligenza artificiale
 

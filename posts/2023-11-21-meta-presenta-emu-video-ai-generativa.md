@@ -10,7 +10,7 @@ incipit: >
   Meta lancia Emu Video e Emu Edit, segnando passi importanti nella tecnologia AI generativa, con applicazioni che vanno dalla generazione di video alla modifica precisa di immagini.
 categories: ["AI Tools", "Meta AI", "AI Updates"]
 cover: /images/meta-presenta-emu-video-ai-generativa-cover.webp
-relatedPosts: ["2023-11-21-google-gemini-rinvio-strategico-competizione-ia"]
+relatedPosts: ["2023-11-07-openai-lancia-i-gpts", "2023-11-21-google-gemini-rinvio-strategico-competizione-ia","2023-11-28-gpt-store-rivoluzione-monetizzazione-intelligenza-artificiale","2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai"]
 author: 'Lucia Cenetiempo'
 color: light
 ---

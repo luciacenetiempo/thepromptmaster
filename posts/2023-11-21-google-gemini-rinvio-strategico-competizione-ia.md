@@ -10,7 +10,7 @@ incipit: >
   In un panorama tecnologico che si evolve a velocità sorprendente, Google ha recentemente annunciato il posticipo del lancio di Gemini, il suo avanzato sistema di intelligenza artificiale, al primo trimestre del 2024.
 categories: ["AI Tools", "Google AI", "AI Updates"]
 cover: /images/google-gemini-rinvio-strategico-competizione-ia-cover.webp
-relatedPosts: ["2023-11-21-meta-presenta-emu-video-ai-generativa"]
+relatedPosts: ["2023-11-07-openai-lancia-i-gpts", "2023-11-21-meta-presenta-emu-video-ai-generativa","2023-11-28-gpt-store-rivoluzione-monetizzazione-intelligenza-artificiale","2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai"]
 author: 'Lucia Cenetiempo'
 color: light
 ---

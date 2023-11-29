@@ -24,7 +24,7 @@ Impara l'arte del prompt engineering per rivoluzionare il tuo approccio alla tec
 
 Il **prompt engineering** emerge come una competenza cruciale nell'universo dell'**intelligenza artificiale**, diventando indispensabile per chiunque desideri interagire efficacemente con modelli di linguaggio avanzati come **GPT-3**. Questa disciplina trascende la mera nozione tecnica, richiedendo **creatività**, **intuito** e **precisione** per il successo delle interazioni AI.
 
-[[ImageRegular props-src=/images/2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai-1.webp props-alt=Prompt Engineering: La tua chiave d'accesso al mondo dell'intelligenza artificiale props-caption=Prompt Engineering: La tua chiave d'accesso al mondo dell'intelligenza artificiale.]]
+[[ImageWide props-src=/images/2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai-1.webp props-alt=Prompt Engineering: La tua chiave d'accesso al mondo dell'intelligenza artificiale props-caption=Prompt Engineering: La tua chiave d'accesso al mondo dell'intelligenza artificiale.]]
 
 ### Il potere del prompt engineering
 
@@ -34,7 +34,7 @@ Nel dialogo con l'**intelligenza artificiale**, il **prompt engineering** è ess
 
 Nel mio corso di **prompt engineering**, ti guiderò attraverso un **percorso formativo** che ti renderà capace di sfruttare al meglio ogni **Large Language Model** (LLM), inclusi **ChatGPT, Claude, GPT** e **Bard**. Il mio obiettivo è farti raggiungere un livello avanzato nel **prompt engineering**, dotandoti di tutte le conoscenze e gli strumenti necessari per sviluppare, **testare** e **gestire** prompt efficaci. Questo percorso non si limita solo alla teoria ma include anche **applicazioni pratiche** e **case study**, per permetterti di vivere un'esperienza di apprendimento completa e coinvolgente nel mondo dell'intelligenza artificiale.
 
-[[ImageRegular props-src=/images/2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai-3.webp props-alt=Il corso di prompt engineering: una guida completa props-caption=Il corso di prompt engineering: una guida completa]]
+[[ImageWide props-src=/images/2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai-3.webp props-alt=Il corso di prompt engineering: una guida completa props-caption=Il corso di prompt engineering: una guida completa]]
 
 ### Per chi è pensato questo corso?
 
