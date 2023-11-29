@@ -9,7 +9,7 @@ subtitle: >
 incipit: >
   OpenAI, con il suo ChatGPT, ha stabilito nuovi standard nell'IA conversazionale rendendolo molto più di uno strumento, ma è GPT-5 a suscitare le aspettative più elevate. 
 categories: ["OpenAI", "ChatGPT", "AI Updates"]
-cover: /images/openai-gpt5-nuova-era-intelligenza-artificiale-cover.png
+cover: /images/openai-gpt5-nuova-era-intelligenza-artificiale-cover.webp
 relatedPosts: ["2023-11-07-openai-lancia-i-gpts", "2023-11-20-sam-altman-greg-brockman-entrano-in-microsoft-openai"]
 author: 'Lucia Cenetiempo'
 color: light
@@ -19,7 +19,7 @@ color: light
 
 OpenAI, con il suo ChatGPT, ha catturato l'immaginazione pubblica, dimostrando che l'intelligenza artificiale può essere più di un semplice strumento tecnologico. Con GPT-3 e GPT-4, OpenAI ha stabilito **nuovi standard nell'IA conversazionale**, ma è **GPT-5 a suscitare le aspettative più elevate**. Durante una recente conferenza per sviluppatori, OpenAI ha presentato GPT-4 Turbo, una versione raffinata del quarto modello generativo, ma è il prossimo GPT-5 a tenere tutti con il fiato sospeso.
 
-[[ImageWide props-src=/images/openai-gpt5-nuova-era-intelligenza-artificiale-1.png props-alt=OpenAI e l'attesa per GPT-5: una nuova svolta nel mondo dell'Intelligenza Artificiale props-caption=OpenAI e l'attesa per GPT-5: una nuova svolta nel mondo dell'Intelligenza Artificiale ]]
+[[ImageWide props-src=/images/openai-gpt5-nuova-era-intelligenza-artificiale-1.webp props-alt=OpenAI e l'attesa per GPT-5: una nuova svolta nel mondo dell'Intelligenza Artificiale props-caption=OpenAI e l'attesa per GPT-5: una nuova svolta nel mondo dell'Intelligenza Artificiale ]]
 
 ## La rivoluzione di gpt-5: il salto di qualità sta per arrivare?
 
@@ -29,7 +29,7 @@ Il mondo della tecnologia è in fervida attesa per GPT-5, il prossimo grande ril
 
 La speculazione su GPT-5 suggerisce che OpenAI potrebbe aver **espanso enormemente il set di dati di addestramento**, puntando a un'intelligenza artificiale con una **precisione ancor più umana** nelle sue risposte. Ma secondo me è importante ricordare che più dati non sempre equivalgono a innovazioni rivoluzionarie. Se le voci si rivelassero vere, GPT-5 potrebbe **ridefinire i confini tra intelligenza umana e macchina**.
 
-[[ImageRegular props-src=/images/openai-gpt5-nuova-era-intelligenza-artificiale-2.png props-alt=GPT-5 espande i confini dell'Intelligenza Artificiale props-caption=GPT-5 espande i confini dell'Intelligenza Artificiale]]
+[[ImageRegular props-src=/images/openai-gpt5-nuova-era-intelligenza-artificiale-2.webp props-alt=GPT-5 espande i confini dell'Intelligenza Artificiale props-caption=GPT-5 espande i confini dell'Intelligenza Artificiale]]
 
 ### Oltre la conversazione: l'impatto di gpt-5
 

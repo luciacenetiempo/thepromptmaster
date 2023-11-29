@@ -437,6 +437,16 @@ a:hover {
   grid-column-gap: 0.75em;
 }
 
+.post-info .categoryList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-info .categoryList a {
+  margin-right: 12px;
+}
+
 .post-info .category {
   color: #000;
   font-size: 0.8em;

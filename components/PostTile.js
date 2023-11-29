@@ -22,6 +22,7 @@ const PostTile = ({ post }) => {
             src={post.cover}
             width={350}
             height={250}
+            alt={post.title}
           />
         </figure>
         <div className="post-block">

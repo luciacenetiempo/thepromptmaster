@@ -9,7 +9,7 @@ subtitle: >
 incipit: >
   OpenAI riaccende la Silicon Valley, centro dell'innovazione tecnologica. Una mossa sorprendente che è seguita all'annuncio al Dev Day è stata la guida geniale di Sam Altman che ha portato alla luce il GPT Store.
 categories: ["OpenAI", "ChatGPT", "AI Updates"]
-cover: /images/openai-lancia-i-gpts-cover.png
+cover: /images/openai-lancia-i-gpts-cover.webp
 relatedPosts: ["2023-11-16-openai-gpt5-nuova-era-intelligenza-artificiale", "2023-11-20-sam-altman-greg-brockman-entrano-in-microsoft-openai"]
 author: 'Lucia Cenetiempo'
 color: light
@@ -21,7 +21,7 @@ La recente mossa di OpenAI, **guidata da Sam Altman**, ha segnato un momento sto
 
 Questa piattaforma non è semplicemente un negozio online; è un vero ecosistema che collega utenti e sviluppatori in un ambiente in cui la creazione e la condivisione prendono vita. Un'ampia gamma di ChatGPT specializzati è in attesa di essere esaminata, ciascuno progettato per soddisfare **particolari esigenze e aspirazioni**, delineando un futuro in cui l'accesso all'IA sarà più **accessibile e democratico per tutti**.
 
-[[ImageWide props-src=/images/openai-lancia-i-gpts.png props-alt=OpenAI lancia il GPT Store al Dev Day props-caption=OpenAI lancia il GPT Store al Dev Day]]
+[[ImageWide props-src=/images/openai-lancia-i-gpts.webp props-alt=OpenAI lancia il GPT Store al Dev Day props-caption=OpenAI lancia il GPT Store al Dev Day]]
 
 ### Un'esperienza utente intelligente e innovativa
 
@@ -32,7 +32,7 @@ Entrare nel GPT Store significa entrare in un mondo in cui **l'innovazione è fa
 Il Dall-E GPT è distinto per la sua capacità di generare immagini su richiesta, che dimostra la **straordinaria versatilità e il potenziale creativo** di queste tecnologie.  
 Questa piattaforma è un paradiso per gli sviluppatori e gli appassionati di intelligenza artificiale. Inoltre, rappresenta un cambiamento nel modo in cui le persone vedono e utilizzano l'intelligenza artificiale.
 
-[[ImageWide props-src=/images/openai-lancia-i-gpts-2.png props-alt=Sam Altman mostra i GPTs al Dev Day props-caption=Sam Altman mostra i GPTs al Dev Day]]
+[[ImageWide props-src=/images/openai-lancia-i-gpts-2.webp props-alt=Sam Altman mostra i GPTs al Dev Day props-caption=Sam Altman mostra i GPTs al Dev Day]]
 
 ### Le prospettive future e le sfide del GPT Store
 

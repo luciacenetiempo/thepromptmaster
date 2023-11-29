@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import LoopingText from './LoopingText';
 import Image from 'next/image';
 import styles from '@/styles/Components.module.css'
-const ImageTop = ({ title, url, color }) => {
+const ImageTop = ({ title, url, color, alt }) => {
   return (
     <div className={`${styles.sectionImageTop} ${styles.wfSection}`}>
       <Image
@@ -10,7 +10,7 @@ const ImageTop = ({ title, url, color }) => {
         src={url}
         width={500}
         height={500}
-        alt='dd'
+        alt={alt}
         className={`${styles.imageTop}`}
       />
       <div className="strip">

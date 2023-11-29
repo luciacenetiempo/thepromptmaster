@@ -7,7 +7,7 @@ const NewsletterStrip = () => {
     <div className="section section--newsletter">
     <div className='newsletter-strip newsletter-strip--title'>
         <div className='newsletter-strip__col'>
-          <img src='/logo-the-prompt-master.png' />
+          <img src='/logo-the-prompt-master.png' alt="logo the prompt master" />
         </div>
         <div className='newsletter-strip__col'>
           <h3>Resta al passo!</h3>

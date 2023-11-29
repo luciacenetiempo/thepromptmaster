@@ -45,6 +45,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               key='home'
               onClick={openMenu}
+              title='home'
             >
               <div className="nav-text-block">
                 <div
@@ -74,6 +75,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               key='ai-updates'
               onClick={openMenu}
+              title='AI updates'
             >
               <div className="nav-text-block">
                 <div
@@ -103,6 +105,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               key='prompt-engineering'
               onClick={openMenu}
+              title='Prompt Engineering'
             >
               <div className="nav-text-block">
                 <div
@@ -133,6 +136,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               key='ai-tools'
               onClick={openMenu}
+              title='AI Tools'
             >
               <div className="nav-text-block">
                 <div
@@ -164,6 +168,7 @@ const Header = ({ color }) => {
               target="_blank"
               key='instagram'
               onClick={openMenu}
+              title='Instagram'
             >
               <div className="nav-text-block">
                 <div className="nav-text">Instagram</div>
@@ -177,6 +182,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               target="_blank"
               key='twitter'
+              title='Twitter'
               onClick={openMenu}
             >
               <div className="nav-text-block">
@@ -191,6 +197,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               target="_blank"
               key='linkedin'
+              title='Linkedin'
               onClick={openMenu}
             >
               <div className="nav-text-block">

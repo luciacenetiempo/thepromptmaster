@@ -9,7 +9,7 @@ subtitle: >
 incipit: >
   Questa è la storia di come la tecnologia AI sta delicatamente modellando il futuro del fashion. Aitana López, modella virtuale nata dalla creatività dell'intelligenza artificiale spagnola, introduce una nuova visione nel settore della moda. 
 categories: ["AI Updates"]
-cover: /images/2023-11-27-aitana-lopez-rivoluzione-moda-digitale-intelligenza-artificiale-cover.jpg
+cover: /images/2023-11-27-aitana-lopez-rivoluzione-moda-digitale-intelligenza-artificiale-cover.webp
 relatedPosts: ["2023-11-20-sam-altman-greg-brockman-entrano-in-microsoft-openai","2023-11-07-openai-lancia-i-gpts","2023-11-16-openai-gpt5-nuova-era-intelligenza-artificiale"]
 author: 'Lucia Cenetiempo'
 color: light
@@ -18,7 +18,7 @@ color: light
 
 Nel mondo digitale, l'innovazione si intreccia con la bellezza. Aitana López, modella virtuale nata dalla creatività spagnola, introduce una nuova visione nel settore della moda. Questa è la storia di come la tecnologia AI sta delicatamente modellando il futuro del fashion.
 
-[[ImageWide props-src=/images/2023-11-27-aitana-lopez-rivoluzione-moda-digitale-intelligenza-artificiale-1.jpg props-alt=Aitana López, la modella creata dall'AI che apre nuove strade nella moda props-caption=Aitana López, la modella creata dall'AI che apre nuove strade nella moda]]
+[[ImageWide props-src=/images/2023-11-27-aitana-lopez-rivoluzione-moda-digitale-intelligenza-artificiale-1.webp props-alt=Aitana López, la modella creata dall'AI che apre nuove strade nella moda props-caption=Aitana López, la modella creata dall'AI che apre nuove strade nella moda]]
 
 ### L'Evoluzione della moda nell'era dell'Intelligenza Artificiale: il caso di Aitana López
 
@@ -28,7 +28,7 @@ Nel dinamico panorama di Barcellona, Aitana López si distingue come una pionier
 
 L'arrivo di Aitana López nel settore della moda segna una svolta cruciale, mostrando come l'integrazione dell'**intelligenza artificiale** possa aprire nuove strade creative. Questa modella AI, con la sua capacità di adattarsi a vari stili e contesti, rappresenta un nuovo modello di **moda e design**, guidato dalla tecnologia. La sua crescente popolarità su Instagram, che conta migliaia di follower, testimonia l'interesse crescente per le **innovazioni AI** nella moda, offrendo nuove possibilità di espressione e modelli di business rivoluzionari. Aitana rappresenta non solo un cambiamento stilistico, ma anche un nuovo approccio nel mondo del design, spianando la strada per un futuro in cui la moda e l'intelligenza artificiale si fondono in maniera sempre più integrata.
 
-[[ImageRegular props-src=/images/2023-11-27-aitana-lopez-rivoluzione-moda-digitale-intelligenza-artificiale-2.jpg props-alt=Redefinire la moda con l'Intelligenza Artificiale: la versatilità di Aitana López props-caption=Redefinire la moda con l'Intelligenza Artificiale: la versatilità di Aitana López]]
+[[ImageRegular props-src=/images/2023-11-27-aitana-lopez-rivoluzione-moda-digitale-intelligenza-artificiale-2.webp props-alt=Redefinire la moda con l'Intelligenza Artificiale: la versatilità di Aitana López props-caption=Redefinire la moda con l'Intelligenza Artificiale: la versatilità di Aitana López]]
 
 ### Innovazione AI dietro il successo di Aitana López nel fashion design
 
@@ -39,7 +39,7 @@ La creazione di Aitana López, la modella virtuale, rappresenta una fusione perf
 
 L'emergere di Aitana López come icona digitale nel settore della moda porta con sé importanti riflessioni etiche ed estetiche. La sua esistenza virtuale, frutto dell'**intelligenza artificiale**, sfida le nostre percezioni convenzionali di bellezza e stile, evidenziando la complessa relazione tra realtà e rappresentazione digitale. Questo trend nel **fashion design**, alimentato dalla tecnologia AI, pone questioni fondamentali sull'etica nell'era digitale, spingendo alla riflessione su come la tecnologia influenzi la nostra comprensione dell'identità e della bellezza, e sul ruolo della **moda AI** nel modellare le tendenze future.
 
-[[ImageRegular props-src=/images/2023-11-27-aitana-lopez-rivoluzione-moda-digitale-intelligenza-artificiale-3.jpg props-alt=Innovazione AI dietro il successo di Aitana López nel fashion design props-caption=Innovazione AI dietro il successo di Aitana López nel fashion design]]
+[[ImageRegular props-src=/images/2023-11-27-aitana-lopez-rivoluzione-moda-digitale-intelligenza-artificiale-3.webp props-alt=Innovazione AI dietro il successo di Aitana López nel fashion design props-caption=Innovazione AI dietro il successo di Aitana López nel fashion design]]
 
 ## Rappresentazioni digitali e il futuro della moda
 

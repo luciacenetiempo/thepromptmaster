@@ -9,7 +9,7 @@ subtitle: >
 incipit: >
   In un mondo in cui l'intelligenza artificiale si sta evolvendo rapidamente, il prompt engineering emerge come una disciplina cruciale. Questo campo relativamente nuovo sta ridefinendo il modo in cui interagiamo con i modelli linguistici, sbloccando potenzialità prima inimmaginabili.
 categories: ["Prompt Engineering"]
-cover: /images/2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale-cover.png
+cover: /images/2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale-cover.webp
 relatedPosts: ["2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai", "2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia", "2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale"]
 author: 'Lucia Cenetiempo'
 color: light
@@ -26,7 +26,7 @@ Concentrandosi sulla progettazione metodica e il perfezionamento dei prompt, que
 Nato dalla necessità di migliorare la comunicazione con i sistemi di Intelligenza Artificiale, il **prompt engineering** ha subito un'importante evoluzione. La pratica dell'ottimizzazione dei prompt è diventata essenziale per ottenere gli output desiderati dai sistemi AI avanzati.
 Con la domanda in crescita di **sistemi AI sofisticati**, l'importanza del prompt engineering continua ad aumentare e questo campo dinamico è in continua evoluzione, adattandosi a nuove sfide e incorporando le ultime tecniche e tecnologie dell'intelligenza artificiale.
 
-[[ImageWide props-src=/images/2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale-cover.png props-alt=L'emergere e l'evoluzione del prompt engineering nell'era dell'AI props-caption=L'emergere e l'evoluzione del prompt engineering nell'era dell'AI]]
+[[ImageWide props-src=/images/2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale-cover.webp props-alt=L'emergere e l'evoluzione del prompt engineering nell'era dell'AI props-caption=L'emergere e l'evoluzione del prompt engineering nell'era dell'AI]]
 
 ### Il prompt engineering: in cosa consiste davvero?
 Il **prompt engineering** emerge come una disciplina fondamentale nel vasto universo dell'**intelligenza artificiale**. Questo campo si dedica alla progettazione, al perfezionamento e all'ottimizzazione dei **prompt** e delle relative **strutture dati**. Questo processo non solo indirizza i sistemi AI verso **output specifici**, ma è anche cruciale per un'**interazione efficace** e senza problemi tra uomo e intelligenza artificiale.
@@ -35,7 +35,7 @@ Il **prompt engineering** emerge come una disciplina fondamentale nel vasto univ
 Con l'integrazione sempre più profonda dell'**intelligenza artificiale** nella nostra vita quotidiana, il ruolo del **prompt engineering** è diventato fondamentale soprattutto in ambito di business per quelle aziende che vogliono finalmente aprirsi alle nuove tecnologie e restare al passo.  
 Le nostre interazioni con **assistenti virtuali**, **chatbot** e **dispositivi attivati vocalmente** sono significativamente influenzate dai sistemi di AI, grazie all'evoluzione dei modelli come **GPT-3**, **GPT-3.5** e **GPT-4**. Questi progressi rendono ancora più evidente l'importanza del prompt engineering nel migliorare la **comunicazione uomo-macchina**, rendendolo un aspetto chiave nell'attuale panorama dell'intelligenza artificiale.
 
-[[ImageRegular props-src=/images/2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale-1.png props-alt=L'importanza crescente del prompt engineering nell'era AI props-caption=L'importanza crescente del prompt engineering nell'era AI]]
+[[ImageRegular props-src=/images/2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale-1.webp props-alt=L'importanza crescente del prompt engineering nell'era AI props-caption=L'importanza crescente del prompt engineering nell'era AI]]
 
 ## Vediamo quindi il Prompt Engineering nel dettaglio:
 
@@ -54,7 +54,7 @@ Questo ambito include una vasta gamma di approcci:
 - Framework metodologici quali il prompting a catena di pensieri e il prompting conversazionale
 - Strumenti e interfacce che supportano nella creazione e nell'analisi dei prompt
 
-[[ImageRegular props-src=/images/2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale-2.png props-alt=Definizione e approcci nel campo del prompt engineering props-caption=Definizione e approcci nel campo del prompt engineering]]
+[[ImageRegular props-src=/images/2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale-2.webp props-alt=Definizione e approcci nel campo del prompt engineering props-caption=Definizione e approcci nel campo del prompt engineering]]
 
 ### La complessità e l'importanza del prompt engineering
 Il **Prompt Engineering** trascende la semplice creazione di prompt, rivelando una disciplina complessa che richiede una profonda comprensione dei principi e delle metodologie per una progettazione efficace. Questo campo comprende attività come la **creazione di prompt efficaci**, l'analisi dettagliata degli input e l'aggiornamento costante del database, facendo dell'ingegnere dei prompt una figura chiave e influente nel panorama dell'AI.
@@ -70,7 +70,7 @@ Contrariamente alla percezione comune, il **Prompt Engineering** si estende ben 
 Il mio obiettivo è chiarire e ampliare la comprensione del Prompt Engineering, evidenziando la sua vasta portata e importanza.
 
 
-[[ImageRegular props-src=/images/2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale-3.png props-alt=La profondità del Prompt Engineering props-caption=La profondità del Prompt Engineering]]
+[[ImageRegular props-src=/images/2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale-3.webp props-alt=La profondità del Prompt Engineering props-caption=La profondità del Prompt Engineering]]
 
 Il Prompt Engineering abbraccia un'ampia gamma di attività, che includono lo **sviluppo di prompt efficaci** e la **selezione accurata degli input AI** e degli **aggiornamenti del database**. Una **profonda comprensione** di vari fattori che influenzano l'efficacia e l'impatto dei prompt è essenziale in questo campo. Come tale, il Prompt Engineering si configura come una **disciplina sofisticata**, cruciale per garantire che i sistemi AI forniscono i risultati desiderati e siano in grado di evolvere in modo efficiente e produttivo.
 

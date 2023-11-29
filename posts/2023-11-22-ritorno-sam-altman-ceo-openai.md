@@ -9,7 +9,7 @@ subtitle: >
 incipit: >
    Sam Altman segna il suo trionfale ritorno alla guida di OpenAI. Questo evento non è solo un colpo di scena nel mondo dell'intelligenza artificiale, ma anche l'inizio di un nuovo capitolo per la sua prestigiosa azienda.
 categories: ["OpenAI", "ChatGPT", "AI Updates"]
-cover: /images/2023-11-22-ritorno-sam-altman-ceo-openai-cover.jpg
+cover: /images/2023-11-22-ritorno-sam-altman-ceo-openai-cover.webp
 relatedPosts: ["2023-11-20-sam-altman-greg-brockman-entrano-in-microsoft-openai","2023-11-07-openai-lancia-i-gpts","2023-11-16-openai-gpt5-nuova-era-intelligenza-artificiale"]
 author: 'Lucia Cenetiempo'
 color: light
@@ -18,7 +18,7 @@ color: light
 
 Sam Altman segna il suo trionfale ritorno alla guida di OpenAI. Questo straordinario evento non è solo un colpo di scena nel mondo dell'intelligenza artificiale, ma anche l'inizio di un nuovo capitolo per la prestigiosa azienda.
 
-[[ImageWide props-src=/images/2023-11-22-ritorno-sam-altman-ceo-openai-1.png props-alt=Sam Altman riconquista la guida di OpenAI: un ritorno inaspettato props-caption=Sam Altman riconquista la guida di OpenAI: un ritorno inaspettato]]
+[[ImageWide props-src=/images/2023-11-22-ritorno-sam-altman-ceo-openai-1.webp props-alt=Sam Altman riconquista la guida di OpenAI: un ritorno inaspettato props-caption=Sam Altman riconquista la guida di OpenAI: un ritorno inaspettato]]
 
 ## Una svolta inaspettata nella storia di OpenAI
 

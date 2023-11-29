@@ -9,7 +9,7 @@ subtitle: >
 incipit: >
   In un mondo dove l'innovazione tecnologica non dorme mai, Sam Altman, fondatore di OpenAI, ci ha regalato un'altra delle sue mosse sorprendenti.
 categories: ["OpenAI", "ChatGPT", "AI Updates"]
-cover: /images/sam-altman-greg-brockman-entrano-in-microsoft-openai-cover.png
+cover: /images/sam-altman-greg-brockman-entrano-in-microsoft-openai-cover.webp
 relatedPosts: ["2023-11-16-openai-gpt5-nuova-era-intelligenza-artificiale","2023-11-07-openai-lancia-i-gpts"]
 author: 'Lucia Cenetiempo'
 color: light
@@ -19,7 +19,7 @@ color: light
 
 In un mondo dove l'innovazione tecnologica non dorme mai, **Sam Altman, fondatore di OpenAI**, ci ha regalato un'altra delle sue mosse sorprendenti. L'ex CEO di OpenAI, noto per le sue scelte audaci, ha lasciato tutti a bocca aperta con una svolta che sembra uscita da un romanzo di fantascienza.
 
-[[ImageWide props-src=/images/sam-altman-greg-brockman-entrano-in-microsoft-openai-1.png props-alt=Sam Altman e Greg Brockman cmbiano rotta: da OpenAI a leader AI in Microsoft props-caption=Sam Altman e Greg Brockman cmbiano rotta: da OpenAI a leader AI in Microsoft]]
+[[ImageWide props-src=/images/sam-altman-greg-brockman-entrano-in-microsoft-openai-1.webp props-alt=Sam Altman e Greg Brockman cmbiano rotta: da OpenAI a leader AI in Microsoft props-caption=Sam Altman e Greg Brockman cmbiano rotta: da OpenAI a leader AI in Microsoft]]
 
 ## Dal caos di openai al nuovo team di ricerca ai in microsoft
 
@@ -35,7 +35,7 @@ Come un fulmine a ciel sereno, **Satya Nadella, CEO di Microsoft**, ha colto l'o
 
 Con l'addio di **Altman e Brockman**, OpenAI si ritrova in una situazione delicata. Il loro passaggio a Microsoft potrebbe rappresentare non solo una **perdita significativa di leadership e visione**, ma anche un potenziale **declino per OpenAI**. Il loro contributo era stato fondamentale nell'ascesa di OpenAI, e ora si apre un **capitolo incerto per l'azienda**.
 
-[[ImageWide props-src=/images/sam-altman-greg-brockman-entrano-in-microsoft-openai-cover.png props-alt=La tempesta perfetta in OpenAI e una nuova era in Microsoft props-caption=La tempesta perfetta in OpenAI e una nuova era in Microsoft]]
+[[ImageWide props-src=/images/sam-altman-greg-brockman-entrano-in-microsoft-openai-cover.webp props-alt=La tempesta perfetta in OpenAI e una nuova era in Microsoft props-caption=La tempesta perfetta in OpenAI e una nuova era in Microsoft]]
 
 L'arrivo di Altman e Brockman in Microsoft promette di portare una **ventata di innovazione**. Con il loro background e la loro esperienza, le possibilità sono immense. Microsoft potrebbe non solo **rafforzare la sua posizione nel campo dell'IA**, ma anche aprire **nuovi orizzonti di ricerca e sviluppo**.
 

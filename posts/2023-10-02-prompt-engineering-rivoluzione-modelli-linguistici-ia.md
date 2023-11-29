@@ -9,7 +9,7 @@ subtitle: >
 incipit: >
   In un mondo in cui l'intelligenza artificiale si sta evolvendo rapidamente, il prompt engineering emerge come una disciplina cruciale. Questo campo relativamente nuovo sta ridefinendo il modo in cui interagiamo con i modelli linguistici, sbloccando potenzialità prima inimmaginabili.
 categories: ["Prompt Engineering"]
-cover: /images/2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia-cover.png
+cover: /images/2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia-cover.webp
 relatedPosts: ["2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai", "2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia", "2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale"]
 author: 'Lucia Cenetiempo'
 color: light
@@ -23,7 +23,7 @@ In un mondo in cui l'intelligenza artificiale si sta evolvendo rapidamente, il p
 
 ## Cos'è il Prompt Engineering?
 
-[[ImageWide props-src=/images/2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia-1.png props-alt=Cos'è il Prompt Engineering? props-caption=Cos'è il Prompt Engineering?]]
+[[ImageWide props-src=/images/2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia-1.webp props-alt=Cos'è il Prompt Engineering? props-caption=Cos'è il Prompt Engineering?]]
 
 Il prompt engineering è una disciplina innovativa che si inserisce nel vasto panorama dell'intelligenza artificiale. Questa pratica si focalizza sulla **progettazione strategica e l'ottimizzazione dei prompt**, al fine di massimizzare l'efficacia dei modelli linguistici (LM) in svariati contesti. I Large Language Models (LLM), quali GPT-3 o BERT, sono al nucleo di questa rivoluzione, offrendo strumenti potenti per la generazione e l'interpretazione del linguaggio.
 
@@ -34,7 +34,7 @@ Nel prompt engineering, l'obiettivo principale è creare input che guidino i mod
 
 Nel contesto dell'intelligenza artificiale, gli ingegneri di prompt rivestono un ruolo decisivo. Utilizzando le loro competenze avanzate, essi **esplorano e ampliano i confini delle possibilità offerte dai LLM**. Il loro lavoro non si limita solo al miglioramento delle capacità di risposta e ragionamento dei modelli, ma si estende anche all'ottimizzazione dell'interazione tra uomo e macchina.
 
-[[ImageRegular props-src=/images/2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia-2.png props-alt=Il ruolo chiave del Prompt Engineering props-caption=Il ruolo chiave del Prompt Engineering]]
+[[ImageRegular props-src=/images/2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia-2.webp props-alt=Il ruolo chiave del Prompt Engineering props-caption=Il ruolo chiave del Prompt Engineering]]
 
 Attraverso un'ingegneria dei prompt ben calibrata, gli sviluppatori possono rendere i LLM non solo più efficienti ma anche più intuitivi e accessibili agli utenti finali. Questo aspetto è fondamentale, in quanto un'interazione efficace e naturale con le IA è cruciale per la loro adozione su larga scala. Inoltre, un focus significativo del prompt engineering è la **sicurezza e l'etica nell'uso dei LLM**. Gli ingegneri devono assicurare che i modelli siano privi di pregiudizi e che le loro risposte siano sempre rilevanti e rispettose degli standard etici, contribuendo così a creare un ambiente AI più sicuro e affidabile.
 
@@ -50,7 +50,7 @@ Una delle sfide principali del prompt engineering è la necessità di **bilancia
 
 Essere **esperti in prompt engineering** significa possedere una comprensione profonda non solo della programmazione, ma anche delle sfumature linguistiche e psicologiche che influenzano la comunicazione tra uomo e macchina.
 
-[[ImageRegular props-src=/images/2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia-3.png props-alt=L'importanza della competenza nel Prompt Engineering props-caption=L'importanza della competenza nel Prompt Engineering]]
+[[ImageRegular props-src=/images/2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia-3.webp props-alt=L'importanza della competenza nel Prompt Engineering props-caption=L'importanza della competenza nel Prompt Engineering]]
 
 Questa competenza permette di personalizzare i modelli linguistici per adattarli a contesti specifici, migliorandone significativamente l'utilità e l'efficacia.
 
@@ -67,7 +67,7 @@ Con la continua evoluzione e domanda di soluzioni di intelligenza artificiale av
 L'ingegneria dei prompt rappresenta molto più di una semplice competenza tecnica; è un catalizzatore che sta plasmando il futuro dell'intelligenza artificiale. **Il prompt engineering sta aprendo la strada a un'epoca in cui l'IA sarà non solo un strumento o un assistente**, ma un compagno di vita quotidiano, profondamente integrato nelle nostre attività e interazioni.
 
 
-[[ImageRegular props-src=/images/2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia-4.png props-alt=L'influenza del Prompt Engineering nel futuro dell'Intelligenza Artificiale props-caption=L'influenza del Prompt Engineering nel futuro dell'Intelligenza Artificiale]]
+[[ImageRegular props-src=/images/2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia-4.webp props-alt=L'influenza del Prompt Engineering nel futuro dell'Intelligenza Artificiale props-caption=L'influenza del Prompt Engineering nel futuro dell'Intelligenza Artificiale]]
 
 Il prompt engineering è fondamentale nel rendere l'IA più accessibile e comprensibile per tutti. **La capacità di formulare prompt efficaci significa avere la possibilità di comunicare con i sistemi AI in un linguaggio più naturale e intuitivo**, rendendo le tecnologie AI più accessibili a un pubblico più ampio. Ciò diminuisce la barriera tecnologica e permette a persone di tutte le età e competenze di beneficiare delle soluzioni AI.
 

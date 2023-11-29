@@ -9,7 +9,7 @@ subtitle: >
 incipit: >
   Meta lancia Emu Video e Emu Edit, segnando passi importanti nella tecnologia AI generativa, con applicazioni che vanno dalla generazione di video alla modifica precisa di immagini.
 categories: ["AI Tools", "Meta AI", "AI Updates"]
-cover: /images/meta-presenta-emu-video-ai-generativa-cover.png
+cover: /images/meta-presenta-emu-video-ai-generativa-cover.webp
 relatedPosts: ["2023-11-21-google-gemini-rinvio-strategico-competizione-ia"]
 author: 'Lucia Cenetiempo'
 color: light
@@ -18,7 +18,7 @@ color: light
 
 In un'epoca in cui la tecnologia sfida i confini della creatività, **Meta AI ci presenta Emu Video ed Emu Edit**. Queste nuove soluzioni AI generative aprono strade rivoluzionarie per la creazione e la modifica di video e immagini, segnando un **importante passo avanti** nel mondo dell'espressione digitale.
 
-[[ImageWide props-src=/images/meta-presenta-emu-video-ai-generativa-1.png props-alt=Emu Video e Emu Edit: Meta AI trasforma la creatività digitale props-caption=Emu Video e Emu Edit: Meta AI trasforma la creatività digitale]]
+[[ImageWide props-src=/images/meta-presenta-emu-video-ai-generativa-1.webp props-alt=Emu Video e Emu Edit: Meta AI trasforma la creatività digitale props-caption=Emu Video e Emu Edit: Meta AI trasforma la creatività digitale]]
 
 ## Emu Video e Emu Edit: nuove Frontiere nell'AI generativa
 
@@ -36,7 +36,7 @@ I risultati ottenuti con Emu Video hanno sorpassato i metodi precedenti nelle va
 
 **Emu Edit rappresenta un passo rivoluzionario** nel campo della modifica delle immagini, stabilendo nuovi standard di precisione e flessibilità. Questo strumento pionieristico di Meta AI va oltre le convenzionali tecniche di editing, permettendo agli utenti di manipolare le immagini con un livello di **controllo e dettaglio senza precedenti**. Grazie a Emu Edit, gli utenti possono eseguire **modifiche complesse con semplici istruzioni testuali**, che includono sia modifiche locali, come l'aggiustamento di dettagli specifici o l'aggiunta di elementi, sia modifiche globali come il cambio di sfondo, le variazioni cromatiche e le trasformazioni geometriche.
 
-[[ImageWide props-src=/images/meta-presenta-emu-video-ai-generativa-2.png props-alt=Emu Edit: Un Nuovo Orizzonte nella Modifica delle Immagini props-caption=Emu Edit: Un Nuovo Orizzonte nella Modifica delle Immagini]]
+[[ImageWide props-src=/images/meta-presenta-emu-video-ai-generativa-2.webp props-alt=Emu Edit: Un Nuovo Orizzonte nella Modifica delle Immagini props-caption=Emu Edit: Un Nuovo Orizzonte nella Modifica delle Immagini]]
 
 La caratteristica più innovativa di Emu Edit è la sua capacità di **alterare esattamente e solamente i pixel rilevanti** per la richiesta di modifica, lasciando intatti gli altri elementi dell'immagine. Questo approccio garantisce un risultato finale che rispecchia fedelmente le intenzioni dell'utente, preservando la **qualità e l'integrità originale** dell'immagine. Emu Edit apre la porta a una **gamma illimitata di possibilità creative**, permettendo modifiche precise che prima erano possibili solo con competenze avanzate di editing grafico.
 
@@ -46,7 +46,7 @@ L'introduzione di Emu Video e Emu Edit segna l'inizio di una **nuova era** per c
 
 Con Emu Video e Emu Edit, le barriere tra immaginazione e realtà si assottigliano. Questi strumenti offrono agli utenti la libertà di **esplorare nuovi territori creativi**, trasformando idee e visioni in creazioni tangibili e visivamente stupefacenti. Per gli artisti digitali, significa poter esprimere la propria creatività senza limiti. Per i creatori di contenuti, rappresenta un'opportunità di **elevare la qualità e l'impatto visivo** dei loro lavori. E per gli appassionati di tecnologia, è un invito ad esplorare le infinite possibilità che l'intelligenza artificiale può offrire nel campo dell'espressione visiva.
 
-[[ImageWide props-src=/images/meta-presenta-emu-video-ai-generativa-4.png props-alt=Potenziale Illimitato per Creatori e Appassionati props-caption=Potenziale Illimitato per Creatori e Appassionati]]
+[[ImageWide props-src=/images/meta-presenta-emu-video-ai-generativa-4.webp props-alt=Potenziale Illimitato per Creatori e Appassionati props-caption=Potenziale Illimitato per Creatori e Appassionati]]
 
 Emu Video e Emu Edit non sono solo innovazioni tecnologiche; sono strumenti che **potenziano la creatività**, invitando ognuno a esplorare e a esprimere la propria visione artistica in modi prima inimmaginabili.
 

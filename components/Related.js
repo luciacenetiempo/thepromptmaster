@@ -9,8 +9,8 @@ const Related = (posts) => {
   return (
     <div className="collection-list-wrapper w-dyn-list">
       <div role="list" className="collection-list w-dyn-items">
-        {posts.posts.map(post => (
-          <PostTile post={post}/>
+        {posts.posts.map((post,index) => (
+          <PostTile key={index} post={post}/>
         ))}
       </div>
     </div>
@@ -18,4 +18,4 @@ const Related = (posts) => {
   );
 };
 
-export default Related;
+export default Related; 

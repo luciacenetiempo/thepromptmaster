@@ -26,6 +26,7 @@ const TemplatePost = (props) => {
       <ImageTop title='THE PROMPT MASTER'
         color='light'
         url={props.postData.cover}
+        alt={props.postData.title}
       />
       <div className="strip">
         <LoopingText
@@ -39,12 +40,12 @@ const TemplatePost = (props) => {
         <div className='content rich-text-block'>
           <div className="post-info">
             {props.postData.categories.map((category, index) => (
-              <>
+              <div className="categoryList" key={index}>
                 <a key={index} href={`/blog/${category.toLowerCase().replace(/\s+/g, '-')}`} className="link-category w-inline-block">
                   <div className="category">{category}</div>
                 </a>
                 <div className="post-circle"></div>
-              </>
+              </div>
             ))}
             <div className="date">{formatDate(props.postData.date)}</div></div>
         </div>

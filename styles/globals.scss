@@ -424,6 +424,15 @@ a {
   -ms-flex-align: center;
   align-items: center;
   grid-column-gap: 0.75em;
+  .categoryList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+      margin-right: 12px;
+    }
+  }
+
   .category {
     color: #000;
     font-size: 0.8em;
@@ -1445,9 +1454,6 @@ form.field-newsletter {
 
     .post-link .post-block .post-background {
       height: 50%;
-    }
-    .post-link .post-block {
-      // padding-bottom: 80%;
     }
   }
   .navbar {
