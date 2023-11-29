@@ -1,6 +1,6 @@
 ---
 id: 2023-11-28-openai-q-modello-intelligenza-artificiale-analisi
-date: 2023-11-27
+date: 2023-11-28
 keywords: OpenAI, Modello Q*, intelligenza artificiale, AGI, reti neurali, sicurezza IA, AI Act.
 title: > 
   Q* Model di OpenAI: la prossima rivoluzione dell’intelligenza artificiale?

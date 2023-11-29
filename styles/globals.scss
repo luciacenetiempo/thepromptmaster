@@ -73,6 +73,9 @@ h1 {
   font-size: 3.5em;
   line-height: 1.2em;
   font-variation-settings: "wdth" 125, "wght" 600;
+  strong{
+    font-variation-settings: "wdth" 125, "wght" 600;
+  }
 }
 
 h2 {
@@ -82,6 +85,9 @@ h2 {
   font-size: 2.62em;
   line-height: 1.21em;
   font-variation-settings: "wdth" 125, "wght" 600;
+  strong{
+    font-variation-settings: "wdth" 125, "wght" 600;
+  }
 }
 
 h3 {
@@ -91,6 +97,9 @@ h3 {
   font-size: 2em;
   line-height: 1.24em;
   font-variation-settings: "wdth" 125, "wght" 600;
+  strong{
+    font-variation-settings: "wdth" 125, "wght" 600;
+  }
 }
 
 h4 {
@@ -100,6 +109,9 @@ h4 {
   font-size: 1.5em;
   line-height: 1.25em;
   font-variation-settings: "wdth" 125, "wght" 600;
+  strong{
+    font-variation-settings: "wdth" 125, "wght" 600;
+  }
 }
 
 h5 {
@@ -109,6 +121,9 @@ h5 {
   font-size: 1.125em;
   line-height: 1.28em;
   font-variation-settings: "wdth" 125, "wght" 600;
+  strong{
+    font-variation-settings: "wdth" 125, "wght" 600;
+  }
 }
 
 h6 {
@@ -118,6 +133,9 @@ h6 {
   font-size: 0.94em;
   line-height: 1.33em;
   font-variation-settings: "wdth" 125, "wght" 600;
+  strong{
+    font-variation-settings: "wdth" 125, "wght" 600;
+  }
 }
 
 p {
@@ -138,7 +156,10 @@ ul {
   font-size: 1.05em;
   line-height: 1.6em;
 }
-
+video{
+  width: 100%;
+  height: auto;
+}
 ol {
   margin-top: 1.5em;
   margin-bottom: 1.5em;

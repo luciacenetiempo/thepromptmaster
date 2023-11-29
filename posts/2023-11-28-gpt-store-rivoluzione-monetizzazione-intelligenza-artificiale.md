@@ -1,6 +1,6 @@
 ---
 id: 2023-11-28-gpt-store-rivoluzione-monetizzazione-intelligenza-artificiale
-date: 2023-11-27
+date: 2023-11-28
 keywords: GPTs, GPTs Store, GPTs personalizzati, intelligenza artificiale, guadagnare con l'AI, ChatGPT, e-commerce AI
 title: > 
   GPTs Store di OpenAI arriva a dicembre! Cosa c'è da aspettarsi?

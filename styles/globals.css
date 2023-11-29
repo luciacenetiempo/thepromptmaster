@@ -68,12 +68,20 @@ h1 {
   font-variation-settings: "wdth" 125, "wght" 600;
 }
 
+h1 strong {
+  font-variation-settings: "wdth" 125, "wght" 600;
+}
+
 h2 {
   margin-top: 0em;
   margin-bottom: 0em;
   color: #000;
   font-size: 2.62em;
   line-height: 1.21em;
+  font-variation-settings: "wdth" 125, "wght" 600;
+}
+
+h2 strong {
   font-variation-settings: "wdth" 125, "wght" 600;
 }
 
@@ -86,12 +94,20 @@ h3 {
   font-variation-settings: "wdth" 125, "wght" 600;
 }
 
+h3 strong {
+  font-variation-settings: "wdth" 125, "wght" 600;
+}
+
 h4 {
   margin-top: 0em;
   margin-bottom: 0em;
   color: #000;
   font-size: 1.5em;
   line-height: 1.25em;
+  font-variation-settings: "wdth" 125, "wght" 600;
+}
+
+h4 strong {
   font-variation-settings: "wdth" 125, "wght" 600;
 }
 
@@ -104,12 +120,20 @@ h5 {
   font-variation-settings: "wdth" 125, "wght" 600;
 }
 
+h5 strong {
+  font-variation-settings: "wdth" 125, "wght" 600;
+}
+
 h6 {
   margin-top: 0em;
   margin-bottom: 0em;
   color: #000;
   font-size: 0.94em;
   line-height: 1.33em;
+  font-variation-settings: "wdth" 125, "wght" 600;
+}
+
+h6 strong {
   font-variation-settings: "wdth" 125, "wght" 600;
 }
 
@@ -130,6 +154,11 @@ ul {
   padding-left: 2em;
   font-size: 1.05em;
   line-height: 1.6em;
+}
+
+video {
+  width: 100%;
+  height: auto;
 }
 
 ol {
