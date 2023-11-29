@@ -1,9 +1,25 @@
 import React, { useState } from 'react';
+import ReactGA from 'react-ga';
 
 const Button = (props) => {
+  const trackLink = () => {
+    ReactGA.event({
+      category: 'User Interaction',
+      action: 'External Link',
+      label: props.text,
+    });
+  };
+
   return (
     <div className='content rich-text-block'>
-    <a href={props.url} alt={props.alt} className="button w-button">{props.text}</a>
+    <a 
+      href={props.url} 
+      alt={props.alt}  
+      className="button w-button"
+      onClick={() => {trackLink('Corso Prompt Master')}}
+      >
+        {props.text}
+      </a>
     </div>
   );
 };

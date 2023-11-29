@@ -7,6 +7,7 @@ const Header = ({ color }) => {
     console.log('opened',opened);
     console.log('!opened',!opened);
     setOpened(!opened)
+    // ga('send', 'event', 'button', 'click', `x-x-openmenu`);
   };
 
 

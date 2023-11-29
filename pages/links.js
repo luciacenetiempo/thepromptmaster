@@ -4,9 +4,18 @@ import LoopingText from '@/components/LoopingText'
 import Link from 'next/link';
 import NewsletterForm from '@/components/NewsletterForm'
 import { getSortedPostsData } from '../lib/posts';
+import ReactGA from 'react-ga';
 
 export default function Links({ allPostsData }) {
   let featured = allPostsData.slice(0, 2);
+  const trackLink = (name) => {
+    console.log(name)
+    ReactGA.event({
+      category: 'User Interaction',
+      action: 'External Link',
+      label: name,
+    });
+  };
   return (
     <>
       <Head>
@@ -29,7 +38,9 @@ export default function Links({ allPostsData }) {
           <h3>😎 Diventa un master</h3>
           <Link
             href={'/blog/prompt-engineering'}
-            className='boxLink'>
+            className='boxLink' 
+            onClick={() => {trackLink('Corso Prompt Master')}}
+          >
             <h5>🔥 Prompt Engineering</h5>
             <p>Diventa un vero Prompt Master</p>
             <span className='CTA'>vai al corso <strong>GRATIS</strong></span>
@@ -37,7 +48,8 @@ export default function Links({ allPostsData }) {
           <Link
             href={'https://app.aiplay.it/categories/corso-chatgpt'}
             className='boxLink'
-            target='_blank'  
+            target='_blank'   
+            onClick={() => {trackLink('AIPlay ChatGPT Prompt Corso Live')}}
           >
             <h5>💣 ChatGPT Prompt Corso Live</h5>
             <p>Aumenta la produttività con ChatGPT</p>
@@ -47,6 +59,7 @@ export default function Links({ allPostsData }) {
             href={'https://www.amazon.it/ChatGPT-Domina-lIntelligenza-Artificiale-Cenetiempo-ebook/dp/B0CBHM58JL/'}
             className='boxLink'
             target='_blank'  
+            onClick={() => {trackLink('Amazon ChatGPT Ebook')}}
           >
             <h5>👉 Domina l'intelligenza artificiale</h5>
             <p>L'ebook perfeto se sei alle prime armi!</p>
@@ -63,7 +76,9 @@ export default function Links({ allPostsData }) {
           {featured.map((post, index) => (
             <Link
               href={'/blog/' + post.slug}
-              className='boxLink'>
+              className='boxLink'
+              onClick={() => {trackLink('Post:' + index)}}
+            >
               <h5>📣 {post.title}</h5>
               <p>{post.incipit}</p>
               <span className='CTA'>leggi il post</span>
