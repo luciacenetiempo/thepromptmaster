@@ -8,7 +8,7 @@ subtitle: >
   Uno sguardo dettagliato sulle funzionalità uniche di Pika che stanno trasformando il settore della produzione video
 incipit: >
   Pika la piattaforma rivoluzionaria che punta al primpo posto tra le AI generativ per il video. Con una recente iniezione di capitale, Pika promette di ridefinire l'esperienza di creazione e modifica dei video, democratizzando l'accesso a strumenti avanzati.
-categories: ["AI Updates", "OpenAI"]
+categories: ["AI Tools", "AI Updates", "Video AI"]
 cover: /images/2023-11-29-pika-rivoluzione-creazione-video-intelligenza-artificiale-cover.webp
 relatedPosts: ["2023-11-27-aitana-lopez-rivoluzione-moda-digitale-intelligenza-artificiale","2023-11-07-openai-lancia-i-gpts","2023-11-16-openai-gpt5-nuova-era-intelligenza-artificiale", "2023-11-28-gpt-store-rivoluzione-monetizzazione-intelligenza-artificiale"]
 author: 'Lucia Cenetiempo'
