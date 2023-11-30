@@ -2,7 +2,7 @@
 
 import { getSortedPostsData, getAllCategories } from "../lib/posts";
 
-const URL = "https://www.thepromptmaster.it";
+const URL = "https://thepromptmaster.it";
 
 function generateSiteMap(posts, categories) {
   console.log(categories)
@@ -11,15 +11,21 @@ function generateSiteMap(posts, categories) {
      <!-- Add the static URLs manually -->
      <url>
        <loc>${URL}</loc>
+       <changefreq>daily</changefreq>
+       <priority>0.7</priority>
      </url>
     <url>
        <loc>${URL}/blog</loc>
+       <changefreq>daily</changefreq>
+       <priority>0.7</priority>
     </url>
      ${categories
        .map((category) => {
          return `
            <url>
                <loc>${`${URL}/blog/${category}`}</loc>
+               <changefreq>daily</changefreq>
+               <priority>0.9</priority>
            </url>
          `;
        })
@@ -29,6 +35,8 @@ function generateSiteMap(posts, categories) {
          return `
            <url>
                <loc>${`${URL}/blog/${id}`}</loc>
+               <changefreq>daily</changefreq>
+               <priority>1</priority>
            </url>
          `;
        })
