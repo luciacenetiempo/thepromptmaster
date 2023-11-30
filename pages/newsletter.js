@@ -2,11 +2,13 @@ import Head from 'next/head'
 import HeaderPlain from '@/components/HeaderPlain'
 import LoopingText from '@/components/LoopingText'
 import NewsletterForm from '@/components/NewsletterForm'
+import { useCanonicalURL } from '@/lib/CanonicalURL'
 export default function Newsletter() {
   return (
     <>
       <Head>
         <title>Newsletter - The Prompt Master - Newsletter Italiana sull'intelligenza artificiale</title>
+        <link rel="canonical" href={useCanonicalURL()} />
       </Head>
       <HeaderPlain />
       <div className='headMarginSmall'>

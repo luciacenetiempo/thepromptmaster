@@ -5,6 +5,7 @@ import Link from 'next/link';
 import NewsletterForm from '@/components/NewsletterForm'
 import { getSortedPostsData } from '../lib/posts';
 import ReactGA from 'react-ga';
+import { useCanonicalURL } from '@/lib/CanonicalURL';
 
 export default function Links({ allPostsData }) {
   let featured = allPostsData.slice(0, 2);
@@ -20,6 +21,7 @@ export default function Links({ allPostsData }) {
     <>
       <Head>
         <title>Links - The Prompt Master - L'intelligenza artificiale come non la immaginavi</title>
+        <link rel="canonical" href={useCanonicalURL()} />
       </Head>
       <HeaderPlain />
       <div className='headMarginSmall'>

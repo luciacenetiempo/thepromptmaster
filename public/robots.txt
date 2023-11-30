@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://thepromptmaster.it/sitemap.xml
+Sitemap: https://www.thepromptmaster.it/sitemap.xml

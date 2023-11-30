@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import LoopingText from '@/components/LoopingText';
 import NewsletterStrip from '@/components/NewsletterStrip';
 import { getSortedPostsData } from '../lib/posts';
+import { useCanonicalURL } from '@/lib/CanonicalURL';
 import Footer from '@/components/Footer';
 
 export default function Page() {
@@ -15,6 +16,7 @@ export default function Page() {
         <meta name="description" content="Prompt Design, Prompt Engineering, AI Updates e tool sull'intelligenza artificiale. Tutto quello che c'è da sapere sul mondo dell'intelligenza artificiale" />
         <meta name="keywords" content="blog ai, blog intelligenza artificiale, prompt engineering, prompt design, prompt engineer, intelligenza artificiale, AI, IA, Artificial Intelligence, tool AI, tool IA, come scrivere prompt, corso prompt engineer, corso prompt engineering, corso prompt design" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href={useCanonicalURL()} />
       </Head>
       <Header color='dark' />
       <div className='headMargin'>

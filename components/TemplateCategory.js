@@ -8,6 +8,7 @@ import Header from '@/components/Header';
 import NewsletterStrip from './NewsletterStrip';
 import Footer from './Footer';
 import PostTileRow from './PostTileRow';
+import { useCanonicalURL } from '@/lib/CanonicalURL';
 
 const TemplateCategory = (props) => {
   const [pagination, setPagination] = useState(10);
@@ -32,6 +33,7 @@ const TemplateCategory = (props) => {
         <meta name="description" content={props.category.toUpperCase().replace(/\-+/g, ' ') + "Tutto quello che c'è da sapere sul mondo dell'intelligenza artificiale"} />
         <meta name="keywords" content={props.category.toUpperCase().replace(/\-+/g, ' ') + ", intelligenza artificiale, AI, IA, Artificial Intelligence"} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href={useCanonicalURL()} />
       </Head>
       <Header color='dark' />
       <div className='headMargin'>

@@ -7,6 +7,7 @@ import BlogPost from './BlogPost';
 import Related from './Related';
 import NewsletterStrip from './NewsletterStrip';
 import Footer from './Footer';
+import { useCanonicalURL } from '@/lib/CanonicalURL';
 
 const formatDate = (inputDate) => {
   const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
@@ -21,6 +22,7 @@ const TemplatePost = (props) => {
         <meta name="keywords" content={props.postData.keywords} />
         <meta name="author" content={props.postData.author} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href={useCanonicalURL()} />
       </Head>
       <Header color={props.postData.color} />
       <ImageTop title='THE PROMPT MASTER'
