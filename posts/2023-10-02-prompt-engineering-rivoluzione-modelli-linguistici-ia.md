@@ -3,7 +3,7 @@ id: 2023-10-02-prompt-engineering-rivoluzione-modelli-linguistici-ia
 date: 2023-10-02
 keywords: prompt engineering, modelli linguistici, Large Language Models, intelligenza artificiale, applicazioni AI
 title: > 
-  Il prompt engineering: una nuova frontiera nell'utilizzo dei modelli linguistici
+  Corso Prompt Engineering: una nuova frontiera nell'utilizzo dei modelli linguistici
 subtitle: >
   Scopri come il prompt engineering sta trasformando l'interazione con i modelli linguistici
 incipit: >
@@ -17,7 +17,7 @@ color: light
 
 #### Lezione 2
 
-# Il prompt engineering: una nuova frontiera nell'utilizzo dei modelli linguistici
+# Corso Prompt Engineering: una nuova frontiera nell'utilizzo dei modelli linguistici
 
 In un mondo in cui l'intelligenza artificiale si sta evolvendo rapidamente, il prompt engineering emerge come una disciplina cruciale. Questo campo relativamente nuovo sta ridefinendo il modo in cui interagiamo con i modelli linguistici, sbloccando potenzialità prima inimmaginabili.
 

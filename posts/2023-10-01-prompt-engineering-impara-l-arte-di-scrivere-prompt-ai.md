@@ -3,7 +3,7 @@ id: 2023-10-01-prompt-engineering-impara-l-arte-di-scrivere-prompt-ai
 date: 2023-10-01
 keywords: Prompt Engineering, Intelligenza Artificiale, Large Language Model, AI Prompt, ChatGPT, Corso di Prompt Engineering, Tecniche di Prompting
 title: > 
-  Prompt Engineering: La tua chiave d'accesso al mondo dell'intelligenza artificiale.
+  Corso Prompt Engineering: La tua chiave d'accesso al mondo dell'intelligenza artificiale.
 subtitle: >
   Unisciti al corso che rivoluzionerà il tuo modo di interagire con l'AI
 incipit: >
@@ -18,7 +18,7 @@ color: light
 
 #### Lezione 1
 
-# Prompt Engineering: La tua chiave d'accesso al mondo dell'intelligenza artificiale.
+# Corso Prompt Engineering: La tua chiave d'accesso al mondo dell'intelligenza artificiale.
 
 Impara l'arte del prompt engineering per rivoluzionare il tuo approccio alla tecnologia
 

@@ -3,7 +3,7 @@ id: 2023-10-03-prompt-engineering-cos-e-intelligenza-artificiale
 date: 2023-10-03
 keywords: prompt engineering, modelli linguistici, Large Language Models, intelligenza artificiale, applicazioni AI
 title: > 
-  Prompt Engineering: Che cos'è?
+  Corso Prompt Engineering: Che cos'è?
 subtitle: >
   Che cos'è il Prompt Engineering e come sta cambiando il nostro modo di interagire con l'AI
 incipit: >
@@ -17,7 +17,7 @@ color: light
 
 #### Lezione 3
 
-# Prompt Engineering: Che cos'è?
+# Corso Prompt Engineering: Che cos'è?
 
 Il **prompt engineering** è ormai l'elemento fondamentale nella relazione in evoluzione tra uomo e **intelligenza artificiale**, è un po' come imparare una nuova lingua che rende la comunicazione con la tecnologia più naturale e intuitiva.
 Concentrandosi sulla progettazione metodica e il perfezionamento dei prompt, questa disciplina gioca un ruolo cruciale nel guidare l'AI verso output precisi, sottolineando la sua importanza nel ciclo di interazione uomo-macchina.
@@ -82,3 +82,5 @@ Discuteremo su come affinare le tecniche di creazione dei prompt, sulle metodolo
 Mentre il campo dell'intelligenza artificiale continua a evolversi quotidianamente, il Prompt Engineering si rivela una disciplina sempre più cruciale. La prossima lezione sarà fondamentale per chiunque voglia non solo comprendere, ma anche applicare efficacemente i principi del **Prompt Engineering nella pratica quotidiana e lavorativa**. 
 
 Il futuro dell'intelligenza artificiale è pieno di potenzialità inesplorate, e il Prompt Engineering gioca un ruolo chiave nel sbloccarle. Non perdete l'opportunità di essere parte di questa entusiasmante evoluzione.
+
+#### [Vai alla lezione 4](/blog/2023-10-04-prompt-engineering-il-ruolo-del-prompt-engineer)
