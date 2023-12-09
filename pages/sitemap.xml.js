@@ -2,7 +2,7 @@
 
 import { getSortedPostsData, getAllCategories } from "../lib/posts";
 
-const URL = "https://www.thepromptmaster.it";
+const URL = "https://thepromptmaster.it";
 
 function generateSiteMap(posts, categories) {
   console.log(categories)
