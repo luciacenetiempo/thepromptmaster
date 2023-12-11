@@ -3,9 +3,6 @@ import React from 'react';
 const HeaderPlain = ({ color }) => {
   return (
     <div className={`navbar w-nav navbar--${color}`}>
-      <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNQFCZCN" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-      </noscript>
       <div className="block-navbar">
         <div className="nav">
           <span className="brand w-nav-brand w--current" aria-label="home">

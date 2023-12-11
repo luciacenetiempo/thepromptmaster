@@ -13,9 +13,6 @@ const Header = ({ color }) => {
 
   return (
     <header className={`navbar w-nav navbar--${color}`}>
-      <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNQFCZCN" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-      </noscript>
       <div className="block-navbar">
         <div className="nav nav--logo">
           <a href="/" className="brand w-nav-brand w--current" aria-label="home">
