@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
         crossorigin="anonymous"
       />
       <Component {...pageProps} />
-      {hasCookie ? (<CookieBanner />) : ('')}
+      {!hasCookie ? (<CookieBanner />) : ('')}
     </>
   )
   
