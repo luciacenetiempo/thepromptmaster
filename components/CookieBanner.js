@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Button from './Button';
 
 const CookieBanner = () => {
+  const [display, setDisplay] = useState('none');
   const [anonymous, setAnonymous] = useState(true);
   const [gestisci, setGestisci] = useState(false);
   const [rifiuta, setRifiuta] = useState(false);
@@ -10,9 +11,11 @@ const CookieBanner = () => {
     const cookieAccepted = getCookie('CookieAccepted');
     if (cookieAccepted === null || cookieAccepted == 'false' ) {
       setAnonymous(true);
+      setDisplay('flex');
       // disableBodyScroll();
     } else if (cookieAccepted === 'true') {
       // Il cookie è accettato, nascondi il banner e sblocca lo scroll
+      setDisplay('none');
       setAnonymous(false);
       setGestisci(false);
       setRifiuta(false);
@@ -81,7 +84,7 @@ const CookieBanner = () => {
   return (
     <>
       {anonymous && (
-        <div className='cookie-banner-overlay'>
+        <div className='cookie-banner-overlay' style={{display: display}}>
           <div className='cookie-banner'>
             <div className='close-banner' onClick={handleCloseClick}>X</div>
             <div className='cookie-banner--row'>
@@ -95,7 +98,7 @@ const CookieBanner = () => {
         </div>
       )}
       {gestisci && (
-        <div className='cookie-banner-overlay'>
+        <div className='cookie-banner-overlay' style={{display: display}}>
           <div className='cookie-banner'>
             <div className='close-banner' onClick={handleCloseClick}>X</div>
             <div className='cookie-banner--row'>
@@ -109,7 +112,7 @@ const CookieBanner = () => {
         </div>
       )}
       {rifiuta && (
-        <div className='cookie-banner-overlay'>
+        <div className='cookie-banner-overlay' style={{display: display}}>
           <div className='cookie-banner'>
             <div className='close-banner' onClick={handleCloseClick}>X</div>
             <div className='cookie-banner--row'>
