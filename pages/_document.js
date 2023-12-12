@@ -12,7 +12,7 @@ export default function Document() {
             height="0" 
             width="0" 
             style={{
-              display: "none%",
+              display: "none",
               visibility: "hidden"
             }}
             >
