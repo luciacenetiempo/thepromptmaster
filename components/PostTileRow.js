@@ -16,8 +16,6 @@ const PostTileRow = ({ post, index }) => {
       <figure>
         <Image
           src={post.cover}
-          // width={350}
-          // height={250}
           fill
         />
       </figure>
