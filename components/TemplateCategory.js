@@ -25,6 +25,7 @@ const TemplateCategory = (props) => {
   let featured = props.posts.slice(0, 2);
   let paginated = props.posts.slice(2, pagination);
   let reverse = props.posts.reverse();
+  console.log(reverse)
   return (
 
     <>

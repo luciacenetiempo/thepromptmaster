@@ -12,14 +12,11 @@ const CookieBanner = () => {
     if (cookieAccepted === null || cookieAccepted == 'false' ) {
       setAnonymous(true);
       setDisplay('flex');
-      // disableBodyScroll();
     } else if (cookieAccepted === 'true') {
-      // Il cookie è accettato, nascondi il banner e sblocca lo scroll
       setDisplay('none');
       setAnonymous(false);
       setGestisci(false);
       setRifiuta(false);
-      // enableBodyScroll();
     }
   }, []);
 
