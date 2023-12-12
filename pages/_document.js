@@ -13,6 +13,7 @@ export default function Document() {
           })(window,document,'script','dataLayer','GTM-PNQFCZCN');
           `}
         </Script>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"></Script>
         <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
