@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import PostTile from '@/components/PostTile';
@@ -13,6 +13,9 @@ import { useCanonicalURL } from '@/lib/CanonicalURL';
 const TemplateCategory = (props) => {
   const [pagination, setPagination] = useState(10);
   const [prev_pagination, setPrevPagination] = useState(null);
+  const [reverse, setReverse] = useState(false);
+  const [featured, setFeatured] = useState(false);
+  const [paginated, setPaginated] = useState(false);
   const loadMore = async () => {
     try {
       let paginationStatusPrev = pagination;
@@ -22,12 +25,16 @@ const TemplateCategory = (props) => {
     } catch (err) {
     }
   };
-  let featured = props.posts.slice(0, 2);
-  let paginated = props.posts.slice(2, pagination);
-  let reverse = props.posts.reverse();
-  console.log(reverse)
-  return (
 
+  useEffect(() => {
+    if(props.category == 'prompt-engineering'){
+      setReverse(props.posts.reverse())
+    } else {
+      setFeatured(props.posts.slice(0, 2));
+      setPaginated(props.posts.slice(2, pagination))
+    }
+  }, []);
+  return (
     <>
       <Head>
         <title>{props.category.toUpperCase().replace(/\-+/g, ' ')} | The Prompt Master</title>
@@ -60,12 +67,17 @@ const TemplateCategory = (props) => {
           <div className='section-content'>
             <div className="collection-list-wrapper-top noBorder">
               <div role="list" className="content-wide rich-text-block">
-                {reverse.map((post, index) => (
-                  <div className='post-tile-row' key={index}>
-                    <span className='number'>{index+1}.</span>
-                    <PostTileRow post={post} index={index} />
-                  </div>
-                ))}
+
+                {
+                  reverse ? (
+                    reverse.map((post, index) => (
+                      <div className='post-tile-row' key={index}>
+                        <span className='number'>{index+1}.</span>
+                        <PostTileRow post={post} index={index} />
+                      </div>
+                    ))
+                  ) : ('')
+                }
               </div>
             </div>
           </div>
@@ -73,16 +85,24 @@ const TemplateCategory = (props) => {
           <>
             <div className="collection-list-wrapper-top">
               <div role="list" className="collection-list-top">
-                {featured.map((post, index) => (
-                  <PostTile post={post} key={index} />
-                ))}
+                {
+                  featured ? (
+                    featured.map((post, index) => (
+                      <PostTile post={post} key={index} />
+                    ))
+                  ) : ('')
+                }
               </div>
             </div>
             <div className="collection-list-wrapper">
               <div role="list" className="collection-list">
-                {paginated.map((post, index) => (
-                  <PostTile post={post} key={index} />
-                ))}
+                {
+                  paginated ? (
+                    paginated.map((post, index) => (
+                      <PostTile post={post} key={index} />
+                    ))
+                  ) : ('')
+                }
               </div>
             </div>
           </>

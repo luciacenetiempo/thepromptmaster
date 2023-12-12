@@ -17,6 +17,7 @@ const PostTileRow = ({ post, index }) => {
         <Image
           src={post.cover}
           fill
+          alt={post.title}
         />
       </figure>
       <div className='post-tile-row--content'>

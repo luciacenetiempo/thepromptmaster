@@ -4,10 +4,7 @@ import Link from 'next/link';
 const Header = ({ color }) => {
   const [opened, setOpened] = useState(false);
   const openMenu = async () => {
-    console.log('opened',opened);
-    console.log('!opened',!opened);
     setOpened(!opened)
-    // ga('send', 'event', 'button', 'click', `x-x-openmenu`);
   };
 
 
