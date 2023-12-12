@@ -1484,7 +1484,7 @@ form.field-newsletter .msg-alert {
     grid-template-columns: 1fr;
   }
   .post-link {
-    min-height: 17em;
+    min-height: 10em;
     border-right-style: none;
     box-shadow: none;
     flex-direction: column;
@@ -1670,6 +1670,22 @@ form.field-newsletter .msg-alert {
     bottom: 50px;
     font-size: 10px;
     font-weight: 600;
+  }
+  .post-link:hover .post-background {
+    height: 50% !important;
+    background: transparent !important;
+  }
+  .post-link:hover .post-text .category,
+  .post-link:hover .post-text .date,
+  .post-link:hover .post-text .post-heading,
+  .post-link:hover .post-text .post-summary {
+    color: black !important;
+  }
+  .post-link .post-text .post-summary {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
   }
 }
 
