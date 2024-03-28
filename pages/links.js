@@ -2,15 +2,15 @@ import Head from 'next/head'
 import HeaderPlain from '@/components/HeaderPlain'
 import LoopingText from '@/components/LoopingText'
 import Link from 'next/link';
-import NewsletterForm from '@/components/NewsletterForm'
-import { getSortedPostsData } from '../lib/posts';
+import NewsletterFormMailerlite from '@/components/NewsletterFormMailerlite';
+// import { getSortedPostsData } from '../lib/posts';
+import { getPosts, getSticky, getNoSticky, getPostFromCategory } from '../lib/wordpress';
 import ReactGA from 'react-ga';
 import { useCanonicalURL } from '@/lib/CanonicalURL';
 
-export default function Links({ allPostsData }) {
-  let featured = allPostsData.slice(0, 2);
+export default function Blog({ no_sticky }) {
+  let featured = no_sticky.slice(0, 2);
   const trackLink = (name) => {
-    console.log(name)
     ReactGA.event({
       category: 'User Interaction',
       action: 'External Link',
@@ -39,7 +39,7 @@ export default function Links({ allPostsData }) {
         <div className='content rich-text-block rich-text-block'>
           <h3>😎 Diventa un master</h3>
           <Link
-            href={'/blog/prompt-engineering'}
+            href={'/blog/category/prompt-engineering'}
             className='boxLink' 
             onClick={() => {trackLink('Corso Prompt Master')}}
           >
@@ -71,8 +71,8 @@ export default function Links({ allPostsData }) {
 
           <h4>Scopri il Futuro dell'Intelligenza Artificiale</h4>
           <p>Resta sempre informato con insights settimanali direttamente nella tua inbox.</p>
-          <NewsletterForm />
-
+          {/* <NewsletterForm /> */}
+          <NewsletterFormMailerlite />
           <div className='spacer'></div>
           <h3>🤯 News imperdibili dal mondo dell'AI!</h3>
           {featured.map((post, index) => (
@@ -81,7 +81,7 @@ export default function Links({ allPostsData }) {
               className='boxLink'
               onClick={() => {trackLink('Post:' + index)}}
             >
-              <h5>📣 {post.title}</h5>
+              <h5 dangerouslySetInnerHTML={{ __html: `📣 ${post.title.rendered}` }}></h5>
               <p>{post.incipit}</p>
               <span className='CTA'>leggi il post</span>
 
@@ -111,11 +111,17 @@ export default function Links({ allPostsData }) {
   )
 }
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+
+
+export async function getStaticProps({ params }) {
+  const sticky = await getSticky();
+  const no_sticky = await getNoSticky();
+  const prompt_engineering = await getPostFromCategory(3);
+  const prompt_tips = await getPostFromCategory(4);
   return {
     props: {
-      allPostsData
-    }
+      no_sticky,
+    },
+    revalidate: 10, // In seconds
   };
 }

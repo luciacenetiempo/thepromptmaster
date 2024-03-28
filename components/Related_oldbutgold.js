@@ -10,7 +10,7 @@ const Related = (posts) => {
     <div className="collection-list-wrapper w-dyn-list">
       <div role="list" className="collection-list w-dyn-items">
         {posts.posts.map((post,index) => (
-          <PostTile key={index} post={post} isCategory={false} /> 
+          <PostTile key={index} post={post}/> 
         ))}
       </div>
     </div>

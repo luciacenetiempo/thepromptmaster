@@ -69,7 +69,7 @@ const Header = ({ color }) => {
 
             <div className="nav-circle"></div>
             <Link
-              href={'/blog/ai-updates'}
+              href={'/blog/category/news-intelligenza-artificiale	'}
               className="nav-link w-inline-block"
               key='ai-updates'
               onClick={openMenu}
@@ -99,7 +99,7 @@ const Header = ({ color }) => {
 
             <div className="nav-circle"></div>
             <Link
-              href={'/blog/prompt-engineering'}
+              href={'/blog/category/prompt-engineering'}
               className="nav-link w-inline-block"
               key='prompt-engineering'
               onClick={openMenu}
@@ -130,7 +130,7 @@ const Header = ({ color }) => {
            
 
             <Link
-              href={'/blog/ai-tools'}
+              href={'/blog/category/ai-tools'}
               className="nav-link w-inline-block"
               key='ai-tools'
               onClick={openMenu}

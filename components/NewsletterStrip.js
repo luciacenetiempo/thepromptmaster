@@ -1,6 +1,8 @@
 import React from 'react';
 import Mailchimp from "react-mailchimp-form"
 import NewsletterForm from './NewsletterForm';
+import NewsletterFormMailerlite from './NewsletterFormMailerlite';
+import ECourseFormMailerlite from './ECourseFormMailerlite';
 
 const NewsletterStrip = () => {
   return (
@@ -18,7 +20,8 @@ const NewsletterStrip = () => {
         </div>
     </div>
     <div className='newsletter-strip newsletter-strip--newsletter'>
-      <NewsletterForm />
+      <NewsletterFormMailerlite />
+      {/* <ECourseFormMailerlite /> */}
     </div>
   </div>
   );

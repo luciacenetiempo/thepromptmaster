@@ -12,10 +12,16 @@ import { useCanonicalURL } from '@/lib/CanonicalURL';
 
 const TemplateCategory = (props) => {
   const [pagination, setPagination] = useState(10);
-  const [prev_pagination, setPrevPagination] = useState(null);
-  const [reverse, setReverse] = useState(false);
-  const [featured, setFeatured] = useState(false);
-  const [paginated, setPaginated] = useState(false);
+  const category = props.category[0];
+  const posts = props.posts;
+  const sticky = props.posts.slice(0, 2);
+  const nonsticky = props.posts.slice(2, pagination);
+  const reverse = props.posts.reverse();
+  let categoryName = category.name;
+  let categoryObj = {
+    name: categoryName,
+    slug: category.slug
+  };
   const loadMore = async () => {
     try {
       let paginationStatusPrev = pagination;
@@ -26,20 +32,19 @@ const TemplateCategory = (props) => {
     }
   };
 
-  useEffect(() => {
-    if(props.category == 'prompt-engineering'){
-      setReverse(props.posts.reverse())
-    } else {
-      setFeatured(props.posts.slice(0, 2));
-      setPaginated(props.posts.slice(2, pagination))
-    }
-  }, []);
+  // useEffect(() => {
+  //   if(props.category == 'prompt-engineering'){
+  //     setReverse(props.posts.reverse())
+  //   } else {
+  //     setFeatured(props.posts.slice(0, 2));
+  //     setPaginated(props.posts.slice(2, pagination))
+  //   }
+  // }, []);
   return (
     <>
       <Head>
-        <title>{props.category.toUpperCase().replace(/\-+/g, ' ')} | The Prompt Master</title>
-        <meta name="description" content={props.category.toUpperCase().replace(/\-+/g, ' ') + "Tutto quello che c'è da sapere sul mondo dell'intelligenza artificiale"} />
-        <meta name="keywords" content={props.category.toUpperCase().replace(/\-+/g, ' ') + ", intelligenza artificiale, AI, IA, Artificial Intelligence"} />
+        <title>{category.yoast_head_json.title}</title>
+        <meta name="description" content={category.yoast_head_json.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href={useCanonicalURL()} />
       </Head>
@@ -55,15 +60,21 @@ const TemplateCategory = (props) => {
         </div>
         <div className="strip">
           <LoopingText
-            text={`${props.category.toUpperCase().replace(/\-+/g, ' ')}: Tutto quello che c'è da sapere`}
+            text={`${categoryName}`}
             size='small'
             velocity={0.08}
             color='dark'
           />
         </div>
       </div>
+      <div className='section-content'>
+        <div className='content rich-text-block'>
+          <h1>{categoryName}</h1>
+          <p dangerouslySetInnerHTML={{ __html: category.description }} />
+        </div>
+      </div>
       {
-        props.category == 'prompt-engineering' ? (
+        category.slug == 'prompt-engineering' ? (
           <div className='section-content'>
             <div className="collection-list-wrapper-top noBorder">
               <div role="list" className="content-wide rich-text-block">
@@ -73,12 +84,12 @@ const TemplateCategory = (props) => {
                     reverse.map((post, index) => (
                       <div className='post-tile-row' key={index}>
                         <span className='number'>{index+1}.</span>
-                        <PostTileRow post={post} index={index} />
+                        <PostTileRow post={post} index={index} isCategory={categoryObj} />
                       </div>
                     ))
                   ) : ('')
                 }
-              </div>
+              </div> 
             </div>
           </div>
         ) : ( 
@@ -86,9 +97,9 @@ const TemplateCategory = (props) => {
             <div className="collection-list-wrapper-top">
               <div role="list" className="collection-list-top">
                 {
-                  featured ? (
-                    featured.map((post, index) => (
-                      <PostTile post={post} key={index} />
+                  sticky ? (
+                    sticky.map((post, index) => (
+                      <PostTile post={post} key={index} isCategory={categoryObj} />
                     ))
                   ) : ('')
                 }
@@ -97,9 +108,9 @@ const TemplateCategory = (props) => {
             <div className="collection-list-wrapper">
               <div role="list" className="collection-list">
                 {
-                  paginated ? (
-                    paginated.map((post, index) => (
-                      <PostTile post={post} key={index} />
+                  nonsticky ? (
+                    nonsticky.map((post, index) => (
+                      <PostTile post={post} key={index} isCategory={categoryObj} />
                     ))
                   ) : ('')
                 }

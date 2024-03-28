@@ -2006,3 +2006,26 @@ footer{
     }
   }
 }
+details {
+  display: flex;
+  width: 100%;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin: 20px 0;
+  border: 1px solid #e5e2e2;
+  summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #e5e2e2;
+    padding-bottom: 16px;
+  }
+}
+.error{
+  color: rgb(237, 76, 103);
+}
+.success{
+  color: rgb(13, 150, 18);
+}

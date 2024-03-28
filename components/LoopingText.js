@@ -47,7 +47,7 @@ const LoopingText = ({ text, size, velocity, color }) => {
   return (
     <div className={`strip-block ${'strip-block--'+size}`} ref={selfRef}>
       {[...Array(2)].map((_, i) => (
-        <div className={`text-strip ${color}`} key={`${i}`}>{text}</div>
+        <div className={`text-strip ${color}`} key={`${i}`} dangerouslySetInnerHTML={{ __html: text }}></div>
       ))}
     </div>
   );

@@ -6,43 +6,46 @@ const formatDate = (inputDate) => {
   return new Date(inputDate).toLocaleDateString('it-IT', options);
 };
 
-const PostTile = ({ post }) => {
+const PostTile = ({ post, isCategory }) => {
+  let slug = post.slug;
+  let cover = post._embedded['wp:featuredmedia'][0].source_url;
+  let title = post.title.rendered;
+  let categories = isCategory == 'false' ? post._embedded['wp:term'][0][0] : isCategory; 
+  let date = post.date;
+  let incipit = post.excerpt.rendered; 
   return (
 
     <div role="listitem" className="collection-item w-dyn-item">
       <Link
-        href={'/blog/' + post.slug}
+        href={'/blog/' + slug}
         className="post-link w-inline-block"
         style={{
-          backgroundImage: `url('${post.cover}')`
+          backgroundImage: `url('${cover}')`
         }}
       >
         <figure className="mobileOnly">
           <Image
-            src={post.cover}
+            src={cover}
             width={350}
             height={250}
-            alt={post.title}
+            alt={title}
           />
         </figure>
         <div className="post-block">
           <div className="post-text">
             <div className="post-info">
               <div className="category">
-                {post.categories[0]}
+                {categories.name}
               </div>
               <div className="post-circle"></div>
               <div className="date">
-                {formatDate(post.date)}
+                {formatDate(date)}
               </div>
             </div>
-            <h4 className="post-heading">
-              {post.title}
+            <h4 className="post-heading" dangerouslySetInnerHTML={{ __html: title }}>
             </h4>
             <div className="post-summary-block">
-              <p className="post-summary">
-                {post.incipit}
-              </p>
+              <div className="post-summary" dangerouslySetInnerHTML={{ __html: incipit }}></div>
             </div>
           </div>
           <div

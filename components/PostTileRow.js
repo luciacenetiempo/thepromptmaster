@@ -5,30 +5,30 @@ const formatDate = (inputDate) => {
   const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
   return new Date(inputDate).toLocaleDateString('it-IT', options);
 };
-
+ 
 const PostTileRow = ({ post, index }) => {
+  let slug = post.slug;
+  let cover = post._embedded['wp:featuredmedia'][0] ? post._embedded['wp:featuredmedia'][0].source_url : '';
+  let title = post.title.rendered;
+  let incipit = post.excerpt.rendered; 
   return (
     <Link
-      href={'/blog/' + post.slug}
+      href={'/blog/' + slug}
       className='post-tile-listing'
     >
       <div className='post-tile-row--row'>
       <figure>
-        <Image
-          src={post.cover}
+        <Image 
+          src={cover}
           fill
-          alt={post.title}
+          alt={title}
         />
       </figure>
       <div className='post-tile-row--content'>
         <h6>Lezione {index + 1}</h6>
-        <h4 className="post-heading">
-          {post.title}
-        </h4>
+        <h4 className="post-heading" dangerouslySetInnerHTML={{ __html: title }}></h4>
         <div className="post-summary-block">
-          <p className="post-summary">
-            {post.incipit}
-          </p>
+          <div className="post-summary" dangerouslySetInnerHTML={{ __html: incipit }}></div>
         </div>
         <span className='goTo'>...leggi tutto</span>
       </div>

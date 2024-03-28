@@ -5,7 +5,6 @@ import { getSortedPostsData, getAllCategories } from "../lib/posts";
 const URL = "https://www.thepromptmaster.it";
 
 function generateSiteMap(posts, categories) {
-  console.log(categories)
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
      <!-- Add the static URLs manually -->

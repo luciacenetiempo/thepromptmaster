@@ -8,67 +8,53 @@ import Related from './Related';
 import NewsletterStrip from './NewsletterStrip';
 import Footer from './Footer';
 import { useCanonicalURL } from '@/lib/CanonicalURL';
-import he from 'he';
 
 const formatDate = (inputDate) => {
   const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
   return new Date(inputDate).toLocaleDateString('it-IT', options);
 };
-
 const TemplatePost = (props) => {
-  
-  let date = props.post.date;
-  let content = props.post.content.rendered;
-  let incipit = props.post.excerpt.rendered;
-  let keywords = '';
-  let author = '';
-  let color = 'light';
-  let cover = props.post._embedded['wp:featuredmedia'][0].source_url;
-  // let cover = props.yoast_head_json.og_image[0].url;
-  let title = props.post.title.rendered;
-  let categories = props.post._embedded['wp:term'][0];
-  let tags = props.post._embedded['wp:term'][1];
   return (
     <>
-      <Head> 
-        <title>{he.decode(props.post.title.rendered)} | The Prompt Master</title>
-        <meta name="description" content={incipit} />
-        <meta name="keywords" content={keywords} />
-        <meta name="author" content={author} />
+      <Head>
+        <title>{props.postData.title} | The Prompt Master</title>
+        <meta name="description" content={props.postData.incipit} />
+        <meta name="keywords" content={props.postData.keywords} />
+        <meta name="author" content={props.postData.author} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href={useCanonicalURL()} />
       </Head>
-      <Header color={color} />
+      <Header color={props.postData.color} />
       <ImageTop title='THE PROMPT MASTER'
         color='light'
-        url={cover}
-        alt={title}
+        url={props.postData.cover}
+        alt={props.postData.title}
       />
       <div className="strip">
         <LoopingText
-          text={title}
+          text={props.postData.title}
           size='small'
           velocity={0.08}
           color='dark'
         />
-      </div> 
+      </div>
       <div className='section-content'>
         <div className='content rich-text-block'>
           <div className="post-info">
-            {categories.map((category, index) => (
+            {props.postData.categories.map((category, index) => (
               <div className="categoryList" key={index}>
-                <a key={index} href={`/blog/category/${category.slug}`} className="link-category w-inline-block">
-                  <div className="category">{category.name}</div>
+                <a key={index} href={`/blog/${category.toLowerCase().replace(/\s+/g, '-')}`} className="link-category w-inline-block">
+                  <div className="category">{category}</div>
                 </a>
                 <div className="post-circle"></div>
               </div>
             ))}
-            <div className="date">{formatDate(date)}</div></div>
+            <div className="date">{formatDate(props.postData.date)}</div></div>
         </div>
-        <div className='content rich-text-block'><h1 dangerouslySetInnerHTML={{ __html: title }}></h1></div>
-        <BlogPost content={content} />
+        <BlogPost content={props.postData.contentHtml} />
       </div>
       <NewsletterStrip />
+
       <div className="strip paddingBoth">
         <LoopingText
           text='potrebbe interessarti anche'
@@ -78,10 +64,9 @@ const TemplatePost = (props) => {
         />
       </div>
 
-      {/* <Related posts={props.post.myrelatedPostsData} /> */}  
+      <Related posts={props.postData.myrelatedPostsData} />
       <Footer />
     </>
-    // <span>ciao</span>
   );
 };
 

@@ -33,3 +33,4 @@ export default function BlogPage(props) {
   }
   return <TemplatePost {...props} />;
 }
+ 

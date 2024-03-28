@@ -6,13 +6,13 @@ import LoopingText from '@/components/LoopingText';
 import Header from '@/components/Header';
 
 // import { getSortedPostsData } from '../lib/posts';
-import { getPosts, getSticky, getNoSticky, getPostFromCategory } from '../lib/wordpress';
+import { getPosts } from '../lib/wordpress';
 
 import NewsletterStrip from '@/components/NewsletterStrip';
 import { useCanonicalURL } from '@/lib/CanonicalURL';
 import Footer from '@/components/Footer';
 
-export default function Home({ sticky, no_sticky, prompt_engineering, prompt_tips }) {
+export default function Home({ allPostsData }) {
   const [pagination, setPagination] = useState(10);
   const [prev_pagination, setPrevPagination] = useState(null);
   const loadMore = async () => {
@@ -24,10 +24,10 @@ export default function Home({ sticky, no_sticky, prompt_engineering, prompt_tip
     } catch (err) {
     }
   };
-  let featured = sticky.slice(0, 2);
-  let paginated = no_sticky.slice(0, pagination);
-  let promptEngineering = prompt_engineering;
-  let promptTips = prompt_tips.slice(0, pagination);
+  let featured = allPostsData.slice(0, 2);
+  let paginated = allPostsData.slice(2, pagination);
+  let promptEngineering = allPostsData.filter(post => post.categories.includes('Prompt Engineering'));
+  let promptTips = allPostsData.slice(2, pagination);
   return (
     <>
       <Head>
@@ -59,7 +59,7 @@ export default function Home({ sticky, no_sticky, prompt_engineering, prompt_tip
       <div className="collection-list-wrapper-top">
         <div role="list" className="collection-list-top">
           {featured.map((post, index) => (
-            <PostTile post={post} key={index} isCategory={post._embedded['wp:term'][0][0]} />
+            <PostTile post={post} key={index} />
           ))}
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function Home({ sticky, no_sticky, prompt_engineering, prompt_tip
       <div className="collection-list-wrapper">
         <div role="list" className="collection-list">
           {promptEngineering.map((post, index) => (
-            <PostTile post={post} key={index} isCategory={post._embedded['wp:term'][0][0]} />
+            <PostTile post={post} key={index} />
           ))}
         </div>
       </div>
@@ -95,7 +95,7 @@ export default function Home({ sticky, no_sticky, prompt_engineering, prompt_tip
       <div className="collection-list-wrapper">
         <div role="list" className="collection-list">
           {paginated.map((post, index) => (
-            <PostTile post={post} key={index} isCategory={post._embedded['wp:term'][0][0]} />
+            <PostTile post={post} key={index} />
           ))}
         </div>
       </div>
@@ -108,17 +108,11 @@ export default function Home({ sticky, no_sticky, prompt_engineering, prompt_tip
 
 
 export async function getStaticProps({ params }) {
-  const sticky = await getSticky();
-  const no_sticky = await getNoSticky();
-  const prompt_engineering = await getPostFromCategory(3);
-  const prompt_tips = await getPostFromCategory(4);
+  const posts = await getPosts();
+  const events = await getEvents();
   return {
     props: {
-      // allPostsData
-      sticky,
-      no_sticky,
-      prompt_engineering,
-      prompt_tips
+      allPostsData
     },
     revalidate: 10, // In seconds
   };

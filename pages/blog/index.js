@@ -4,12 +4,15 @@ import React, { useState } from 'react';
 import PostTile from '@/components/PostTile';
 import LoopingText from '@/components/LoopingText';
 import Header from '@/components/Header';
-import { getSortedPostsData } from '../../lib/posts';
-import NewsletterStrip from '@/components/NewsletterStrip';
-import Footer from '@/components/Footer';
-import { useCanonicalURL } from '@/lib/CanonicalURL';
 
-export default function Blog({ allPostsData }) {
+// import { getSortedPostsData } from '../lib/posts';
+import { getPosts, getSticky, getNoSticky, getPostFromCategory } from '../../lib/wordpress';
+
+import NewsletterStrip from '@/components/NewsletterStrip';
+import { useCanonicalURL } from '@/lib/CanonicalURL';
+import Footer from '@/components/Footer';
+
+export default function Blog({ sticky, no_sticky, prompt_engineering, prompt_tips }) {
   const [pagination, setPagination] = useState(10);
   const [prev_pagination, setPrevPagination] = useState(null);
   const loadMore = async () => {
@@ -21,8 +24,10 @@ export default function Blog({ allPostsData }) {
     } catch (err) {
     }
   };
-  let featured = allPostsData.slice(0, 2);
-  let paginated = allPostsData.slice(2, pagination);
+  let featured = sticky.slice(0, 2);
+  let paginated = no_sticky.slice(0, pagination);
+  let promptEngineering = prompt_engineering;
+  let promptTips = prompt_tips.slice(0, pagination);
   return (
     <>
       <Head>
@@ -51,18 +56,46 @@ export default function Blog({ allPostsData }) {
           />
         </div>
       </div>
-
       <div className="collection-list-wrapper-top">
         <div role="list" className="collection-list-top">
-          {featured.map(post => (
-            <PostTile post={post} />
+          {featured.map((post, index) => (
+            <PostTile post={post} key={index} isCategory={post._embedded['wp:term'][0][0]} />
           ))}
         </div>
       </div>
+        <div className="strip paddingVertical">
+          <LoopingText
+            text='PROMPT ENGINEERING - TUTTO QUELLO CHE DEVI SAPERE'
+            size='big'
+            velocity={0.08}
+            color='dark'
+          />
+        </div>
+      <div className="collection-list-wrapper collection-list-wrapper-title paddingVertical noBorder">
+        <h2>Tutto quello che devi sapere sul mondo del Prompt Engineering</h2>
+      </div>
       <div className="collection-list-wrapper">
         <div role="list" className="collection-list">
-          {paginated.map(post => (
-            <PostTile post={post} />
+          {promptEngineering.map((post, index) => (
+            <PostTile post={post} key={index} isCategory={post._embedded['wp:term'][0][0]} />
+          ))}
+        </div>
+      </div>
+      <div className="strip paddingVertical">
+        <LoopingText
+          text='ALTRE NEWS DAL MONDO AI'
+          size='big'
+          velocity={0.08}
+          color='dark'
+        />
+      </div>
+      <div className="collection-list-wrapper collection-list-wrapper-title paddingVertical noBorder">
+        <h2>Altre news dal mondo dell'intelligenza artificiale</h2>
+      </div>
+      <div className="collection-list-wrapper">
+        <div role="list" className="collection-list">
+          {paginated.map((post, index) => (
+            <PostTile post={post} key={index} isCategory={post._embedded['wp:term'][0][0]} />
           ))}
         </div>
       </div>
@@ -73,11 +106,20 @@ export default function Blog({ allPostsData }) {
   );
 }
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+
+export async function getStaticProps({ params }) {
+  const sticky = await getSticky();
+  const no_sticky = await getNoSticky();
+  const prompt_engineering = await getPostFromCategory(3);
+  const prompt_tips = await getPostFromCategory(4);
   return {
     props: {
-      allPostsData
-    }
+      // allPostsData
+      sticky,
+      no_sticky,
+      prompt_engineering,
+      prompt_tips
+    },
+    revalidate: 10, // In seconds
   };
 }

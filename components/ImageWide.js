@@ -7,15 +7,23 @@ const ImageWide = (props) => {
     <div className='content-wide rich-text-block'>
       <figure className="w-richtext-align-fullwidth w-richtext-figure-type-image">
         <div>
-        <img
+          {/* <img
           src={props.src}
           className={`${styles.imageTop}`} 
           alt={props.alt}
-        />
+        /> */}
+          <Image
+            priority
+            src={props.src}
+            width={props.width}
+            height={props.height}
+            alt={props.alt}
+            className={`${styles.imageTop}`}
+          />
         </div>
         {
-        props.caption ? (<>
-          <figcaption>{props.caption}</figcaption>
+          props.alt ? (<>
+            <figcaption>{props.alt}</figcaption>
           </>) : (
             ''
           )
