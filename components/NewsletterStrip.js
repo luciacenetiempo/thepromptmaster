@@ -20,8 +20,13 @@ const NewsletterStrip = () => {
         </div>
     </div>
     <div className='newsletter-strip newsletter-strip--newsletter'>
-      <NewsletterFormMailerlite />
-      {/* <ECourseFormMailerlite /> */}
+      <NewsletterFormMailerlite 
+        listId='115595877754603214' 
+        label='Inserisci il tuo indirizzo email!' 
+        submit='Iscriviti!' 
+        success=''
+        error=''
+      />
     </div>
   </div>
   );

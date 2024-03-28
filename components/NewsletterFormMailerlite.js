@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
-const NewsletterFormMailerlite = () => {
-
+const NewsletterFormMailerlite = ({listId, label, submit, success, error, }) => {
   const [isSuccess, setSuccess] = useState(false);
   const [isError, setError] = useState(false);
-
+  const [successMessage, setSuccessMessage] = useState(success.length > 1 ? success : 'Yeah! Benvenuto tra i veri Prompt Heroes!');
+  const [errorMessage, setErrorMessage] = useState(error.length > 1 ? error : 'Qualcosa è andato storto. Controlla l\'indirizzo email.');
+  console.log(successMessage)
+  console.log(errorMessage)
   async function onSubmit(event) {
     event.preventDefault()
- 
     const formData = new FormData(event.target)
-    const response = await fetch('https://assets.mailerlite.com/jsonp/863030/forms/115595877754603214/subscribe', {
+    let url = `https://assets.mailerlite.com/jsonp/863030/forms/${listId}/subscribe`;
+    const response = await fetch(url, {
       method: 'POST',
       body: formData,
     })
@@ -19,7 +21,7 @@ const NewsletterFormMailerlite = () => {
     if(data.success){
       setSuccess(true)
       setError(false)
-    } else {
+    } else { 
       setSuccess(false)
       setError(true)
     }
@@ -28,10 +30,10 @@ const NewsletterFormMailerlite = () => {
 
   return (
       <form className="field-newsletter" onSubmit={onSubmit}>
-        <input placeholder="Inserisci il tuo indirizzo email!" name="fields[email]" type="email" />
-          <button type="submit">Iscriviti!</button>
-          {isSuccess ? (<div className="msg-alert success">Yeah! Benveuto tra i veri Prompt Heroes!</div>) : ('')}
-          {isError ? (<div className="msg-alert error">Qualcosa è andato storto. Controlla l'indirizzo email.</div>) : ('')}
+        <input placeholder={label} name="fields[email]" type="email" />
+          <button type="submit">{submit}</button>
+          {isSuccess ? (<div className="msg-alert success">{successMessage}</div>) : ('')}
+          {isError ? (<div className="msg-alert error">{errorMessage}</div>) : ('')}
       </form>
   );
 };
