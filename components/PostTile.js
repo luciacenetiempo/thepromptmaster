@@ -9,6 +9,7 @@ const formatDate = (inputDate) => {
 const PostTile = ({ post, isCategory }) => {
   let slug = post.slug;
   let cover = post._embedded['wp:featuredmedia'][0].source_url;
+  console.log(cover)
   let title = post.title.rendered;
   let categories = isCategory == 'false' ? post._embedded['wp:term'][0][0] : isCategory; 
   let date = post.date;
@@ -25,7 +26,7 @@ const PostTile = ({ post, isCategory }) => {
       >
         <figure className="mobileOnly">
           <Image
-            src={cover}
+            src={cover} 
             width={350}
             height={250}
             alt={title}

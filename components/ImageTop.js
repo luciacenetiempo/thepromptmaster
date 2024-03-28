@@ -11,7 +11,7 @@ const ImageTop = ({ title, url, color, alt }) => {
         width={500}
         height={500}
         alt={alt}
-        className={`${styles.imageTop}`}
+        className={`${styles.imageTop}`} 
       />
       <div className="strip">
         <LoopingText text={title} size='big' velocity={0.08} color={color} />

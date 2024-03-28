@@ -24,6 +24,7 @@ const TemplatePost = (props) => {
   let author = '';
   let color = 'light';
   let cover = props.post._embedded['wp:featuredmedia'][0].source_url;
+  console.log(cover)
   // let cover = props.yoast_head_json.og_image[0].url;
   let title = props.post.title.rendered;
   let categories = props.post._embedded['wp:term'][0];
