@@ -12,8 +12,9 @@ import NewsletterStrip from '@/components/NewsletterStrip';
 import { useCanonicalURL } from '@/lib/CanonicalURL';
 import Footer from '@/components/Footer';
 
-export default function Home({ sticky, no_sticky, prompt_engineering, prompt_tips }) {
-  const [pagination, setPagination] = useState(10);
+export default function Home({ sticky, no_sticky, prompt_engineering, ai_news, prompt_tips }) {
+  console.log(no_sticky)
+  const [pagination, setPagination] = useState(4);
   const [prev_pagination, setPrevPagination] = useState(null);
   const loadMore = async () => {
     try {
@@ -25,7 +26,8 @@ export default function Home({ sticky, no_sticky, prompt_engineering, prompt_tip
     }
   };
   let featured = sticky.slice(0, 2);
-  let paginated = no_sticky.slice(0, pagination);
+  let aiNews = ai_news;
+  let paginated = aiNews.slice(0, pagination);
   let promptEngineering = prompt_engineering;
   let promptTips = prompt_tips.slice(0, pagination);
   return (
@@ -127,6 +129,7 @@ export async function getStaticProps({ params }) {
   const sticky = await getSticky();
   const no_sticky = await getNoSticky();
   const prompt_engineering = await getPostFromCategory(3);
+  const ai_news = await getPostFromCategory(1);
   const prompt_tips = await getPostFromCategory(4);
   return {
     props: {
@@ -134,6 +137,7 @@ export async function getStaticProps({ params }) {
       sticky,
       no_sticky,
       prompt_engineering,
+      ai_news,
       prompt_tips
     },
     revalidate: 10, // In seconds
