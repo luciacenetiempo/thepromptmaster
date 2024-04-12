@@ -43,8 +43,8 @@ const PostTile = ({ post, isCategory }) => {
                 {formatDate(date)}
               </div>
             </div>
-            <h4 className="post-heading" dangerouslySetInnerHTML={{ __html: title }}>
-            </h4>
+            <h3 className="post-heading asH4" dangerouslySetInnerHTML={{ __html: title }}>
+            </h3>
             <div className="post-summary-block">
               <div className="post-summary" dangerouslySetInnerHTML={{ __html: incipit }}></div>
             </div>

@@ -38,23 +38,7 @@ export default function Home({ sticky, no_sticky, prompt_engineering, prompt_tip
         <link rel="canonical" href={useCanonicalURL()} />
       </Head>
       <Header color='dark' />
-      <div className='collection-list-wrapper paddingVertical fixedHeight headMargin'>
-        <div className='halfCol'>
-          <h1>Utilizza ChatGPT <br/>come mai fatto prima</h1>
-        </div>
-        <div className="strip">
-          <LoopingText
-            text='THE PROMPT MASTER'
-            size='big'
-            velocity={0.08}
-            color='dark'
-          />
-        </div>
-        <div className='halfCol halfCol50'>
-          <p>Ciao, sono Lucia Cenetiempo, <br/>qui su The Prompt Master parlo di <strong>intelligenza artificiale generativa</strong> e ti spiego come scrivere <strong>prompt efficaci per ChatGPT</strong> per aumentare la produttività nel business.</p>
-        </div>
-      </div>
-      {/* <div className='headMargin'>
+      <div className='headMargin'>
         <div className="strip">
           <LoopingText
             text='THE PROMPT MASTER'
@@ -78,15 +62,15 @@ export default function Home({ sticky, no_sticky, prompt_engineering, prompt_tip
             <PostTile post={post} key={index} isCategory={post._embedded['wp:term'][0][0]} />
           ))}
         </div>
-      </div> */}
-      <div className="strip paddingVertical">
-        <LoopingText
-          text='PROMPT ENGINEERING - TUTTO QUELLO CHE DEVI SAPERE'
-          size='big'
-          velocity={0.08}
-          color='dark'
-        />
       </div>
+        <div className="strip paddingVertical">
+          <LoopingText
+            text='PROMPT ENGINEERING - TUTTO QUELLO CHE DEVI SAPERE'
+            size='big'
+            velocity={0.08}
+            color='dark'
+          />
+        </div>
       <div className="collection-list-wrapper collection-list-wrapper-title paddingVertical noBorder">
         <h2>Tutto quello che devi sapere sul mondo del Prompt Engineering</h2>
       </div>
