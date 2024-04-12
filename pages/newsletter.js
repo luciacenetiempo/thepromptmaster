@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import HeaderPlain from '@/components/HeaderPlain'
 import LoopingText from '@/components/LoopingText'
-// import NewsletterForm from '@/components/NewsletterForm'
 import NewsletterFormMailerlite from '@/components/NewsletterFormMailerlite';
 import { useCanonicalURL } from '@/lib/CanonicalURL'
 export default function Newsletter() {
@@ -34,7 +33,13 @@ export default function Newsletter() {
       <div className='section-content'>
         <div className='content rich-text-block rich-text-block--newsletter'>
           <h1>Scopri il Futuro dell'Intelligenza Artificiale</h1>
-          <NewsletterFormMailerlite />
+          <NewsletterFormMailerlite 
+            listId='115595877754603214' 
+            label='Inserisci il tuo indirizzo email!' 
+            submit='Iscriviti!' 
+            success=''
+            error=''
+          />
           <h3>Resta sempre informato con insights settimanali direttamente nella tua inbox.</h3>
           <p>Ecco una piccola anteprima di quello che ti aspetta ogni settimana nella tua casella di posta:</p>
           <p><strong>🤖 Prompt per mettere il turbo: </strong><br />
@@ -49,7 +54,13 @@ export default function Newsletter() {
               scopri ogni settimana sempre di più sul mondo dell'AI per essere sul pezzo!</p>
           <h4>🎁 ed in più, subito in regalo per te la BIBBIA DI MIDJOURNEY</h4>
           <h2>Non restare indietro!<br/>Iscriviti subito!</h2>
-          <NewsletterFormMailerlite />
+          <NewsletterFormMailerlite 
+            listId='115595877754603214' 
+            label='Inserisci il tuo indirizzo email!' 
+            submit='Iscriviti!' 
+            success=''
+            error=''
+          />
         </div>
       </div>
       <div className=''>
