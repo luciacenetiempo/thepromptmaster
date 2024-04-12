@@ -3,7 +3,6 @@ import HeaderPlain from '@/components/HeaderPlain'
 import LoopingText from '@/components/LoopingText'
 import Link from 'next/link';
 import NewsletterFormMailerlite from '@/components/NewsletterFormMailerlite';
-// import { getSortedPostsData } from '../lib/posts';
 import { getPosts, getSticky, getNoSticky, getPostFromCategory } from '../lib/wordpress';
 import ReactGA from 'react-ga';
 import { useCanonicalURL } from '@/lib/CanonicalURL';
@@ -71,8 +70,13 @@ export default function Blog({ no_sticky }) {
 
           <h4>Scopri il Futuro dell'Intelligenza Artificiale</h4>
           <p>Resta sempre informato con insights settimanali direttamente nella tua inbox.</p>
-          {/* <NewsletterForm /> */}
-          <NewsletterFormMailerlite />
+          <NewsletterFormMailerlite 
+            listId='115595877754603214' 
+            label='Inserisci il tuo indirizzo email!' 
+            submit='Iscriviti!' 
+            success=''
+            error=''
+          />
           <div className='spacer'></div>
           <h3>🤯 News imperdibili dal mondo dell'AI!</h3>
           {featured.map((post, index) => (
