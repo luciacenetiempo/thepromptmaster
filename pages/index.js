@@ -26,7 +26,7 @@ export default function Home({ sticky, no_sticky, prompt_engineering, ai_news, p
     }
   };
   let featured = sticky.slice(0, 2);
-  let aiNews = ai_news;
+  let aiNews = ai_news; 
   let paginated = aiNews.slice(0, pagination);
   let promptEngineering = prompt_engineering;
   let promptTips = prompt_tips.slice(0, pagination);
