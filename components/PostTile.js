@@ -19,9 +19,6 @@ const PostTile = ({ post, isCategory }) => {
       <Link
         href={'/blog/' + slug}
         className="post-link w-inline-block"
-        style={{
-          backgroundImage: `url('${cover}')`
-        }}
       >
         <figure className="mobileOnly">
           <Image
