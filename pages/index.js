@@ -13,7 +13,6 @@ import { useCanonicalURL } from '@/lib/CanonicalURL';
 import Footer from '@/components/Footer';
 
 export default function Home({ sticky, no_sticky, prompt_engineering, ai_news, prompt_tips }) {
-  console.log(no_sticky)
   const [pagination, setPagination] = useState(4);
   const [prev_pagination, setPrevPagination] = useState(null);
   const loadMore = async () => {

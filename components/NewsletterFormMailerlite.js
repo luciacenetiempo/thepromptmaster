@@ -5,8 +5,6 @@ const NewsletterFormMailerlite = ({listId, label, submit, success, error, }) => 
   const [isError, setError] = useState(false);
   const [successMessage, setSuccessMessage] = useState(success.length > 1 ? success : 'Yeah! Benvenuto tra i veri Prompt Heroes!');
   const [errorMessage, setErrorMessage] = useState(error.length > 1 ? error : 'Qualcosa è andato storto. Controlla l\'indirizzo email.');
-  console.log(successMessage)
-  console.log(errorMessage)
   async function onSubmit(event) {
     event.preventDefault()
     const formData = new FormData(event.target)
