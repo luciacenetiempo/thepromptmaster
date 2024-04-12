@@ -20,15 +20,38 @@ export default function App({ Component, pageProps }) {
     <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"></Script>
     <Script id="google-analytics">
       {`
+
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
+
+        gtag('consent', 'default', {
+          'ad_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied',
+          'analytics_storage': 'denied'
+        });
+
         gtag('js', new Date());
       
         gtag('config', 'G-QXT3DWCP13');
+        
       `}
     </Script>
       <Component {...pageProps} />
       {!hasCookie ? (<CookieBanner />) : ('')}
+      {hasCookie ? (
+       <Script id="google-analytics">
+        {`
+        
+        function consentGrantedAdStorage() {
+          gtag('consent', 'update', {
+            'ad_storage': 'granted'
+          });
+        }
+        consentGrantedAdStorage();
+        `}
+       </Script>
+      ) : ('')}
     </>
   )
   
