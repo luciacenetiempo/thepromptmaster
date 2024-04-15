@@ -3,7 +3,6 @@ import Head from 'next/head';
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import LoopingText from '@/components/LoopingText';
-import NewsletterStrip from '@/components/NewsletterStrip';
 import { getSortedPostsData } from '../lib/posts';
 import { useCanonicalURL } from '@/lib/CanonicalURL';
 import Footer from '@/components/Footer';
@@ -185,7 +184,6 @@ export default function Page() {
         <p>Il Titolare del Trattamento si riserva il diritto di apportare modifiche alla presente privacy policy in qualsiasi momento, notificandolo agli Utenti su questa pagina e, se possibile, su questa piattaforma. Inoltre, se le modifiche riguardano trattamenti basati sul consenso dell'Utente, il Titolare otterrà nuovamente il consenso dell'Utente, se necessario. Gli Utenti sono invitati a consultare regolarmente questa pagina per verificare eventuali aggiornamenti.</p>
         </div>
       </div>
-      <NewsletterStrip />
       <Footer />
     </>
   );

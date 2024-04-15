@@ -1,17 +1,18 @@
-import Link from 'next/link';
 import Head from 'next/head';
 import React, { useState } from 'react';
-import PostTile from '@/components/PostTileBig';
+import PostTile from '@/components/PostTile';
 import LoopingText from '@/components/LoopingText';
 import Header from '@/components/Header';
 
 // import { getSortedPostsData } from '../lib/posts';
-import { getPosts, getSticky, getNoSticky, getPostFromCategory } from '../../lib/wordpress';
+import { getPosts, getSticky, getNoSticky, getPostFromCategory } from '../lib/wordpress';
+
+import NewsletterStrip from '@/components/NewsletterStrip';
 import { useCanonicalURL } from '@/lib/CanonicalURL';
 import Footer from '@/components/Footer';
 
-export default function Blog({ sticky, no_sticky, prompt_engineering, prompt_tips }) {
-  const [pagination, setPagination] = useState(10);
+export default function Home({ sticky, no_sticky, prompt_engineering, ai_news, prompt_tips }) {
+  const [pagination, setPagination] = useState(4);
   const [prev_pagination, setPrevPagination] = useState(null);
   const loadMore = async () => {
     try {
@@ -23,7 +24,8 @@ export default function Blog({ sticky, no_sticky, prompt_engineering, prompt_tip
     }
   };
   let featured = sticky.slice(0, 2);
-  let paginated = no_sticky.slice(0, pagination);
+  let aiNews = ai_news; 
+  let paginated = aiNews.slice(0, pagination);
   let promptEngineering = prompt_engineering;
   let promptTips = prompt_tips.slice(0, pagination);
   return (
@@ -36,7 +38,23 @@ export default function Blog({ sticky, no_sticky, prompt_engineering, prompt_tip
         <link rel="canonical" href={useCanonicalURL()} />
       </Head>
       <Header color='dark' />
-      <div className='headMargin'>
+      <div className='collection-list-wrapper paddingVertical fixedHeight headMargin'>
+        <div className='halfCol'>
+          <h1>Utilizza ChatGPT <br/>come mai fatto prima</h1>
+        </div>
+        <div className="strip">
+          <LoopingText
+            text='THE PROMPT MASTER'
+            size='big'
+            velocity={0.08}
+            color='dark'
+          />
+        </div>
+        <div className='halfCol halfCol50'>
+          <p>Ciao, sono Lucia Cenetiempo, <br/>qui su The Prompt Master parlo di <strong>intelligenza artificiale generativa</strong> e ti spiego come scrivere <strong>prompt efficaci per ChatGPT</strong> per aumentare la produttività nel business.</p>
+        </div>
+      </div>
+      {/* <div className='headMargin'>
         <div className="strip">
           <LoopingText
             text='THE PROMPT MASTER'
@@ -60,15 +78,15 @@ export default function Blog({ sticky, no_sticky, prompt_engineering, prompt_tip
             <PostTile post={post} key={index} isCategory={post._embedded['wp:term'][0][0]} />
           ))}
         </div>
+      </div> */}
+      <div className="strip paddingVertical">
+        <LoopingText
+          text='PROMPT ENGINEERING - TUTTO QUELLO CHE DEVI SAPERE'
+          size='big'
+          velocity={0.08}
+          color='dark'
+        />
       </div>
-        <div className="strip paddingVertical">
-          <LoopingText
-            text='PROMPT ENGINEERING - TUTTO QUELLO CHE DEVI SAPERE'
-            size='big'
-            velocity={0.08}
-            color='dark'
-          />
-        </div>
       <div className="collection-list-wrapper collection-list-wrapper-title paddingVertical noBorder">
         <h2>Tutto quello che devi sapere sul mondo del Prompt Engineering</h2>
       </div>
@@ -97,6 +115,7 @@ export default function Blog({ sticky, no_sticky, prompt_engineering, prompt_tip
           ))}
         </div>
       </div>
+      <NewsletterStrip />
       {/* <button onClick={loadMore}>LOAD MORE</button> */}
       <Footer />
     </>
@@ -108,6 +127,7 @@ export async function getStaticProps({ params }) {
   const sticky = await getSticky();
   const no_sticky = await getNoSticky();
   const prompt_engineering = await getPostFromCategory(3);
+  const ai_news = await getPostFromCategory(1);
   const prompt_tips = await getPostFromCategory(4);
   return {
     props: {
@@ -115,6 +135,7 @@ export async function getStaticProps({ params }) {
       sticky,
       no_sticky,
       prompt_engineering,
+      ai_news,
       prompt_tips
     },
     revalidate: 10, // In seconds

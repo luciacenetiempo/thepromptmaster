@@ -2,12 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import PostTile from '@/components/PostTile';
+import PostTileBig from '@/components/PostTileBig';
 import LoopingText from '@/components/LoopingText';
 import Header from '@/components/Header';
-import NewsletterStrip from './NewsletterStrip';
 import Footer from './Footer';
-import PostTileRow from './PostTileRow';
 import { useCanonicalURL } from '@/lib/CanonicalURL';
 
 const TemplateCategory = (props) => {
@@ -32,14 +30,6 @@ const TemplateCategory = (props) => {
     }
   };
 
-  // useEffect(() => {
-  //   if(props.category == 'prompt-engineering'){
-  //     setReverse(props.posts.reverse())
-  //   } else {
-  //     setFeatured(props.posts.slice(0, 2));
-  //     setPaginated(props.posts.slice(2, pagination))
-  //   }
-  // }, []);
   return (
     <>
       <Head>
@@ -67,7 +57,7 @@ const TemplateCategory = (props) => {
           />
         </div>
       </div>
-      <div className='section-content'>
+      <div className='section-content paddingVertical'>
         <div className='content rich-text-block'>
           <h1>{categoryName}</h1>
           <p dangerouslySetInnerHTML={{ __html: category.description }} />
@@ -75,7 +65,7 @@ const TemplateCategory = (props) => {
       </div>
       {
         category.slug == 'prompt-engineering' ? (
-          <div className='section-content'>
+          <div className='section-content paddingVertical'>
             <div className="collection-list-wrapper-top noBorder">
               <div role="list" className="content-wide rich-text-block">
 
@@ -84,7 +74,7 @@ const TemplateCategory = (props) => {
                     reverse.map((post, index) => (
                       <div className='post-tile-row' key={index}>
                         <span className='number'>{index+1}.</span>
-                        <PostTileRow post={post} index={index} isCategory={categoryObj} />
+                        <PostTileBig post={post} index={index} isCategory={categoryObj} />
                       </div>
                     ))
                   ) : ('')
@@ -94,23 +84,12 @@ const TemplateCategory = (props) => {
           </div>
         ) : ( 
           <>
-            <div className="collection-list-wrapper-top">
-              <div role="list" className="collection-list-top">
-                {
-                  sticky ? (
-                    sticky.map((post, index) => (
-                      <PostTile post={post} key={index} isCategory={categoryObj} />
-                    ))
-                  ) : ('')
-                }
-              </div>
-            </div>
-            <div className="collection-list-wrapper">
+            <div className="collection-list-wrapper paddingVertical">
               <div role="list" className="collection-list">
                 {
                   nonsticky ? (
                     nonsticky.map((post, index) => (
-                      <PostTile post={post} key={index} isCategory={categoryObj} />
+                      <PostTileBig post={post} key={index} isCategory={categoryObj} />
                     ))
                   ) : ('')
                 }
@@ -119,8 +98,6 @@ const TemplateCategory = (props) => {
           </>
         )
       }
-
-      <NewsletterStrip />
       <Footer />
     </>
   );

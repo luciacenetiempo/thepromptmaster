@@ -3,7 +3,6 @@ import Head from 'next/head';
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import LoopingText from '@/components/LoopingText';
-import NewsletterStrip from '@/components/NewsletterStrip';
 import Footer from '@/components/Footer';
 import { getSortedPostsData } from '../lib/posts';
 import { useCanonicalURL } from '@/lib/CanonicalURL';
@@ -115,7 +114,6 @@ export default function Page() {
           <p>La maggior parte dei browser offre agli utenti la possibilità di gestire i cookie attraverso le impostazioni del browser, permettendo loro di modificare il proprio consenso all'utilizzo dei cookie e di controllare o eliminare i cookie, compresi quelli di The Prompt Master. Per ulteriori informazioni sul controllo dei cookie tramite il tuo browser, ti invitiamo a consultare la documentazione fornita dal produttore del tuo browser.</p>
         </div>
       </div>
-      <NewsletterStrip />
       <Footer />
     </>
   );

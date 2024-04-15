@@ -5,7 +5,6 @@ import LoopingText from './LoopingText';
 import ImageTop from './ImageTop';
 import BlogPost from './BlogPost';
 import Related from './Related';
-import NewsletterStrip from './NewsletterStrip';
 import Footer from './Footer';
 import { useCanonicalURL } from '@/lib/CanonicalURL';
 import he from 'he';
@@ -68,7 +67,6 @@ const TemplatePost = (props) => {
         <div className='content rich-text-block'><h1 dangerouslySetInnerHTML={{ __html: title }}></h1></div>
         <BlogPost content={content} />
       </div>
-      <NewsletterStrip />
       <div className="strip paddingBoth">
         <LoopingText
           text='potrebbe interessarti anche'

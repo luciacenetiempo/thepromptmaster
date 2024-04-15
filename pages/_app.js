@@ -11,6 +11,12 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     if (cookies.CookieAccepted) {
       setHasCookie(true)
+      gtag('consent', 'update', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted',
+        'analytics_storage': 'granted'
+      });
     }
   }, [cookies]);
 
@@ -24,34 +30,22 @@ export default function App({ Component, pageProps }) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
 
+        gtag('js', new Date());
+      
+        gtag('config', 'G-QXT3DWCP13');
+
+
         gtag('consent', 'default', {
           'ad_storage': 'denied',
           'ad_user_data': 'denied',
           'ad_personalization': 'denied',
           'analytics_storage': 'denied'
         });
-
-        gtag('js', new Date());
-      
-        gtag('config', 'G-QXT3DWCP13');
         
       `}
     </Script>
       <Component {...pageProps} />
       {!hasCookie ? (<CookieBanner />) : ('')}
-      {hasCookie ? (
-       <Script id="google-analytics">
-        {`
-        
-        function consentGrantedAdStorage() {
-          gtag('consent', 'update', {
-            'ad_storage': 'granted'
-          });
-        }
-        consentGrantedAdStorage();
-        `}
-       </Script>
-      ) : ('')}
     </>
   )
   
