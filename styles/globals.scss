@@ -232,6 +232,31 @@ a {
     color: $color_2;
   }
 }
+
+.phrase{
+  font-size: 0.9em;
+  color: #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .bullet{
+    font-size: 2em;
+    margin-top: -3px;
+    margin-right: 5px;
+  }
+  .icon{
+    display: inline-flex;
+    transform-origin: bottom right;
+    font-size: 1.5em;
+    margin-left: 5px;
+    margin-right: 5px;
+    animation: waving 2s linear infinite;
+    &--noanimation{
+      animation: none;
+      -webkit-animation: none;
+    }
+  }
+}
 .rich-text-block {
   p {
     margin-bottom: 1.3em;
@@ -663,23 +688,6 @@ a {
             width: 100%;
           }
         }
-      }
-    }
-    .phrase{
-      font-size: 0.9em;
-      color: #000;
-      .bullet{
-        font-size: 1.3em;
-      }
-      .icon{
-        animation: waving 2s linear infinite;
-        display: inline-flex;
-        transform-origin: bottom right;
-        font-size: 1.3em;
-        &--noanimation{
-          animation: none;
-          -webkit-animation: none;
-}
       }
     }
     .halfCol{
@@ -1464,7 +1472,14 @@ a {
     }
   }
 }
-
+.bg-separator{
+  display: flex;
+  flex-flow: column;
+  z-index: 10;
+  .bg-primary{
+    background-color: #E75AD7;
+  }
+}
 .section {
   // padding: 1.1em 2em;
   &--newsletter {
@@ -1478,6 +1493,52 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     margin-top: -1px;
+    &--block{
+      background-color: transparent;
+      border: 0;
+      display: flex;
+      flex-flow: column;
+      padding-bottom: 0 !important;
+      .newsletterWrap{
+        font-size: 1em;
+        width: 100%;
+        padding: 2.5em;
+        background-color: #E75AD7;
+        border-radius: 1.5rem;
+        border-radius:1.5rem 1.5rem 0rem 0rem;
+        position: relative;
+        &::before{
+          position: absolute;
+          bottom: -100%;
+          left: 0;
+          width: 100%;
+          background-color: #000;
+          content: '';
+          height: 100%;
+        }
+        .newsletter-strip__col{
+          width: 50%;
+          h2{
+            padding: 0.5em 0 1em 0;
+          }
+          form.field-newsletter{
+            button{
+              border-radius: 100%;
+              background-color: #000;
+              display: flex;
+              padding: 0;
+              height: 100%;
+              padding: 1.5em;
+              margin-left: 15px;
+              svg{
+                fill:#d727a7;
+              }
+            }
+          }
+        }
+      }
+
+    }
   }
 }
 .newsletter-strip {
@@ -1731,7 +1792,7 @@ form.field-newsletter {
     padding-bottom: 1.2em;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
-    background-color: #fff;
+    // background-color: #fff;
   }
   .nav-page {
     -webkit-box-orient: vertical;
@@ -1764,7 +1825,7 @@ form.field-newsletter {
     padding-bottom: 1.2em;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
-    background-color: #fff;
+    // background-color: #fff;
   }
 
   .nav-menu.dark {
@@ -1853,7 +1914,7 @@ form.field-newsletter {
   }
 
   .navbar--footer {
-    padding: 2em 1.5em;
+    padding: 2em;
     .block-navbar {
       flex-flow: column;
     }
@@ -2235,11 +2296,14 @@ footer{
     }
   }
   &.footerBlack{
+    margin-top: 0;
+    padding-top: 0 !important;
     .footerContainer{
       color: white;
       background: #000000;
-      border-radius: 1.5em;
-      padding: 2.5em;
+      border-radius: 0 0 1.5em 1.5em;
+      padding: 3.5em 2.5em 2.5em 2.5em;
+      width: 100%;
       a{
         color: white;
         .nav-text{

@@ -3,13 +3,10 @@ import parse, { domToReact, attributesToProps } from 'html-react-parser';
 import ImageWide from './ImageWide';
 import ImageRegular from './ImageRegular';
 import VideoRegular from './VideoRegular';
-import VideoWide from './VideoWide';
 import CodeBlock from './CodeBlock';
 import Quote from './Quote';
 import Button from './Button';
-import Gallery from './Gallery';
 import Twitter from './Twitter';
-import NewsletterStrip from './NewsletterStrip';
 
 
 // Mappatura dei componenti

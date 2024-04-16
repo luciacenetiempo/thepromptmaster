@@ -104,7 +104,7 @@ export default function Home({ sticky, no_sticky, prompt_engineering, ai_news, p
           </div>          
           <div className='sectionBlog__col' role="list">
             <div className='sectionBlog__col__head'>
-              <span className="phrase"><span class="icon">🤖</span> Intelligenza artificiale</span>
+              <span className="phrase"><span className="icon">🤖</span> Intelligenza artificiale</span>
               <h2>tutto quello che devi sapere</h2>
             </div>
             {paginatedPE.map((post, index) => (

@@ -1,9 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import NewsletterStrip from './NewsletterStrip';
+import NewsletterBlock from './NewsletterBlock';
 
 const Footer = () => {
   return (
+    <>
+    
+    <NewsletterBlock />
     <footer className={`navbar navbar--footer w-nav footerBlack paddingVertical`}>
       <div className='footerContainer '>
         <div className="block-navbar">
@@ -92,6 +95,7 @@ const Footer = () => {
       </div>
       <div className="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
     </footer>
+    </>
   );
 };
 
