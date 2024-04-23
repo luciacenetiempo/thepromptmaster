@@ -90,3 +90,15 @@
     grid-template-rows: auto;
   }
 }
+
+.blogPost{
+  figure{
+    img{
+      border-radius: 2.5rem;
+      -webkit-border-radius: 2.5rem;
+      -moz-border-radius: 2.5rem;
+      -ms-border-radius: 2.5rem;
+      -o-border-radius: 2.5rem;
+}
+  }
+}

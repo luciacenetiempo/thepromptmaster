@@ -791,6 +791,51 @@ a:hover {
   }
 }
 
+.singleTile .singleTilePic {
+  position: relative;
+}
+
+.singleTile .singleTilePic .svgOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70px;
+  z-index: 9;
+  pointer-events: none;
+  margin-top: 2.8em;
+  margin-bottom: 2.8em;
+  padding: 1rem 1.3rem 1rem 0.7rem;
+  background: white;
+  border-radius: 0 0 1.5rem 0;
+}
+
+.singleTile .singleTilePic .svgOverlay svg {
+  width: 100%;
+  height: auto;
+}
+
+.singleTile .singleTilePic .svgOverlay::before {
+  content: '';
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' class='w-10 h-10 text-white z-30 fill-current absolute top-40 left-3 -mt-px ml-px transform -translate-x-full %7C xl:left-4 dark:text-grayDark-600' version='1.1' xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 100 100' xml:space='preserve' style=' fill: white;%0A'%3E%3Cpath d='M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z'%3E%3C/path%3E%3C/svg%3E");
+  top: 0;
+  right: -2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: rotate(270deg);
+}
+
+.singleTile .singleTilePic .svgOverlay::after {
+  content: '';
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' class='w-10 h-10 text-white z-30 fill-current absolute top-40 left-3 -mt-px ml-px transform -translate-x-full %7C xl:left-4 dark:text-grayDark-600' version='1.1' xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 100 100' xml:space='preserve' style=' fill: white;%0A'%3E%3Cpath d='M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z'%3E%3C/path%3E%3C/svg%3E");
+  bottom: -2.5rem;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: rotate(-90deg);
+}
+
 .singleTile figure {
   border-radius: 1.5rem;
   overflow: hidden;
@@ -2476,4 +2521,145 @@ details summary {
   to {
     transform: rotate(0deg);
   }
+}
+
+.mainCta {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+}
+
+.mainCta .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+  background: #d727a7;
+  border-radius: 1.625rem;
+}
+
+.mainCta .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.mainCta .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.275rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.mainCta .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.425rem;
+  height: 0.425rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.mainCta .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #d727a7;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  font-size: 0.9rem;
+}
+
+.mainCta:hover .circle {
+  width: 100%;
+}
+
+.mainCta:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+.mainCta:hover .button-text {
+  color: #fff;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.circleCta {
+  background-color: #d727a7;
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  border-radius: 999999px;
+  top: 50%;
+  right: 0;
+  transition: transform 0.5s ease;
+  transition-duration: 3.9s;
+}
+
+.circleCta span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2.2em;
+}
+
+.circleCta .circleAnimation {
+  top: -5px;
+  left: -5px;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  transition: transform color 0.5s ease;
+  transition-duration: .9s;
+}
+
+.circleCta .rotate {
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1.9px;
+  fill: transparent;
+  animation: spin 14s linear infinite;
+}
+
+.circleCta .rotate circle {
+  fill: transparent;
+}
+
+.circleCta:hover .circleAnimation {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  color: white;
+}
+
+.circleCta:hover .circleAnimation text {
+  fill: white;
 }

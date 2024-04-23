@@ -120,8 +120,8 @@ function parseCustomSyntax(content) {
                 image_alt = childAttr.value
               }
             })
-            if(!isWide && !isVideo){
-              return <ImageRegular src={image_url} alt={image_alt} width={image_width} height={image_height} />
+            if(!isVideo){
+              return <ImageWide src={image_url} alt={image_alt} width={image_width} height={image_height} />
             } 
             if(isWide && !isVideo){
               return <ImageWide src={image_url} alt={image_alt} width={image_width} height={image_height} />

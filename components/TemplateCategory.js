@@ -13,7 +13,7 @@ const TemplateCategory = (props) => {
   const category = props.category[0];
   const posts = props.posts;
   const sticky = props.posts.slice(0, 2);
-  const nonsticky = props.posts.slice(2, pagination);
+  const nonsticky = props.posts.slice(0, pagination);
   const reverse = props.posts.reverse();
   let categoryName = category.name;
   let categoryObj = {

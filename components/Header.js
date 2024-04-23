@@ -39,11 +39,10 @@ const Header = ({ color }) => {
           <div className="nav-page">
 
             <Link
-              href={'/'}
+              href={'/blog/category/chatgpt'}
               className="nav-link w-inline-block"
-              key='home'
-              onClick={openMenu}
-              title='home'
+              key='ChatGPT'
+              title='ChatGPT'
             >
               <div className="nav-text-block">
                 <div
@@ -53,7 +52,7 @@ const Header = ({ color }) => {
                     transformStyle: 'preserve-3d'
                   }}
                 >
-                  Home
+                  ChatGPT
                 </div>
                 <div
                   className="nav-text absolute"
@@ -62,18 +61,17 @@ const Header = ({ color }) => {
                     transformStyle: 'preserve-3d'
                   }}
                 >
-                  Home
+                  ChatGPT
                 </div>
               </div>
-            </Link>
+            </Link> 
 
             <div className="nav-circle"></div>
             <Link
-              href={'/blog/category/news-intelligenza-artificiale	'}
+              href={'/blog/category/midjourney'}
               className="nav-link w-inline-block"
-              key='ai-updates'
-              onClick={openMenu}
-              title='AI updates'
+              key='midjourney'
+              title='Midjourney'
             >
               <div className="nav-text-block">
                 <div
@@ -83,7 +81,7 @@ const Header = ({ color }) => {
                     transformStyle: 'preserve-3d'
                   }}
                 >
-                  AI updates
+                  Midjourney
                 </div>
                 <div
                   className="nav-text absolute"
@@ -92,7 +90,7 @@ const Header = ({ color }) => {
                     transformStyle: 'preserve-3d'
                   }}
                 >
-                  AI updates
+                  Midjourney
                 </div>
               </div>
             </Link>
@@ -130,11 +128,10 @@ const Header = ({ color }) => {
            
 
             <Link
-              href={'/blog/category/ai-tools'}
+              href={'/blog/category/chatgpt-produttivita'}
               className="nav-link w-inline-block"
-              key='ai-tools'
-              onClick={openMenu}
-              title='AI Tools'
+              key='chatgpt-produttivita'
+              title='ChatGPT & Produttività'
             >
               <div className="nav-text-block">
                 <div
@@ -144,7 +141,7 @@ const Header = ({ color }) => {
                     transformStyle: 'preserve-3d'
                   }}
                 >
-                  AI Tools
+                  ChatGPT & Produttività
                 </div>
                 <div
                   className="nav-text absolute"
@@ -153,7 +150,37 @@ const Header = ({ color }) => {
                     transformStyle: 'preserve-3d'
                   }}
                 >
-                  AI Tools
+                  ChatGPT & Produttività
+                </div>
+              </div>
+            </Link>            
+            <div className="nav-circle"></div>
+           
+
+            <Link
+              href={'/blog/category/news-intelligenza-artificiale'}
+              className="nav-link w-inline-block"
+              key='news-ai'
+              title='News AI'
+            >
+              <div className="nav-text-block">
+                <div
+                  className="nav-text"
+                  style={{
+                    transform: 'translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
+                    transformStyle: 'preserve-3d'
+                  }}
+                >
+                  News AI
+                </div>
+                <div
+                  className="nav-text absolute"
+                  style={{
+                    transform: 'translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
+                    transformStyle: 'preserve-3d'
+                  }}
+                >
+                  News AI
                 </div>
               </div>
             </Link>

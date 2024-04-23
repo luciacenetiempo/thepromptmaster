@@ -4,16 +4,15 @@ import styles from '@/styles/Components.module.css';
 
 const ImageRegular = (props) => {
   return (
-    <div className='content rich-text-block'>
+    <div className={`content rich-text-block ${styles.blogPost}`}>
       <figure className="w-richtext-align-fullwidth w-richtext-figure-type-image">
         <div>
           <Image
-            priority
             src={props.src}
             width={props.width}
             height={props.height}
             alt={props.alt}
-            className={`${styles.imageTop}`}
+            className={`${styles.imageTop}`} 
           />
         </div>
         {

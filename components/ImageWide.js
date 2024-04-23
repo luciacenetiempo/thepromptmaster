@@ -4,16 +4,10 @@ import Image from 'next/image';
 
 const ImageWide = (props) => {
   return (
-    <div className='content-wide rich-text-block'>
+    <div className={`content-wide rich-text-block ${styles.blogPost}`}>
       <figure className="w-richtext-align-fullwidth w-richtext-figure-type-image">
         <div>
-          {/* <img
-          src={props.src}
-          className={`${styles.imageTop}`} 
-          alt={props.alt}
-        /> */}
           <Image
-            priority
             src={props.src}
             width={props.width}
             height={props.height}

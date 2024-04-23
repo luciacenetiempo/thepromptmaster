@@ -22,7 +22,7 @@ const TemplatePost = (props) => {
   let keywords = '';
   let author = '';
   let color = 'light';
-  let cover = props.post._embedded['wp:featuredmedia'][0].source_url;
+  let cover = props.post._embedded['wp:featuredmedia'] ? props.post._embedded['wp:featuredmedia'][0].source_url : '';;
   // let cover = props.yoast_head_json.og_image[0].url;
   let title = props.post.title.rendered;
   let categories = props.post._embedded['wp:term'][0];
