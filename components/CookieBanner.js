@@ -88,8 +88,8 @@ const CookieBanner = () => {
               <p>Utilizziamo i cookies al fine di raccogliere ed utilizzare dati come dichiarato nell’<a href="/privacy">informativa sulla privacy</a>. L’informativa sui <a href="/cookie">cookies</a> fornisce informazioni dettagliate su come e quando li utilizziamo.</p>
             </div>
             <div className='cookie-banner--row'>
-              <button className='button buttonAcconsento' onClick={handleAcconsentoClick}>Acconsento</button>
-              <button className='button buttonGestisci' onClick={handleGestisciClick}>Gestisci</button>
+              <button role="button" className='button buttonAcconsento' onClick={handleAcconsentoClick}>Acconsento</button>
+              <button role="button" className='button buttonGestisci' onClick={handleGestisciClick}>Gestisci</button>
             </div>
           </div>
         </div>
@@ -102,8 +102,8 @@ const CookieBanner = () => {
               <p>La piattaforma ThePromptMaster, il sito e tutti i nostri servizi ritengono i cookies elencati nell’informativa essenziali per il funzionamento del sito, per permettere all’utente di ricevere un servizio adeguato in merito alle sue finalità, e fornire a al sito web un servizio qualitativo. Se non accetti non potrai accedere ad alcuna funzionalità del sito. Chiudendo questo banner dichiari di accettare.</p>
             </div>
             <div className='cookie-banner--row'>
-              <button className='button buttonAcconsento' onClick={handleAcconsentoClick}>Acconsento</button>
-              <button className='button buttonRifiuta' onClick={handleRifiutaClick}>Rifiuta</button>
+              <button role="button" className='button buttonAcconsento' onClick={handleAcconsentoClick}>Acconsento</button>
+              <butto role="button"n className='button buttonRifiuta' onClick={handleRifiutaClick}>Rifiuta</butto>
             </div>
           </div>
         </div>
@@ -116,8 +116,8 @@ const CookieBanner = () => {
               <p>Se non accetti i cookies non potrai accedere ad alcuna funzionalità del sito. Chiudendo questo banner o cliccando su Accetta, dichiari di accettare i cookies presenti, pertanto potrai accedere a tutte le funzionalità del sito.</p>
             </div>
             <div className='cookie-banner--row'>
-              <button className='button buttonAcconsento' onClick={handleAcconsentoClick}>Acconsento</button>
-              <button className='button buttonGestisci' onClick={handleGestisciClick}>Indietro</button>
+              <button role="button" className='button buttonAcconsento' onClick={handleAcconsentoClick}>Acconsento</button>
+              <button role="button" className='button buttonGestisci' onClick={handleGestisciClick}>Indietro</button>
             </div>
           </div>
         </div>
