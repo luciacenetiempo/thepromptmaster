@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="it">
 
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"></Script>
+      <Script defer src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"></Script>
       <Script id="google-analytics">
         {`
 
@@ -35,10 +35,6 @@ export default function RootLayout({ children }) {
           
         `}
       </Script>
-      {/* <Script src="https://groot.mailerlite.com/js/w/webforms.min.js?v2d8fb22bb5b3677f161552cd9e774127" type="text/javascript"></Script>
-      <Script>
-        fetch("https://assets.mailerlite.com/jsonp/863030/forms/115595877754603214/takel")
-      </Script> */}
       <body className={`ciao`}>
         <PageWrapper>
         {children}
