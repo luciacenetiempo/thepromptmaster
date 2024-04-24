@@ -83,18 +83,18 @@ export default async function Home() {
       </div>
       <div className='collection-list-wrapper paddingVertical fixedHeight headMargin'>
         <div className='sectionBlog'>
-          <div className='sectionBlog__col' role="list">
+          <div className='sectionBlog__col' role="listbox">
             {newsAI.slice(0,2).map((post, index) => (
-              <PostTileBig post={post} key={index} isCategory={post._embedded['wp:term'][0][0]} />
+              <PostTileBig post={post} key={index} isCategory={post._embedded['wp:term'][0][0]} role="listitem" />
             ))}
           </div>          
-          <div className='sectionBlog__col' role="list">
+          <div className='sectionBlog__col' role="listbox">
             <div className='sectionBlog__col__head'>
               <span className="phrase"><span className="icon">🤖</span> Intelligenza artificiale</span>
               <h2>tutto quello che devi sapere</h2>
             </div>
             {promptEng.slice(0,2).map((post, index) => (
-              <PostTileBig post={post} key={index} isCategory={post._embedded['wp:term'][0][0]} />
+              <PostTileBig post={post} key={index} isCategory={post._embedded['wp:term'][0][0]} role="listitem"/>
             ))}
           </div>
         </div>

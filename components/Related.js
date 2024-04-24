@@ -7,9 +7,9 @@ const formatDate = (inputDate) => {
 const Related = (posts) => {
   return (
     <div className="collection-list-wrapper w-dyn-list">
-      <div role="list" className="collection-list w-dyn-items">
+      <div role="listbox" className="collection-list w-dyn-items">
         {posts.posts.map((post,index) => (
-          <PostTile key={index} post={post} isCategory={false} /> 
+          <PostTile key={index} post={post} isCategory={false} role="listitem"/> 
         ))}
       </div>
     </div>

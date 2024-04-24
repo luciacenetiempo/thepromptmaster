@@ -17,7 +17,7 @@ const Footer = () => {
             <Cta text='vediamo' href='https://' />
           </div>        
           <div className={`${styles.footer__col} ${styles.footer__col__nav}`}>
-            <ul role='nav'>
+            <ul role='navigation'>
               <h4>Impara</h4>
               <li>
                 <Link
@@ -42,7 +42,7 @@ const Footer = () => {
               <li><a href="">ChatGPT & Produttività</a></li>
               <li><a href="">Ebook Gratis</a></li>
             </ul>          
-            <ul role='nav'>
+            <ul role='navigation'>
               <h4>Esplora</h4>
               <li><a href="">Tool AI</a></li>
               <li><a href="">News AI</a></li>

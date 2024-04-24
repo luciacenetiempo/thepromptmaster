@@ -48,7 +48,7 @@ const TemplateCategory = (props) => {
         category.slug == 'prompt-engineering' ? (
           <div className='section-content paddingVertical'>
             <div className="collection-list-wrapper-top noBorder">
-              <div role="list" className="content-wide rich-text-block">
+              <div role="listbox" className="content-wide rich-text-block">
 
                 {
                   reverse ? (
@@ -66,7 +66,7 @@ const TemplateCategory = (props) => {
         ) : ( 
           <>
             <div className="collection-list-wrapper paddingVertical">
-              <div role="list" className="collection-list">
+              <div role="listbox" className="collection-list">
                 {
                   nonsticky ? (
                     nonsticky.map((post, index) => (
