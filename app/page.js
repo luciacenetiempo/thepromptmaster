@@ -34,7 +34,7 @@ export default async function Home() {
             alt='Ti spiego come usare chatgpt al meglio con prompt efficaci.'
             className='roundedBox__img'
             fill
-            sizes="(min-width: 808px) 50vw, 100vw"
+            sizes="(min-width: 808px) 80vh, 100vw"
             style={{
               objectFit: 'cover', // cover, contain, none
             }}
