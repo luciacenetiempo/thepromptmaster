@@ -13,34 +13,33 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="it">
-
-      <Script defer src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"></Script>
-      <Script id="google-analytics">
-        {`
-
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-
-          gtag('js', new Date());
-        
-          gtag('config', 'G-QXT3DWCP13');
-
- 
-          gtag('consent', 'default', {
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied',
-            'analytics_storage': 'denied'
-          });
-          
-        `}
-      </Script>
       <body className={`ciao`}>
         <PageWrapper>
         {children}
         <Footer />
         </PageWrapper>
         <UtilityCookies />
+
+        <Script defer src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+
+            gtag('js', new Date());
+          
+            gtag('config', 'G-QXT3DWCP13');
+
+
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied'
+            });
+            
+          `}
+        </Script>
       </body>
     </html>
   );
