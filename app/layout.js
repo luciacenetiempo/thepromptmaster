@@ -33,13 +33,13 @@ export default function RootLayout({ children }) {
             
           `}
         </Script>
+        <Script defer src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"></Script>
         <PageWrapper>
         {children}
         <Footer />
         </PageWrapper>
         <UtilityCookies />
 
-        <Script defer src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"></Script>
       </body>
     </html>
   );

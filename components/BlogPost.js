@@ -12,9 +12,34 @@ import Twitter from './Twitter';
 // Mappatura dei componenti
 
 function parseCustomSyntax(content) {
-  let test = parse(content,{
+  // let newContent = content.replace(new RegExp(`href="http://blog.thepromptmaster.it/`, 'g'), `href="https://www.thepromptmaster.it/blog/`);
+  const regex = /href="http:\/\/blog.thepromptmaster.it\/([^"]+)"/g;
+  const newHtmlString = content.replace(regex, (match, capturedPath) => {
+    const finalPath = capturedPath.split("/")[capturedPath.split("/").length - 2];
+    return `href="/blog/${finalPath}"`;
+  });
+  let test = parse(newHtmlString,{
     replace(domNode) {
       if(domNode.name){ 
+        if (domNode.name && domNode.name == 'a' && domNode.attributes) {
+          let button = false;
+          let href = '';
+          let text = domNode.children[0].data;
+          domNode.attributes.map((attr) => {
+            if(attr.name == 'class' && attr.value.indexOf('wp-element-button') > -1){
+              button = true;
+            }
+            if(attr.name == 'href'){
+              href = attr.value;
+            }
+          })
+          if(button){
+            return <Button url={href} text={text} />
+          } else {
+            return domNode;
+          }
+        }
+        // console.log(domNode.name)
         if (domNode.name && domNode.name == 'h1') {
           return <div className='content rich-text-block'><h1>{domToReact(domNode.children)}</h1></div>
         }
@@ -40,7 +65,9 @@ function parseCustomSyntax(content) {
           return <div className='content rich-text-block'><ul>{domToReact(domNode.children)}</ul></div>
         }
         if (domNode.name && domNode.name == 'p') {
-          return <div className='content rich-text-block'><p>{domToReact(domNode.children)}</p></div>
+          return <div className='content rich-text-block'><p>
+            {domToReact(domNode.children)}
+          </p></div> 
         }        
         if (domNode.name && domNode.name == 'details') {
           return <div className='content rich-text-block'><details>{domToReact(domNode.children)}</details></div>
@@ -131,24 +158,6 @@ function parseCustomSyntax(content) {
             }
           }
 
-        }
-        if (domNode.name && domNode.name == 'a' && domNode.attributes) {
-          let button = false;
-          let href = '';
-          let text = domNode.children[0].data;
-          domNode.attributes.map((attr) => {
-            if(attr.name == 'class' && attr.value.indexOf('wp-element-button') > -1){
-              button = true;
-            }
-            if(attr.name == 'href'){
-              href = attr.value;
-            }
-          })
-          if(button){
-            return <Button url={href} text={text} />
-          } else {
-            return domNode;
-          }
         }
       } else {
         return false
