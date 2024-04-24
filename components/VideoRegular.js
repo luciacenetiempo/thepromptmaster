@@ -1,7 +1,3 @@
-import React, { useState } from 'react';
-import ReactPlayer from 'react-player'
-import styles from '@/styles/Components.module.css';
-
 const VideoRegular = (props) => {
   return (
     <div className='content rich-text-block'>

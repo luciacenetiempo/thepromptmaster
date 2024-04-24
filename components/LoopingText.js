@@ -1,3 +1,5 @@
+"use client"
+
 import { useRef, useEffect } from 'react';
 
 const LoopingText = ({ text, size, velocity, color }) => {

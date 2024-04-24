@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import styles from '@/styles/Components.module.css';
+import styles from '../styles/Components.module.scss'
 import Image from 'next/image';
 
 const ImageWide = (props) => {

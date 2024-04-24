@@ -1692,7 +1692,7 @@ form.field-newsletter {
   margin: 2em 10%;
 }
 @media (prefers-color-scheme: dark) {
-  &:root {
+  :root {
     --foreground-rgb: 255, 255, 255;
   }
   html {
@@ -2565,4 +2565,48 @@ $black: #d727a7;
       }
     }
   }
+}
+
+.sobold{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: red;
+}
+.loading{
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #f6f6f6;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  &__icon{
+    font-size: 13vh;
+    animation: flip 1s linear infinite;
+    -webkit-animation: flip 1s linear infinite;
+}
+  &__text{
+    margin-top: 4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1;
+    letter-spacing: 0.1rem;
+  }
+}
+
+@keyframes flip {
+  to {
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
 }

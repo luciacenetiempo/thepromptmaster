@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react';
 import Link from 'next/link';
 
@@ -43,6 +45,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               key='ChatGPT'
               title='ChatGPT'
+              prefetch={false}
             >
               <div className="nav-text-block">
                 <div
@@ -72,6 +75,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               key='midjourney'
               title='Midjourney'
+              prefetch={false}
             >
               <div className="nav-text-block">
                 <div
@@ -102,6 +106,7 @@ const Header = ({ color }) => {
               key='prompt-engineering'
               onClick={openMenu}
               title='Prompt Engineering'
+              prefetch={false}
             >
               <div className="nav-text-block">
                 <div
@@ -132,6 +137,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               key='chatgpt-produttivita'
               title='ChatGPT & Produttività'
+              prefetch={false}
             >
               <div className="nav-text-block">
                 <div
@@ -162,6 +168,7 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               key='news-ai'
               title='News AI'
+              prefetch={false}
             >
               <div className="nav-text-block">
                 <div
@@ -192,8 +199,8 @@ const Header = ({ color }) => {
               className="nav-link w-inline-block"
               target="_blank"
               key='instagram'
-              onClick={openMenu}
               title='Instagram'
+              prefetch={false}
             >
               <div className="nav-text-block">
                 <div className="nav-text">Instagram</div>
@@ -208,7 +215,7 @@ const Header = ({ color }) => {
               target="_blank"
               key='twitter'
               title='Twitter'
-              onClick={openMenu}
+              prefetch={false}
             >
               <div className="nav-text-block">
                 <div className="nav-text">Twitter</div>
@@ -223,7 +230,7 @@ const Header = ({ color }) => {
               target="_blank"
               key='linkedin'
               title='Linkedin'
-              onClick={openMenu}
+              prefetch={false}
             >
               <div className="nav-text-block">
                 <div className="nav-text">Linkedin</div>

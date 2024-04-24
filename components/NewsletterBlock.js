@@ -1,6 +1,4 @@
 import React from 'react';
-import Mailchimp from "react-mailchimp-form"
-import NewsletterForm from './NewsletterForm';
 import NewsletterFormMailerlite from './NewsletterFormMailerlite';
 import ECourseFormMailerlite from './ECourseFormMailerlite';
 

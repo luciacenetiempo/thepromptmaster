@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 const Cta = (props) => {
   return (
     <a className="mainCta learn-more" href={props.url}>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+"use client"
 import ReactGA from 'react-ga';
 
 const Button = (props) => {

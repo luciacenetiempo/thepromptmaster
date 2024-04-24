@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/Components.module.css';
+import styles from '../styles/Components.module.scss'
 
 const Gallery = (props) => {
   // Assumendo che 'props.urls' sia la stringa contenente gli URL separati da virgole

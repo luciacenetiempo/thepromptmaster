@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import NewsletterBlock from './NewsletterBlock';
 import Cta from './Cta';
-import styles from '@/styles/Footer.module.scss'
+import styles from '../styles/Footer.module.scss'
 
 const Footer = () => {
   return (
@@ -83,9 +83,7 @@ const Footer = () => {
             <span>L'intelligenza artificiale come non te l'aspettavi.</span>
           </div>          
           <div className={`${styles.footer__row__credits__stripe}`}> 
-            <span>ChatGPT, Midjourney e Prompt Engineering</span> 
-            <span>|</span> 
-            <span>Tutti diritti riservati</span>            
+            <span>ChatGPT, Midjourney e Prompt Engineering</span>         
             <span>|</span> 
             <span><a href="">Privacy Policy</a></span>
           </div>

@@ -1,5 +1,6 @@
+"use client"
 import React, { useState } from 'react';
-import styles from '@/styles/Components.module.css'
+import styles from '../styles/Components.module.scss'
 
 
 const CodeBlock = (props) => {

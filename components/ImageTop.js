@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
 import LoopingText from './LoopingText';
 import Image from 'next/image';
-import styles from '@/styles/Components.module.css'
+import styles from '../styles/Components.module.scss'
+
 const ImageTop = ({ title, url, color, alt }) => {
   return (
     <div className={`${styles.sectionImageTop} ${styles.wfSection}`}>

@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
 import Image from 'next/image';
-import styles from '@/styles/Components.module.css';
+import styles from '../styles/Components.module.scss'
 
 const ImageRegular = (props) => {
   return (

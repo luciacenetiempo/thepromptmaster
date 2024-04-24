@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Head from 'next/head';
 import Header from './Header';
 import LoopingText from './LoopingText';
@@ -6,7 +5,7 @@ import ImageTop from './ImageTop';
 import BlogPost from './BlogPost';
 import Related from './Related';
 import Footer from './Footer';
-import { useCanonicalURL } from '@/lib/CanonicalURL';
+// import { useCanonicalURL } from './../lib/CanonicalURL';
 import he from 'he';
 
 const formatDate = (inputDate) => {
@@ -15,28 +14,18 @@ const formatDate = (inputDate) => {
 };
 
 const TemplatePost = (props) => {
-  
   let date = props.post.date;
   let content = props.post.content.rendered;
   let incipit = props.post.excerpt.rendered;
   let keywords = '';
   let author = '';
   let color = 'light';
-  let cover = props.post._embedded['wp:featuredmedia'] ? props.post._embedded['wp:featuredmedia'][0].source_url : '';;
-  // let cover = props.yoast_head_json.og_image[0].url;
+  let cover = props.post._embedded['wp:featuredmedia'] ? props.post._embedded['wp:featuredmedia'][0].source_url : '';
   let title = props.post.title.rendered;
   let categories = props.post._embedded['wp:term'][0];
   let tags = props.post._embedded['wp:term'][1];
   return (
     <>
-      <Head> 
-        <title>{he.decode(props.post.title.rendered)} | The Prompt Master</title>
-        <meta name="description" content={incipit} />
-        <meta name="keywords" content={keywords} />
-        <meta name="author" content={author} />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href={useCanonicalURL()} />
-      </Head>
       <Header color={color} />
       <ImageTop title='THE PROMPT MASTER'
         color='light'
@@ -75,11 +64,7 @@ const TemplatePost = (props) => {
           color='dark'
         />
       </div>
-
-      {/* <Related posts={props.post.myrelatedPostsData} /> */}  
-      <Footer />
     </>
-    // <span>ciao</span>
   );
 };
 

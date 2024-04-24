@@ -1,5 +1,5 @@
+"use client";
 import React, { useState, useEffect } from 'react';
-import Button from './Button';
 
 const CookieBanner = () => {
   const [display, setDisplay] = useState('none');
