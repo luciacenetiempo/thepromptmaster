@@ -17,13 +17,14 @@ const Footer = () => {
             <Cta text='vediamo' href='https://' />
           </div>        
           <div className={`${styles.footer__col} ${styles.footer__col__nav}`}>
-            <ul role='navigation'>
+            <ul role='menu'>
               <h4>Impara</h4>
               <li>
                 <Link
                   href={'/blog/category/chatgpt'}
                   key='ChatGPT'
                   title='ChatGPT'
+                  role="menuitem"
                 >
                   ChatGPT
                 </Link>
@@ -33,22 +34,22 @@ const Footer = () => {
                   href={'/blog/category/midjourney'}
                   key='Midjourney'
                   title='Midjourney'
+                  role="menuitem"
                 >
                   Midjourney
                 </Link>
               </li>
-              <li><a href="">Midjourney</a></li>
-              <li><a href="">Prompt Engineering</a></li>
-              <li><a href="">ChatGPT & Produttività</a></li>
-              <li><a href="">Ebook Gratis</a></li>
+              <li><a role="menuitem" href="">Prompt Engineering</a></li>
+              <li><a role="menuitem" href="">ChatGPT & Produttività</a></li>
+              <li><a role="menuitem" href="">Ebook Gratis</a></li>
             </ul>          
-            <ul role='navigation'>
+            <ul role='menu'>
               <h4>Esplora</h4>
-              <li><a href="">Tool AI</a></li>
-              <li><a href="">News AI</a></li>
-              <li><a href="">Chi sono</a></li>
-              <li><a href="">Corso ChatGPT</a></li>
-              <li><a href="">Contatti</a></li>
+              <li><a role="menuitem" href="">Tool AI</a></li>
+              <li><a role="menuitem" href="">News AI</a></li>
+              <li><a role="menuitem" href="">Chi sono</a></li>
+              <li><a role="menuitem" href="">Corso ChatGPT</a></li>
+              <li><a role="menuitem" href="">Contatti</a></li>
             </ul>
           </div>
         </div>
