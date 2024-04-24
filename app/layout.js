@@ -14,13 +14,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="it">
       <body className={`ciao`}>
-        <PageWrapper>
-        {children}
-        <Footer />
-        </PageWrapper>
-        <UtilityCookies />
-
-        <Script defer src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"></Script>
         <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -40,6 +33,13 @@ export default function RootLayout({ children }) {
             
           `}
         </Script>
+        <PageWrapper>
+        {children}
+        <Footer />
+        </PageWrapper>
+        <UtilityCookies />
+
+        <Script defer src="https://www.googletagmanager.com/gtag/js?id=G-QXT3DWCP13"></Script>
       </body>
     </html>
   );
