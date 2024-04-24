@@ -14,43 +14,47 @@ const Footer = () => {
         <div className={`${styles.footer__row}`}>
           <div className={`${styles.footer__col} ${styles.footer__col__desc}`}>
             <h3>Ti è piaciuto ciò che hai visto?</h3>
-            <Cta text='vediamo' href='https://' />
+            <Cta text='vediamo' href='/' />
           </div>        
           <div className={`${styles.footer__col} ${styles.footer__col__nav}`}>
-            <ul role='menu'>
+            <div>
               <h4>Impara</h4>
-              <li>
-                <Link
-                  href={'/blog/category/chatgpt'}
-                  key='ChatGPT'
-                  title='ChatGPT'
-                  role="menuitem"
-                >
-                  ChatGPT
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={'/blog/category/midjourney'}
-                  key='Midjourney'
-                  title='Midjourney'
-                  role="menuitem"
-                >
-                  Midjourney
-                </Link>
-              </li>
-              <li><a role="menuitem" href="">Prompt Engineering</a></li>
-              <li><a role="menuitem" href="">ChatGPT & Produttività</a></li>
-              <li><a role="menuitem" href="">Ebook Gratis</a></li>
-            </ul>          
-            <ul role='menu'>
-              <h4>Esplora</h4>
-              <li><a role="menuitem" href="">Tool AI</a></li>
-              <li><a role="menuitem" href="">News AI</a></li>
-              <li><a role="menuitem" href="">Chi sono</a></li>
-              <li><a role="menuitem" href="">Corso ChatGPT</a></li>
-              <li><a role="menuitem" href="">Contatti</a></li>
-            </ul>
+              <ul role='menu'>
+                <li role="presentation">
+                  <Link
+                    href={'/blog/category/chatgpt'}
+                    key='ChatGPT'
+                    title='ChatGPT'
+                    role="menuitem"
+                  >
+                    ChatGPT
+                  </Link>
+                </li>
+                <li role="presentation">
+                  <Link
+                    href={'/blog/category/midjourney'}
+                    key='Midjourney'
+                    title='Midjourney'
+                    role="menuitem"
+                  >
+                    Midjourney
+                  </Link>
+                </li>
+                <li role="presentation"><a role="menuitem" href="">Prompt Engineering</a></li>
+                <li role="presentation"><a role="menuitem" href="">ChatGPT & Produttività</a></li>
+                <li role="presentation"><a role="menuitem" href="">Ebook Gratis</a></li>
+              </ul>    
+            </div>      
+            <div>
+              <h4 role="presentation">Esplora</h4>
+              <ul role='menu'>
+                <li role="presentation"><a role="menuitem" href="">Tool AI</a></li>
+                <li role="presentation"><a role="menuitem" href="">News AI</a></li>
+                <li role="presentation"><a role="menuitem" href="">Chi sono</a></li>
+                <li role="presentation"><a role="menuitem" href="">Corso ChatGPT</a></li>
+                <li role="presentation"><a role="menuitem" href="">Contatti</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
