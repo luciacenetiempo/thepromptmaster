@@ -34,7 +34,7 @@ const TemplatePost = (props) => {
       />
       <div className="strip">
         <LoopingText
-          text={title}
+          text={categories[0].name}
           size='small'
           velocity={0.08}
           color='dark'

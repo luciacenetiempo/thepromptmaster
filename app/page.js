@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "../components/Header";
 import PostTileBig from "../components/PostTileBig";
 import LoopingText from "../components/LoopingText";
+import Carousel from "../components/Carousel";
 
 import { getPostFromCategory } from '../lib/wordpress';
 
@@ -27,6 +28,7 @@ export default async function Home() {
     <>
     <Header color='dark' />
       <div className='collection-list-wrapper paddingVertical fixedHeight headMargin'>
+        {/* first block header */}
         <div className='roundedBox'>
           <Image
             priority
@@ -58,6 +60,8 @@ export default async function Home() {
             </div>
           </div>
         </div>
+
+        {/* block 2 col text */}
         <div className='sectionText'>
           <div className='sectionText__content'>
             <span className="phrase"><span className='bullet'>&#8226;</span> Cos'è The Prompt Master <span className='icon icon--noanimation'>🤯</span></span>
@@ -65,6 +69,23 @@ export default async function Home() {
           </div>
         </div>
       </div>
+      <div className="strip">
+        <LoopingText
+          text='IMPARA AD USARE CHATGPT'
+          size='big'
+          velocity={0.08}
+          color='dark'
+        />
+      </div>     
+      <div className="strip"> 
+        <LoopingText
+          text="Scopri come usare ChatGPT"
+          size='small'
+          velocity={0.08}
+          color='dark'
+        />
+      </div>
+      <Carousel list={chatgpt} title={'Come funiona ChatGPT?'} section={'ChatGPT'}/>
       <div className="strip">
         <LoopingText
           text='INTELLIGENZA ARTIFICIALE'
@@ -75,7 +96,7 @@ export default async function Home() {
       </div>     
       <div className="strip"> 
         <LoopingText
-          text='TUTTO QUELLO CHE DEVI SAPERE'
+          text="Cosa c'è di nuovo da sapere?"
           size='small'
           velocity={0.08}
           color='dark'
@@ -91,7 +112,7 @@ export default async function Home() {
           <div className='sectionBlog__col'>
             <div className='sectionBlog__col__head'>
               <span className="phrase"><span className="icon">🤖</span> Intelligenza artificiale</span>
-              <h2>tutto quello che devi sapere</h2>
+              <h2>Cosa c'è di nuovo da sapere?</h2>
             </div>
             <div role="list">
               {promptEng.slice(0,2).map((post, index) => (

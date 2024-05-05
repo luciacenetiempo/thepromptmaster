@@ -400,6 +400,7 @@ a:hover {
   display: flex;
   padding-right: 8rem;
   font-variation-settings: "wdth" 125, "wght" 700;
+  position: relative;
 }
 
 .strip .strip-block .text-strip::after {
@@ -624,6 +625,7 @@ a:hover {
   height: 80vh;
   border-radius: 1.5rem;
   overflow: hidden;
+  margin-bottom: 4em;
 }
 
 @media screen and (max-width: 479px) {
@@ -697,6 +699,7 @@ a:hover {
 
 .collection-list-wrapper.fixedHeight .sectionText__content {
   display: flex;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 479px) {
@@ -706,11 +709,11 @@ a:hover {
 }
 
 .collection-list-wrapper.fixedHeight .sectionText__content .phrase {
-  min-width: 30vw;
+  min-width: 25vw;
 }
 
 .collection-list-wrapper.fixedHeight .sectionText__content h2 {
-  text-indent: 7rem;
+  text-indent: 14rem;
   padding: 0 2.5rem;
 }
 
@@ -2611,10 +2614,11 @@ details summary {
   width: 120px;
   height: 120px;
   border-radius: 999999px;
-  top: 50%;
-  right: 0;
+  bottom: 5vw;
+  right: 5vw;
   transition: transform 0.5s ease;
   transition-duration: 3.9s;
+  z-index: 9999;
 }
 
 .circleCta span {
@@ -2709,4 +2713,37 @@ details summary {
     -o-transform: matrix(-1, 0, 0, 1, 0, 0);
     transform: matrix(-1, 0, 0, 1, 0, 0);
   }
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper .singleTile {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.135, 0.9, 0.15, 1);
+  transition-duration: .9s;
+  transform: scale(0.95);
+}
+
+.swiper .singleTile:hover {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  position: relative;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  cursor: pointer;
+  z-index: 1000 !important;
+}
+
+.sliderCarousel .singleTile .singleTilePic .svgOverlay {
+  margin-top: 0;
+}
+
+.sr-only {
+  display: none;
 }

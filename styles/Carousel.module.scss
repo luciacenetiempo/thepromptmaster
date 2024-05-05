@@ -1,0 +1,79 @@
+.carousel{
+  width: 100%;
+  display: flex;
+  padding-left: 4em;
+  padding-top: 4em;
+  padding-bottom: 8em;
+  @media screen and (max-width: 720px) {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 8em;
+  }  
+  &__row{
+    display: flex;
+    width: 100%;
+    @media screen and (max-width: 720px) {
+      flex-flow: column;
+    }  
+  }
+  &__text{
+    display: flex;
+    flex-flow: column;
+    width: 25vw;
+    padding-right: 2.5rem;
+    @media screen and (max-width: 720px) {
+      width: 100%;
+    }  
+  }
+  &__slide{
+    display: flex;
+    width: calc(100% - 25vw);
+    @media screen and (max-width: 720px) {
+      width: 100%;
+      margin-top: 2.5rem;
+    }  
+  }
+  &__slider{
+    width: 100%;
+    .svgOverlay{
+      margin-top: 0;
+    }
+    figure{
+      margin-top: 0!important;
+      height: 19vw;
+      @media screen and (max-width: 720px) {
+        height: 30vh;
+      }  
+    }
+  }
+  &__nav{
+    display: flex;
+    justify-self: flex-end;
+    margin-top: auto;
+    &__button{
+      width: 40px;
+      height: 40px;
+      background-color: rgb(238, 238, 238);
+      border-radius: 9999px;
+      -webkit-border-radius: 9999px;
+      -moz-border-radius: 9999px;
+      -ms-border-radius: 9999px;
+      -o-border-radius: 9999px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 8px;
+      cursor: pointer;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(.135,.9,.15,1);
+      transition-duration: .9s;
+      &:hover{
+        background-color: #d727a7;    
+        transform: scale(1.2);
+        svg{
+          fill: white;
+        }
+      }
+    }
+  }
+}

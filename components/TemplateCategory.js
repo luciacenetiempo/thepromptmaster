@@ -17,6 +17,15 @@ const TemplateCategory = (props) => {
     name: categoryName,
     slug: category.slug
   };
+   
+  let icons = {
+    'ai-tools	' : '🎈',
+    'chatgpt' : '🤖',
+    'chatgpt-produttivita' : '🧠',
+    'midjourney' : '🎨',
+    'news-intelligenza-artificiale' : '⏰',
+    'prompt-engineering' : '💣',
+  }
   return (
     <>
       <Header color='dark' />
@@ -38,10 +47,12 @@ const TemplateCategory = (props) => {
           />
         </div>
       </div>
-      <div className='section-content paddingVertical'>
-        <div className='content rich-text-block'>
-          <h1>{categoryName}</h1>
-          <p dangerouslySetInnerHTML={{ __html: category.description }} />
+      <div className='collection-list-wrapper paddingVertical fixedHeight'>
+        <div className='sectionText'>
+          <div className='sectionText__content'>
+            <h1 className="phrase"><span className='bullet'>&#8226;</span> <span dangerouslySetInnerHTML={{ __html: categoryName }}></span> <span className='icon'>{icons[category.slug]}</span></h1>
+            <p className='asH2' dangerouslySetInnerHTML={{ __html: category.description }} />
+          </div>
         </div>
       </div>
       {

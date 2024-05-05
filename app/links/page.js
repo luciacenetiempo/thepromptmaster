@@ -54,7 +54,7 @@ export default async function Page() {
             <p>Aumenta la produttività con ChatGPT</p>
             <span className='CTA'>vai al corso su <strong>AI PLAY</strong></span>
           </Link>
-          <Link
+          {/* <Link
             href={'https://www.amazon.it/ChatGPT-Domina-lIntelligenza-Artificiale-Cenetiempo-ebook/dp/B0CBHM58JL/'}
             className='boxLink'
             target='_blank'  
@@ -62,7 +62,7 @@ export default async function Page() {
             <h5>👉 Domina l'intelligenza artificiale</h5>
             <p>L'ebook perfeto se sei alle prime armi!</p>
             <span className='CTA'>acquista l'ebook su <strong>Amazon</strong></span>
-          </Link>
+          </Link> */}
           <div className='spacer'></div>
 
           <h4>Scopri il Futuro dell'Intelligenza Artificiale</h4>
