@@ -5,7 +5,7 @@ import LoopingText from '../../components/LoopingText'
 import NewsletterFormMailerlite from '../../components/NewsletterFormMailerlite';
 
 export const metadata = {  
-  title: "Link - The Prompt Master",
+  title: "Midjourney Discord - The Prompt Master",
   description: "L'intelligenza artificiale come non te l'aspettavi",
   metadataBase: new URL('https://www.thepromptmaster.it'),
   alternates: {
