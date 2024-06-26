@@ -23,6 +23,7 @@ export default async function Home() {
   const promptChatGPT = await getPostFromCategory(17);
   const promptEng = await getPostFromCategory(3);
   const chatgpt = await getPostFromCategory(15);
+  const midjourney = await getPostFromCategory(16);
   const newsAI = await getPostFromCategory(1);
   return (
     <>
@@ -122,6 +123,24 @@ export default async function Home() {
           </div>
         </div>
       </div>
+
+      <div className="strip">
+        <LoopingText
+          text='IMPARA AD USARE MIDJOURNEY'
+          size='big'
+          velocity={0.08}
+          color='dark'
+        />
+      </div> 
+      <div className="strip"> 
+        <LoopingText
+          text="Scopri come usare Midjourney"
+          size='small'
+          velocity={0.08}
+          color='dark'
+        />
+      </div>
+      <Carousel list={midjourney} title={'Genera immagini con MidJourney'} section={'Midjourney'}/>
     </>
   );
 }
