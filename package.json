@@ -16,7 +16,7 @@
     "gray-matter": "^4.0.3",
     "he": "^1.2.0",
     "html-react-parser": "^5.1.10",
-    "next": "14.2.2",
+    "next": "^15.0.3",
     "react": "^18",
     "react-cookie": "^7.1.4",
     "react-dom": "^18",
