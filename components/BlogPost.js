@@ -15,7 +15,7 @@ function parseCustomSyntax(content) {
   // let newContent = content.replace(new RegExp(`href="http://blog.thepromptmaster.it/`, 'g'), `href="https://www.thepromptmaster.it/blog/`);
   const regex = /href="http:\/\/blog.thepromptmaster.it\/([^"]+)"/g;
   const newHtmlString = content.replace(regex, (match, capturedPath) => {
-    const finalPath = capturedPath.split("/")[capturedPath.split("/").length - 2];
+    const finalPath = capturedPath.split("/")[capturedPath.split("/").length - 2]; 
     return `href="/blog/${finalPath}"`;
   });
   let test = parse(newHtmlString,{
