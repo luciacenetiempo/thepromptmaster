@@ -14,9 +14,9 @@ const Footer = () => {
         <div className={`${styles.footer__row}`}>
           <div className={`${styles.footer__col} ${styles.footer__col__desc}`}>
             <h3>Ti è piaciuto ciò che hai visto?</h3>
-            <Cta text='vediamo' href='/' />
+            <Cta text='contattami!' href='https://www.linkedin.com/in/luciacenetiempo/' target='_blank' />
           </div>        
-          <div className={`${styles.footer__col} ${styles.footer__col__nav}`}>
+          {/* <div className={`${styles.footer__col} ${styles.footer__col__nav}`}>
             <div>
               <h4>Impara</h4>
               <ul role='menu'>
@@ -55,7 +55,7 @@ const Footer = () => {
                 <li role="presentation"><a role="menuitem" href="">Contatti</a></li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className={`${styles.footer__row} ${styles.footer__row__text}`}>
