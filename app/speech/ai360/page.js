@@ -50,7 +50,7 @@ export default function Page() {
             success=''
             error=''
             speechName='AI360'
-            slideLink='/file/ai360/ai-poste.pdf'
+            slideLink='/file/ai360/20250120-ai360.pdf'
           />
         </div>
       </div>

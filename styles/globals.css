@@ -2532,6 +2532,7 @@ details summary {
   cursor: pointer;
   border: 0;
   text-decoration: none;
+  margin-right: auto;
 }
 
 .mainCta .circle {
