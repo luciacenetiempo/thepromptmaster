@@ -2747,3 +2747,7 @@ details summary {
 .sr-only {
   display: none;
 }
+
+.tx-center {
+  text-align: center;
+}

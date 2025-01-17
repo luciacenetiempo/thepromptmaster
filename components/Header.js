@@ -210,7 +210,7 @@ const Header = ({ color }) => {
 
             <div className="nav-circle"></div>
             <Link
-              href={'https://twitter.com/t_prompt_master'}
+              href={'https://x.com/luciacenetiempo'}
               className="nav-link w-inline-block"
               target="_blank"
               key='twitter'
