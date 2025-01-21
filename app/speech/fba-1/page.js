@@ -4,7 +4,7 @@ import LoopingText from '../../../components/LoopingText'
 import NewsletterFormSlide from '../../../components/NewsletterFormSlide';
 
 export const metadata = {  
-  title: "FBA - The Prompt Master",
+  title: "AI360 - The Prompt Master",
   description: "L'intelligenza artificiale come non te l'aspettavi",
   metadataBase: new URL('https://www.thepromptmaster.it'),
   alternates: {
@@ -49,8 +49,8 @@ export default function Page() {
             submit='Iscriviti!' 
             success=''
             error=''
-            speechName='FBA'
-            slideLink='/file/fba/20250123-fba.pdf'
+            speechName='AI360'
+            slideLink='/file/ai360/20250120-ai360.pdf'
           />
         </div>
       </div>
