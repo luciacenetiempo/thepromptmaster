@@ -49,7 +49,7 @@ export default function Page() {
             submit='Iscriviti!' 
             success=''
             error=''
-            speechName='FBA'
+            speechName='AI360'
             slideLink='/file/fba/20250123-fba.pdf'
           />
         </div>
