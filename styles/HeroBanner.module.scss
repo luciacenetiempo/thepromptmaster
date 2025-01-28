@@ -1,0 +1,117 @@
+.herobanner{
+  width: 100vw;
+  height: 100vh;
+  &__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+    flex-flow: column;
+    @media screen and (max-width: 479px) {
+      padding: 15px;
+    }
+    .text{
+      color: #d727a7;
+      font-size: 1.5em;
+      margin: 1.5em 0;
+      font-weight: 600;
+      @media screen and (max-width: 479px) {
+        font-size: 1.2em;
+        margin: 15px 0;
+      }
+      .icon{
+        font-size: 1.5em;
+        animation: waving 2s linear infinite;
+      }
+    }
+    h1{
+      font-size: 8em;
+      color:white;
+      font-family:"Monument", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 20px 0;
+      line-height: 1em;
+      width: 100%;
+      @media screen and (max-width: 479px) {
+        font-size: 4em;
+        br{
+          display: inline;
+        }
+      }
+    }
+    p{
+      text-align: center;
+      color: white;
+      line-height: 1.8em;
+      strong{
+        color: white;
+        font-size: 1.2em;
+        display: block;
+        margin:15px 0;
+      }
+    }
+    .ctaButton{
+      display: flex;
+      flex-flow: column;
+      padding: 20px;
+      border: 1px solid white;
+      border-radius: 1em;
+      margin-top: 25px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      .textBig{
+        font-size: 1em;
+      }
+      .textSmall{
+        font-size: 0.8em;
+      }
+    }
+    &__ctaRow{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}
+@keyframes waving {
+  0% {
+      transform: rotate(0deg)
+  }
+
+  10% {
+      transform: rotate(14deg)
+  }
+
+  20% {
+      transform: rotate(-8deg)  ;
+      -webkit-transform: rotate(-8deg);
+      -moz-transform: rotate(-8deg);
+      -ms-transform: rotate(-8deg);
+      -o-transform: rotate(-8deg);
+  }
+
+  30% {
+      transform: rotate(14deg)
+  }
+
+  40% {
+      transform: rotate(-4deg)
+  }
+
+  50% {
+      transform: rotate(8deg)
+  }
+
+  60% {
+      transform: rotate(0deg)
+  }
+
+  to {
+      transform: rotate(0deg)
+  }
+}

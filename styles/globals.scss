@@ -20,6 +20,116 @@ $pink: #d727a7;
   font-stretch: 75% 125%;
 }
 
+@font-face {
+  font-family: "Monument";
+  src: local('Monument'), 
+       url("/fonts/Monument.woff2") format("woff2"),
+       url("/fonts/Monument.woff") format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: local('Open Sauce Sans'),
+       url("/fonts/OpenSauceSans-Regular.woff2") format("woff2"),
+       url("/fonts/OpenSauceSans-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: local('Open Sauce Sans'),
+       url("/fonts/OpenSauceSans-Bold.woff2") format("woff2"),
+       url("/fonts/OpenSauceSans-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monument";
+  src: local('Monument Extended Ultrabold'), 
+       url("/fonts/MonumentExtended-Ultrabold.woff2") format("woff2"),
+       url("/fonts/MonumentExtended-Ultrabold.woff") format("woff");
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monument";
+  src: local('Monument Extended Regular'), 
+       url("/fonts/MonumentExtended-Regular.woff2") format("woff2"),
+       url("/fonts/MonumentExtended-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: local('Open Sauce Sans Light'),
+       url("/fonts/OpenSauceSans-Light.woff2") format("woff2"),
+       url("/fonts/OpenSauceSans-Light.woff") format("woff");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: local('Open Sauce Sans Regular'),
+       url("/fonts/OpenSauceSans-Regular.woff2") format("woff2"),
+       url("/fonts/OpenSauceSans-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: local('Open Sauce Sans Medium'),
+       url("/fonts/OpenSauceSans-Medium.woff2") format("woff2"),
+       url("/fonts/OpenSauceSans-Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: local('Open Sauce Sans SemiBold'),
+       url("/fonts/OpenSauceSans-SemiBold.woff2") format("woff2"),
+       url("/fonts/OpenSauceSans-SemiBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: local('Open Sauce Sans Bold'),
+       url("/fonts/OpenSauceSans-Bold.woff2") format("woff2"),
+       url("/fonts/OpenSauceSans-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: local('Open Sauce Sans ExtraBold'),
+       url("/fonts/OpenSauceSans-ExtraBold.woff2") format("woff2"),
+       url("/fonts/OpenSauceSans-ExtraBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
 :root {
   --max-width: 1100px;
   --play: running;
@@ -33,6 +143,8 @@ $pink: #d727a7;
   --gray: #e0e0e0;
   --text-color: rgba(0, 0, 0, 0.75);
   --dark-gray: rgba(0, 0, 0, 0.75);
+  --font-primary: "Open Sauce Sans", sans-serif;
+  --font-secondary: "Monument", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -58,7 +170,7 @@ body {
   -ms-flex-align: stretch;
   align-items: stretch;
   background-color: $background-color_1;
-  font-family: $font-family_1;
+  font-family: var(--font-primary);
   color: $color_1;
   font-size: 16px;
   line-height: 1.6em;
@@ -71,6 +183,10 @@ body {
       background-color: #E75AD7;
       color: white;
     }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
   }
 }
 
@@ -357,6 +473,7 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  font-family: var(--font-secondary);
   .strip-block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2444,6 +2561,8 @@ $black: #d727a7;
   border: 0;
   text-decoration: none;
   margin-right: auto;
+  width: 80%;
+  max-width: 300px;
   .circle {
     @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
     position: relative;
@@ -2487,7 +2606,8 @@ $black: #d727a7;
     left: 0;
     right: 0;
     bottom: 0;
-    color: #d727a7;
+    // color: #d727a7;
+    color: white;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -2650,4 +2770,17 @@ $black: #d727a7;
 }
 .tx-center{
   text-align: center;
+}
+
+.herobanner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  
+  figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+  }
 }

@@ -2,6 +2,7 @@ import Header from '/components/Header'
 import HeaderPlain from '../../../components/HeaderPlain'
 import LoopingText from '../../../components/LoopingText'
 import NewsletterFormSlide from '../../../components/NewsletterFormSlide';
+import { useMemo, useCallback } from 'react';
 
 export const metadata = {  
   title: "FBA - The Prompt Master",
@@ -18,6 +19,14 @@ export const metadata = {
 }
 
 export default function Page() {
+  const expensiveCalculation = useMemo(() => {
+    // calcoli costosi qui
+  }, []);
+
+  const handleClick = useCallback(() => {
+    // logica del click
+  }, []);
+
   return (
     <>
       <HeaderPlain />

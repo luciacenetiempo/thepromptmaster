@@ -17,6 +17,7 @@ const Button = (props) => {
       alt={props.alt}  
       className="button w-button"
       onClick={() => {trackLink('Corso Prompt Master')}}
+      target={props.target}
       >
         {props.text}
       </a>

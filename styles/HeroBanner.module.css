@@ -1,0 +1,130 @@
+.herobanner {
+  width: 100vw;
+  height: 100vh;
+}
+
+.herobanner__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  position: relative;
+  flex-flow: column;
+}
+
+@media screen and (max-width: 479px) {
+  .herobanner__content {
+    padding: 15px;
+  }
+}
+
+.herobanner__content .text {
+  color: #d727a7;
+  font-size: 1.5em;
+  margin: 1.5em 0;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 479px) {
+  .herobanner__content .text {
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+}
+
+.herobanner__content .text .icon {
+  font-size: 1.5em;
+  animation: waving 2s linear infinite;
+}
+
+.herobanner__content h1 {
+  font-size: 8em;
+  color: white;
+  font-family: "Monument", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 1em;
+  width: 100%;
+}
+
+@media screen and (max-width: 479px) {
+  .herobanner__content h1 {
+    font-size: 4em;
+  }
+  .herobanner__content h1 br {
+    display: inline;
+  }
+}
+
+.herobanner__content p {
+  text-align: center;
+  color: white;
+  line-height: 1.8em;
+}
+
+.herobanner__content p strong {
+  color: white;
+  font-size: 1.2em;
+  display: block;
+  margin: 15px 0;
+}
+
+.herobanner__content .ctaButton {
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 1em;
+  margin-top: 25px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.herobanner__content .ctaButton .textBig {
+  font-size: 1em;
+}
+
+.herobanner__content .ctaButton .textSmall {
+  font-size: 0.8em;
+}
+
+.herobanner__content__ctaRow {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%;
+}
+
+@keyframes waving {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

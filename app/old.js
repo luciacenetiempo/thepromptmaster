@@ -1,10 +1,8 @@
 import Image from "next/image";
 import Header from "../components/Header";
-import HeroBanner from "../components/HeroBanner";
 import PostTileBig from "../components/PostTileBig";
 import LoopingText from "../components/LoopingText";
 import Carousel from "../components/Carousel";
-import React from "react";
 
 import { getPostFromCategory } from '../lib/wordpress';
 
@@ -21,7 +19,6 @@ export const metadata = {
   keywords: ['ChatGPT', 'Midjourney', 'Chat GPT', 'Prompt', 'Prompt Engineering', 'Prompt Design', 'Prompt ChatGPT', 'Intelligenza Artificiale'],
   authors: [{ name: 'Lucia Cenetiempo', url: 'https://www.thepromptmaster.it' }],
 }
-
 export default async function Home() {
   const promptChatGPT = await getPostFromCategory(17);
   const promptEng = await getPostFromCategory(3);
@@ -30,15 +27,49 @@ export default async function Home() {
   const newsAI = await getPostFromCategory(1);
   return (
     <>
-    <Header color='light' />
-        <HeroBanner
-          src='/images/bg-purple.webp'
-          alt=''
-          title=''
-          subtitle=''
-          cta=''
-          link=''
-        />
+    <Header color='dark' />
+      <div className='collection-list-wrapper paddingVertical fixedHeight headMargin'>
+        {/* first block header */}
+        <div className='roundedBox'>
+          <Image
+            priority
+            src='/images/bg-home.webp'
+            alt='Ti spiego come usare chatgpt al meglio con prompt efficaci.'
+            className='roundedBox__img'
+            fill
+            sizes="(min-width: 808px) 80vh, 100vw"
+            style={{
+              objectFit: 'cover', // cover, contain, none
+            }}
+          />
+          <div className='roundedBox__headline'>
+            <span className="phrase"><span className='bullet'>&#8226;</span> Ciao, sono The Prompt Master <span className='icon'>👋</span></span>
+            <h1>Ti spiego come usare chatgpt al meglio con prompt efficaci.</h1>
+          </div>
+          <div className='author author__white'>
+            <Image
+              priority
+              src='/images/avatar.webp'
+              alt='Lucia Cenetiempo - The Prompt Master'
+              className='author__avatar'
+              width={56}
+              height={56}
+            />
+            <div className='author__info'>
+              <span className='author__info__name'>Lucia Cenetiempo</span>
+              <span className='author__info__rule'>The Prompt Master</span>
+            </div>
+          </div>
+        </div>
+
+        {/* block 2 col text */}
+        <div className='sectionText'>
+          <div className='sectionText__content'>
+            <span className="phrase"><span className='bullet'>&#8226;</span> Cos'è The Prompt Master <span className='icon icon--noanimation'>🤯</span></span>
+            <h2>Se ti stai chiedendo a cosa serve chatGPT, come usare chatgpt, cosa si può chiedere o cosa puoi fargli fare, sei nel posto giusto.</h2>
+          </div>
+        </div>
+      </div>
       <div className="strip">
         <LoopingText
           text='IMPARA AD USARE CHATGPT'
