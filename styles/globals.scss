@@ -21,16 +21,6 @@ $pink: #d727a7;
 }
 
 @font-face {
-  font-family: "Monument";
-  src: local('Monument'), 
-       url("/fonts/monument/Monument.woff2") format("woff2"),
-       url("/fonts/monument/Monument.woff") format("woff");
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Open Sauce Sans";
   src: local('Open Sauce Sans'),
        url("/fonts/open-sauce-sans/OpenSauceSans-Regular.woff2") format("woff2"),
