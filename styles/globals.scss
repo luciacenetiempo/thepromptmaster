@@ -23,8 +23,8 @@ $pink: #d727a7;
 @font-face {
   font-family: "Monument";
   src: local('Monument'), 
-       url("/fonts/Monument.woff2") format("woff2"),
-       url("/fonts/Monument.woff") format("woff");
+       url("/fonts/monument/Monument.woff2") format("woff2"),
+       url("/fonts/monument/Monument.woff") format("woff");
   font-display: swap;
   font-weight: normal;
   font-style: normal;
@@ -33,8 +33,8 @@ $pink: #d727a7;
 @font-face {
   font-family: "Open Sauce Sans";
   src: local('Open Sauce Sans'),
-       url("/fonts/OpenSauceSans-Regular.woff2") format("woff2"),
-       url("/fonts/OpenSauceSans-Regular.woff") format("woff");
+       url("/fonts/open-sauce-sans/OpenSauceSans-Regular.woff2") format("woff2"),
+       url("/fonts/open-sauce-sans/OpenSauceSans-Regular.woff") format("woff");
   font-display: swap;
   font-weight: normal;
   font-style: normal;
@@ -43,8 +43,8 @@ $pink: #d727a7;
 @font-face {
   font-family: "Open Sauce Sans";
   src: local('Open Sauce Sans'),
-       url("/fonts/OpenSauceSans-Bold.woff2") format("woff2"),
-       url("/fonts/OpenSauceSans-Bold.woff") format("woff");
+       url("/fonts/open-sauce-sans/OpenSauceSans-Bold.woff2") format("woff2"),
+       url("/fonts/open-sauce-sans/OpenSauceSans-Bold.woff") format("woff");
   font-display: swap;
   font-weight: bold;
   font-style: normal;
@@ -53,8 +53,8 @@ $pink: #d727a7;
 @font-face {
   font-family: "Monument";
   src: local('Monument Extended Ultrabold'), 
-       url("/fonts/MonumentExtended-Ultrabold.woff2") format("woff2"),
-       url("/fonts/MonumentExtended-Ultrabold.woff") format("woff");
+       url("/fonts/monument/MonumentExtended-Ultrabold.woff2") format("woff2"),
+       url("/fonts/monument/MonumentExtended-Ultrabold.woff") format("woff");
   font-display: swap;
   font-weight: 800;
   font-style: normal;
@@ -63,8 +63,8 @@ $pink: #d727a7;
 @font-face {
   font-family: "Monument";
   src: local('Monument Extended Regular'), 
-       url("/fonts/MonumentExtended-Regular.woff2") format("woff2"),
-       url("/fonts/MonumentExtended-Regular.woff") format("woff");
+       url("/fonts/monument/MonumentExtended-Regular.woff2") format("woff2"),
+       url("/fonts/monument/MonumentExtended-Regular.woff") format("woff");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -73,8 +73,8 @@ $pink: #d727a7;
 @font-face {
   font-family: "Open Sauce Sans";
   src: local('Open Sauce Sans Light'),
-       url("/fonts/OpenSauceSans-Light.woff2") format("woff2"),
-       url("/fonts/OpenSauceSans-Light.woff") format("woff");
+       url("/fonts/open-sauce-sans/OpenSauceSans-Light.woff2") format("woff2"),
+       url("/fonts/open-sauce-sans/OpenSauceSans-Light.woff") format("woff");
   font-display: swap;
   font-weight: 300;
   font-style: normal;
@@ -83,8 +83,8 @@ $pink: #d727a7;
 @font-face {
   font-family: "Open Sauce Sans";
   src: local('Open Sauce Sans Regular'),
-       url("/fonts/OpenSauceSans-Regular.woff2") format("woff2"),
-       url("/fonts/OpenSauceSans-Regular.woff") format("woff");
+       url("/fonts/open-sauce-sans/OpenSauceSans-Regular.woff2") format("woff2"),
+       url("/fonts/open-sauce-sans/OpenSauceSans-Regular.woff") format("woff");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -93,8 +93,8 @@ $pink: #d727a7;
 @font-face {
   font-family: "Open Sauce Sans";
   src: local('Open Sauce Sans Medium'),
-       url("/fonts/OpenSauceSans-Medium.woff2") format("woff2"),
-       url("/fonts/OpenSauceSans-Medium.woff") format("woff");
+       url("/fonts/open-sauce-sans/OpenSauceSans-Medium.woff2") format("woff2"),
+       url("/fonts/open-sauce-sans/OpenSauceSans-Medium.woff") format("woff");
   font-display: swap;
   font-weight: 500;
   font-style: normal;
@@ -103,8 +103,8 @@ $pink: #d727a7;
 @font-face {
   font-family: "Open Sauce Sans";
   src: local('Open Sauce Sans SemiBold'),
-       url("/fonts/OpenSauceSans-SemiBold.woff2") format("woff2"),
-       url("/fonts/OpenSauceSans-SemiBold.woff") format("woff");
+       url("/fonts/open-sauce-sans/OpenSauceSans-SemiBold.woff2") format("woff2"),
+       url("/fonts/open-sauce-sans/OpenSauceSans-SemiBold.woff") format("woff");
   font-display: swap;
   font-weight: 600;
   font-style: normal;
@@ -113,8 +113,8 @@ $pink: #d727a7;
 @font-face {
   font-family: "Open Sauce Sans";
   src: local('Open Sauce Sans Bold'),
-       url("/fonts/OpenSauceSans-Bold.woff2") format("woff2"),
-       url("/fonts/OpenSauceSans-Bold.woff") format("woff");
+       url("/fonts/open-sauce-sans/OpenSauceSans-Bold.woff2") format("woff2"),
+       url("/fonts/open-sauce-sans/OpenSauceSans-Bold.woff") format("woff");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
@@ -123,8 +123,8 @@ $pink: #d727a7;
 @font-face {
   font-family: "Open Sauce Sans";
   src: local('Open Sauce Sans ExtraBold'),
-       url("/fonts/OpenSauceSans-ExtraBold.woff2") format("woff2"),
-       url("/fonts/OpenSauceSans-ExtraBold.woff") format("woff");
+       url("/fonts/open-sauce-sans/OpenSauceSans-ExtraBold.woff2") format("woff2"),
+       url("/fonts/open-sauce-sans/OpenSauceSans-ExtraBold.woff") format("woff");
   font-display: swap;
   font-weight: 800;
   font-style: normal;
