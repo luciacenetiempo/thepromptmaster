@@ -35,7 +35,7 @@ export default async function sitemap() {
   const dynamicPages = allPosts.map(post => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.modified),
-    changeFrequency: 'daily',
+    changeFrequency: 'weekly',
     priority: 0.5,
   }))
 
