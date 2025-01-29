@@ -5,6 +5,7 @@ import ImageTop from './ImageTop';
 import BlogPost from './BlogPost';
 import Related from './Related';
 import Footer from './Footer';
+import Carousel from './Carousel';
 // import { useCanonicalURL } from './../lib/CanonicalURL';
 import he from 'he';
 
@@ -58,7 +59,7 @@ const TemplatePost = (props) => {
       </div>
       <div className="strip paddingBoth">
         <LoopingText
-          text='potrebbe interessarti anche'
+          text='the prompt master'
           size='smallBold'
           velocity={0.08}
           color='dark'
