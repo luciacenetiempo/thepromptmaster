@@ -24,6 +24,7 @@ export async function generateMetadata(props) {
 export default async function PostID( props ){
     const slug = await getSlugs('posts');
     const post = await getPost(props.params.id);
+    console.log(post)
     return (
         <Suspense fallback={<Loading />}>
             <TemplatePost post={post} />
