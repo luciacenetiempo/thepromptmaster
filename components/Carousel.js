@@ -11,7 +11,6 @@ import 'swiper/css/scrollbar';
 import styles from '../styles/Carousel.module.scss'
 
 const Carousel = (props) => {
-
   return (
     <div className='collection-list-wrapper fixedHeight'>
       <div className={styles.carousel}>
@@ -54,7 +53,8 @@ const Carousel = (props) => {
                 },
               }}
             >
-              {props.list.slice(0, 6).map((post, index) => (
+              {props.list.slice(0, 26).map((post, index) => (
+                
                 <SwiperSlide key={index}>
                   <PostTileBig post={post} isCategory={post._embedded['wp:term'][0][0]} role="listitem"/>
                 </SwiperSlide>
