@@ -25,6 +25,7 @@ const TemplatePost = (props) => {
   let title = props.post.title.rendered;
   let categories = props.post._embedded['wp:term'][0];
   let tags = props.post._embedded['wp:term'][1];
+  console.log(props.post)
   return (
     <>
       <Header color={color} />
