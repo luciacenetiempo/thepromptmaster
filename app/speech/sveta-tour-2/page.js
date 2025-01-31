@@ -38,7 +38,7 @@ export default function Page() {
             color='dark'
           />
         </div> */}
-      </div>
+      </div> 
 
       <div className='section-content'>
         <div className='content rich-text-block rich-text-block--newsletter'>
