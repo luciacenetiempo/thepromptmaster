@@ -6,7 +6,7 @@ import ImageWide from '../../../components/ImageWide'
 import HeroBannerImg from '../../../components/HeroBannerImg'
 
 export const metadata = {  
-  title: "FBA - The Prompt Master",
+  title: "Toolkit - The Prompt Master",
   description: "L'intelligenza artificiale come non te l'aspettavi",
   metadataBase: new URL('https://www.thepromptmaster.it'),
   alternates: {
