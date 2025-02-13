@@ -1,6 +1,9 @@
 .footer {
   background-color: #000000;
   height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, .footer p, .footer span, .footer a {
@@ -58,7 +61,6 @@
   font-size: 0.8rem;
   justify-content: space-between;
   color: #7f7f7f;
-  padding: 0 5rem 0 2rem;
 }
 
 @media screen and (max-width: 479px) {
@@ -113,8 +115,7 @@
 }
 
 .footer__col__desc {
-  width: 25%;
-  margin: 0 6rem 0 5rem;
+  width: 50%;
 }
 
 @media screen and (max-width: 479px) {
