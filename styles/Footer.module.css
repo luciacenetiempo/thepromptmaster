@@ -10,7 +10,7 @@
 .footer__wrap {
   display: flex;
   flex-flow: column;
-  padding: 3rem 2.5rem 2.5rem 2.5rem;
+  padding: 3rem 4rem 2.5rem;
 }
 
 .footer__row {
@@ -42,7 +42,7 @@
   font-size: 9vw;
   font-weight: 600;
   width: 100%;
-  left: 2rem;
+  left: 0;
 }
 
 @media screen and (max-width: 479px) {
