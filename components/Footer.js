@@ -94,7 +94,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <a href="" className='circleCta'>
+      <a href="https://calendar.app.google/uVDLew261bvqQyrTA" target="_blank" className='circleCta'>
         <span>👀</span>
         <div className='circleAnimation'>
           <svg width="100" height="100" viewBox="0 0 200 200" className='rotate'>

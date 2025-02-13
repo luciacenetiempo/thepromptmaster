@@ -22,7 +22,7 @@ const HeroBanner = (props) => {
           <p>Non importa a che punto sei, con la formazione giusta andrai davvero lontano.<br/>
           Qualunque sia il tuo business, l'intelligenza artificiale è il tuo alleato.<br/><strong>Impara con me. Cresci con l’AI.</strong></p>
           <div className={`${styles.herobanner__content__ctaRow}`}>
-            <Button text="Parliamone!" url="https://calendly.com/thepromptmaster-info/15min" target="_blank"/>
+            <Button text="Parliamone!" url="https://calendar.app.google/uVDLew261bvqQyrTA" target="_blank"/>
           </div>
         </div>
       </figure>
