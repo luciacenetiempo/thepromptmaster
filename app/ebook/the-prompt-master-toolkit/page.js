@@ -25,7 +25,7 @@ export default function Page() {
       <HeaderPlain />
 
       <HeroBannerImg
-          src='/toolkit.png'
+          src='/toolkit.webp'
           alt=''
           title=''
           subtitle=''
