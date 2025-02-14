@@ -177,6 +177,12 @@ h2 strong, .asH2 strong {
   font-variation-settings: "wdth" 125, "wght" 500;
 }
 
+@media screen and (max-width: 479px) {
+  h2, .asH2 {
+    font-size: 1.62em;
+  }
+}
+
 h3, .asH3 {
   margin-top: 0em;
   margin-bottom: 0em;
@@ -2431,7 +2437,7 @@ header.navbar .nav-mobile {
   top: 19px;
   margin: 0;
   scale: 0.5;
-  z-index: 13;
+  z-index: 20;
 }
 
 header.navbar .nav-mobile span {

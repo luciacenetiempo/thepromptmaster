@@ -204,6 +204,10 @@ h2, .asH2 {
   strong{
     font-variation-settings: "wdth" 125, "wght" 500;
   }
+
+  @media screen and (max-width: 479px) {
+    font-size: 1.62em;
+  }
 }
 
 h3, .asH3 {
@@ -2354,7 +2358,7 @@ header {
       top: 19px;
       margin: 0;
       scale: 0.5;
-      z-index: 13;
+      z-index: 20;
       span {
         display: block;
         position: absolute;
