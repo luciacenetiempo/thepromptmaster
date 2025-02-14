@@ -39,7 +39,7 @@
 }
 
 .herobanner__content h1 {
-  font-size: 8em;
+  font-size: 5em;
   color: white;
   font-family: "Monument", sans-serif;
   text-transform: uppercase;
@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 479px) {
   .herobanner__content h1 {
-    font-size: 4em;
+    font-size: 2.5em;
   }
   .herobanner__content h1 br {
     display: inline;

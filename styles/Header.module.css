@@ -1,0 +1,75 @@
+.header__bussolotto {
+  background-color: white;
+  border: 1px solid #f2f2f2;
+  border-radius: 500px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 10px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 479px) {
+  .header__bussolotto {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding-right: 50px;
+    z-index: 14;
+  }
+}
+
+.header__bussolotto figure {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  margin: 0;
+}
+
+@media screen and (max-width: 479px) {
+  .header__bussolotto figure {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.header__bussolotto__col {
+  margin-left: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header__bussolotto__col span {
+  line-height: 1.4em;
+}
+
+.header__bussolotto__col__name {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 479px) {
+  .header__bussolotto__col__name {
+    font-size: 9px;
+    display: none;
+  }
+}
+
+.header__bussolotto__col__role {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 479px) {
+  .header__bussolotto__col__role {
+    font-size: 9px;
+    display: none;
+  }
+}

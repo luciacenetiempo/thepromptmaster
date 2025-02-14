@@ -2,10 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Bussolotto from './Bussolotto';
-import styles from '../styles/Header.module.scss'
 
-const Header = ({ color }) => {
+const HeaderOld = ({ color }) => {
   const [opened, setOpened] = useState(false);
   const openMenu = async () => {
     setOpened(!opened)
@@ -13,7 +11,7 @@ const Header = ({ color }) => {
 
 
   return (
-    <header className={`navbar w-nav navbar--${color} ${styles.header}`}>
+    <header className={`navbar w-nav navbar--${color}`}>
       <div className="block-navbar">
         <div className="nav nav--logo">
           <a href="/" className="brand w-nav-brand w--current" aria-label="home">
@@ -39,8 +37,7 @@ const Header = ({ color }) => {
             </svg>
           </a>
         </div>
-      </div>
-      <nav role="navigation" className={`nav-menu w-nav-menu ${opened ? 'open' : ''}`}>
+        <nav role="navigation" className={`nav-menu w-nav-menu ${opened ? 'open' : ''}`}>
           <div className="nav-page">
 
             <Link
@@ -242,19 +239,19 @@ const Header = ({ color }) => {
             </Link>
           </div>
           {/* <div className="nav-circle"></div> */}
-      </nav>
-      <Bussolotto />
+        </nav>
 
-      <div className={`nav-mobile ${opened ? 'open' : ''}`} onClick={openMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <div className={`nav-mobile ${opened ? 'open' : ''}`} onClick={openMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </header>
   );
 };
 
-export default Header;
+export default HeaderOld;

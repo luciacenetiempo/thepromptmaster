@@ -395,20 +395,28 @@ a {
 .button {
   padding: 1.6em 2.3em;
   background-color: $background-color_2;
-  -webkit-transition: background-color 300ms
-    cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: background-color 300ms    cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: background-color 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: $color_5;
-  font-size: 0.85em;
+  font-size: 0.95em;
+  margin-top:15px;
+  letter-spacing: 0.1em;
   line-height: 1.3em;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
   display: inline-block;
   color: white;
   text-decoration: none;
   border: 0;
   cursor: pointer;
-  &:hover {
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+  
+  &:hover{
     background-color: $background-color_3;
     color: white;
   }
@@ -698,6 +706,10 @@ a {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+
+    @media screen and (max-width: 479px) {
+      margin-top:30px;
+    }
     .roundedBox{    
       background-color: #f5f5f5;
       position: relative;
@@ -1222,18 +1234,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding: 1.1em 2em;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   background-color: transparent;
   z-index: 11;
@@ -1248,7 +1250,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  // width: 100%;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -1312,6 +1314,10 @@ a {
       animation-iteration-count: infinite;
       animation-timing-function: linear;
     }
+
+    @media screen and (max-width: 479px) {
+      width: 90px;
+    }
   }
 }
 
@@ -1346,7 +1352,9 @@ a {
 
 .nav-text {
   color: #000;
-  font-size: 0.95em;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
   line-height: 1.3em;
   font-variation-settings: "wdth" 100, "wght" 400;
   &:hover {
@@ -1589,9 +1597,6 @@ a {
 }
 
 .navbar--light {
-  .w-nav-menu.open {
-    background-color: #000 !important;
-  }
   .nav-text {
     color: white;
   }
@@ -1921,11 +1926,12 @@ form.field-newsletter {
   .navbar {
     padding-right: 1.5em;
     padding-left: 1.5em;
+    margin-top: 20px;
   }
   .nav {
     position: absolute;
     z-index: 12;
-    top: 1.1em;
+    top: 25px;
   }
   .w-nav .w-nav-menu {
     position: absolute;
@@ -1937,6 +1943,8 @@ form.field-newsletter {
     height: 100vh;
     z-index: 11;
     display: none;
+    top: -20px;
+    background-color: #000;
   }
   .nav-menu {
     padding-top: 1.2em;
@@ -2342,8 +2350,8 @@ header {
       cursor: pointer;
       display: none;
       position: absolute;
-      right: 1.1em;
-      top: 1.1em;
+      right: 25px;
+      top: 19px;
       margin: 0;
       scale: 0.5;
       z-index: 13;
@@ -2352,7 +2360,7 @@ header {
         position: absolute;
         height: 9px;
         width: 50%;
-        background: #ffffff;
+        background: #000000;
         opacity: 1;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -2553,6 +2561,7 @@ $black: #d727a7;
   margin-right: auto;
   width: 80%;
   max-width: 300px;
+  margin-top: 25px;
   .circle {
     @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
     position: relative;
@@ -2616,6 +2625,17 @@ $black: #d727a7;
     }
     .button-text {
       color: $white;
+    }
+  }
+
+  &.dark{
+    .button-text {
+      color: #d727a7;
+    }
+    &:hover{
+      .button-text {
+        color: white;
+      }
     }
   }
 }

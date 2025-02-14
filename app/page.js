@@ -4,6 +4,7 @@ import HeroBanner from "../components/HeroBanner";
 import PostTileBig from "../components/PostTileBig";
 import LoopingText from "../components/LoopingText";
 import Carousel from "../components/Carousel";
+import Chisono from "../components/Chisono";
 import React from "react";
 
 import { getPostFromCategory } from '../lib/wordpress';
@@ -38,15 +39,17 @@ export default async function Home() {
           subtitle=''
           cta=''
           link=''
-        />
-      <div className="strip">
+        /> 
+
+      <div className="strip"> 
         <LoopingText
-          text='IMPARA AD USARE CHATGPT'
+          text="L'AI non ti ruberà il lavoro se impari ad usarla!"
           size='big'
           velocity={0.08}
           color='dark'
         />
-      </div>     
+      </div>
+      <Chisono />
       <div className="strip"> 
         <LoopingText
           text="Scopri come usare ChatGPT"
