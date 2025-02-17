@@ -64,14 +64,14 @@ export default function Page() {
         </div>
       </div>
       <div className=''>
-        <div className="strip">
+        {/* <div className="strip">
           <LoopingText
             text='THE PROMPT MASTER'
             size='big'
             velocity={0.08}
             color='dark'
           />
-        </div>
+        </div> */}
         {/* <div className="strip">
           <LoopingText
             text={`AI WEEK`}
