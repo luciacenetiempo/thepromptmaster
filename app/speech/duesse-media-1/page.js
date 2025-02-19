@@ -64,7 +64,7 @@ export default function Page() {
         </div>
       </div>
       <div className=''>
-        {/* <div className="strip">
+        {/* <div className="strip"> 
           <LoopingText
             text='THE PROMPT MASTER'
             size='big'
