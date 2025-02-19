@@ -59,7 +59,7 @@ export default function Page() {
             success=''
             error=''
             speechName='Duesse Media Network'
-            slideLink='/file/duesse/20250218-duesse.pdf'
+            slideLink='/file/duesse/20250219-duesse.pdf'
           />
         </div>
       </div>
