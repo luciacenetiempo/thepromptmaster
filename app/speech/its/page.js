@@ -59,7 +59,7 @@ export default function Page() {
             success=''
             error=''
             speechName='ITS Mobilità'
-            slideLink='/file/its/20250320-its-mobilita-taranto'
+            slideLink='/file/its/20250320-its-mobilita-taranto.pdf'
           />
         </div>
       </div>
