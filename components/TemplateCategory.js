@@ -24,7 +24,7 @@ const TemplateCategory = (props) => {
     'chatgpt-produttivita' : '🧠',
     'midjourney' : '🎨',
     'news-intelligenza-artificiale' : '⏰',
-    'prompt-engineering' : '💣',
+    'prompt-design' : '💣',
   }
   return (
     <>
@@ -56,7 +56,7 @@ const TemplateCategory = (props) => {
         </div>
       </div>
       {
-        category.slug == 'prompt-engineering' ? (
+        category.slug == 'prompt-design' ? (
           <div className='section-content paddingVertical'>
             <div className="collection-list-wrapper-top noBorder">
               <div role="list" className="content-wide rich-text-block">

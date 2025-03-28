@@ -38,7 +38,7 @@ export default async function Page() {
         <div className='content rich-text-block rich-text-block'>
           <h3>😎 Diventa un master</h3>
           <Link
-            href={'/blog/category/prompt-engineering'}
+            href={'/blog/category/prompt-design'}
             className='boxLink' 
           >
             <h5>🔥 Prompt Engineering</h5>

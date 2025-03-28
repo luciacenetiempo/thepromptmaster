@@ -101,11 +101,11 @@ const HeaderOld = ({ color }) => {
 
             <div className="nav-circle"></div>
             <Link
-              href={'/blog/category/prompt-engineering'}
+              href={'/blog/category/prompt-design'}
               className="nav-link w-inline-block"
-              key='prompt-engineering'
+              key='prompt-design'
               onClick={openMenu}
-              title='Prompt Engineering'
+              title='Prompt Design'
               prefetch={false}
             >
               <div className="nav-text-block">

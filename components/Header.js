@@ -104,11 +104,11 @@ const Header = ({ color }) => {
 
             <div className="nav-circle"></div>
             <Link
-              href={'/blog/category/prompt-engineering'}
+              href={'/blog/category/prompt-design'}
               className="nav-link w-inline-block"
-              key='prompt-engineering'
+              key='prompt-design'
               onClick={openMenu}
-              title='Prompt Engineering'
+              title='Prompt Design'
               prefetch={false}
             >
               <div className="nav-text-block">
@@ -119,7 +119,7 @@ const Header = ({ color }) => {
                     transformStyle: 'preserve-3d'
                   }}
                 >
-                  Prompt Engineering
+                  Prompt Design
                 </div>
                 <div
                   className="nav-text absolute"
@@ -128,7 +128,7 @@ const Header = ({ color }) => {
                     transformStyle: 'preserve-3d'
                   }}
                 >
-                  Prompt Engineering
+                  Prompt Design
                 </div>
               </div>
             </Link> 
