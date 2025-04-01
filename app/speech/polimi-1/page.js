@@ -59,7 +59,7 @@ export default function Page() {
             success=''
             error=''
             speechName='POLIMI'
-            slideLink='/file/polimi/20250401-polimi.pdf'
+            slideLink='/file/polimi/20250401-polimi-1.pdf'
           />
         </div>
       </div>
