@@ -50,7 +50,7 @@ export default function Page() {
             success=''
             error=''
             speechName='IA PER TUTTI'
-            slideLink='/file/iapertutti/20250410-iapertutti.pdf'
+            slideLink='/file/ia-per-tutti/20250410-ia-per-tutti.pdf'
           />
         </div>
       </div>
