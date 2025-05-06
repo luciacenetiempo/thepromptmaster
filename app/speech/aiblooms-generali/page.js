@@ -50,7 +50,7 @@ export default function Page() {
             success=''
             error=''
             speechName='AI Blooms per Generali'
-            slideLink='/file/aiblooms-generali/20250506-aiblooms-generali.pdf'
+            slideLink='/file/aiblooms-generali/20250507-aiblooms-generali.pdf'
           />
         </div>
       </div>
