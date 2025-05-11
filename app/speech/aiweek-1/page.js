@@ -1,10 +1,21 @@
-"use client"
 import Header from '/components/Header'
 import HeaderPlain from '../../../components/HeaderPlain'
 import LoopingText from '../../../components/LoopingText'
 import NewsletterFormSlide from '../../../components/NewsletterFormSlide';
 
-
+export const metadata = {  
+  title: "AIWEEK - The Prompt Master",
+  description: "L'intelligenza artificiale come non te l'aspettavi",
+  metadataBase: new URL('https://www.thepromptmaster.it'),
+  alternates: {
+    canonical: '',
+  },
+  openGraph: {
+    images: '/og-image.png',
+  },
+  keywords: ['ChatGPT', 'Midjourney', 'Chat GPT', 'Prompt', 'Prompt Engineering', 'Prompt Design', 'Prompt ChatGPT', 'Intelligenza Artificiale'],
+  authors: [{ name: 'Lucia Cenetiempo', url: 'https://www.thepromptmaster.it' }],
+}
 
 export default function Page() {
   return (
@@ -19,14 +30,14 @@ export default function Page() {
             color='dark'
           />
         </div>
-        <div className="strip">
+        {/* <div className="strip">
           <LoopingText
             text={`newsletter`}
             size='small'
             velocity={0.08}
             color='dark'
           />
-        </div>
+        </div> */}
       </div>
 
       <div className='section-content'>
@@ -38,8 +49,8 @@ export default function Page() {
             submit='Iscriviti!' 
             success=''
             error=''
-            speechName='AI WEEK'
-            slideLink='/storage/aiweek/slide1'
+            speechName='AIWEEK - ChatGPT 1'
+            slideLink='/file/aiweek/20250513-aiweek-1.pdf'
           />
         </div>
       </div>
@@ -52,14 +63,14 @@ export default function Page() {
             color='dark'
           />
         </div>
-        <div className="strip">
+        {/* <div className="strip">
           <LoopingText
             text={`AI WEEK`}
             size='small'
             velocity={0.08}
             color='dark'
           />
-        </div>
+        </div> */}
       </div>
     </>
   );
