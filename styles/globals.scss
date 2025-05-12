@@ -2798,3 +2798,32 @@ $black: #d727a7;
     position: relative;
   }
 }
+.nomarginTop{
+  margin-top:0;
+}
+.fullheight{
+  @media screen and (max-width: 479px) {
+    min-height: 80vh;
+  }
+  .field-newsletter{
+    button{
+      position: relative;
+      display: flex;
+      &::after{        
+        content: "scarica";
+        position: relative;
+        color: black;
+        margin-left: 10px;
+        font-size: 19px;
+        display: flex;
+      }
+    }
+    input[type=email]{
+      max-width: 80%;
+      @media screen and (max-width: 479px) {
+        max-width: 100%;
+      }
+    }
+
+  } 
+}

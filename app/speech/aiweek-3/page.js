@@ -20,8 +20,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <HeaderPlain />
-      <div className='headMarginSmall'>
+      <div className='headMarginSmall nomarginTop'>
         <div className="strip">
           <LoopingText
             text='THE PROMPT MASTER'
@@ -40,9 +39,10 @@ export default function Page() {
         </div> */}
       </div>
 
-      <div className='section-content'>
+      <div className='section-content fullheight'>
         <div className='content rich-text-block rich-text-block--newsletter'>
-          <h2 className='tx-center'>Inserisci il tuo indirizzo<br/>e-mail per visualizzare le slide</h2>
+          <p className='tx-center'><strong>Inserisci la tua email<br/>e scarica le slide</strong></p>
+          <h2 className='tx-center'>ChatGPT, Midjourney, Runway, Suno...<br/>PIÙ CREATIVITÀ, MENO LIMITI</h2>
           <NewsletterFormSlide 
             listId='143770881076757629' 
             label='Inserisci il tuo indirizzo email!' 
