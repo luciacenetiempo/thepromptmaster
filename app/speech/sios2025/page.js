@@ -50,7 +50,7 @@ export default function Page() {
             success=''
             error=''
             speechName='SIOS 2025 - ChatGPT'
-            slideLink='/file/aiweek/20250529-sios-sardegna.pdf'
+            slideLink='/file/sios2025/20250529-sios-sardegna.pdf'
           />
         </div>
       </div>
