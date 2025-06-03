@@ -103,7 +103,7 @@ const CookieBanner = () => {
             </div>
             <div className='cookie-banner--row'>
               <button role="button" className='button buttonAcconsento' onClick={handleAcconsentoClick}>Acconsento</button>
-              <butto role="button"n className='button buttonRifiuta' onClick={handleRifiutaClick}>Rifiuta</butto>
+              <button role="button" className='button buttonRifiuta' onClick={handleRifiutaClick}>Rifiuta</button>
             </div>
           </div>
         </div>
