@@ -50,7 +50,7 @@ export default function Page() {
             success=''
             error=''
             speechName='Namirial - ChatGPT 1'
-            slideLink='/file/aiweek/20250616-namirial-1.pdf'
+            slideLink='/file/namirial/20250616-namirial-1.pdf'
           />
         </div>
       </div>
