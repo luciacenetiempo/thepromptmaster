@@ -4,7 +4,7 @@ import LoopingText from '../../../components/LoopingText'
 import NewsletterFormSlide from '../../../components/NewsletterFormSlide';
 
 export const metadata = {  
-  title: "AIWEEK - The Prompt Master",
+  title: "Cervarolo - The Prompt Master",
   description: "L'intelligenza artificiale come non te l'aspettavi",
   metadataBase: new URL('https://www.thepromptmaster.it'),
   alternates: {
