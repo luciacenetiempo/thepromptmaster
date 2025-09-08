@@ -50,7 +50,7 @@ export default function Page() {
             success=''
             error=''
             speechName='cervarolo'
-            slideLink='/file/cervarolo/20250709-cervarolo.pdf'
+            slideLink='/file/cervarolo/20250909-cervarolo.pdf'
           />
         </div>
       </div>
