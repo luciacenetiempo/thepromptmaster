@@ -50,7 +50,7 @@ export default function Page() {
             success=''
             error=''
             speechName='EMPATIK'
-            slideLink='/file/empatik/20250903-empatik-1.pdf'
+            slideLink='/file/empatik/20250910-empatik-2.pdf'
           />
         </div>
       </div>
