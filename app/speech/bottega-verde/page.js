@@ -49,7 +49,7 @@ export default function Page() {
             submit='Iscriviti!' 
             success=''
             error=''
-            speechName='EMPATIK'
+            speechName='Bottega Verde'
             slideLink='/file/bootega-verde/20250912-bottega-verde-1.pdf'
           />
         </div>
