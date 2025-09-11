@@ -2,10 +2,9 @@ import Header from '/components/Header'
 import HeaderPlain from '../../../components/HeaderPlain'
 import LoopingText from '../../../components/LoopingText'
 import NewsletterFormSlide from '../../../components/NewsletterFormSlide';
-import { useMemo, useCallback } from 'react';
 
 export const metadata = {  
-  title: "POLIMI - The Prompt Master",
+  title: "Bottega Verde - The Prompt Master",
   description: "L'intelligenza artificiale come non te l'aspettavi",
   metadataBase: new URL('https://www.thepromptmaster.it'),
   alternates: {
@@ -19,18 +18,9 @@ export const metadata = {
 }
 
 export default function Page() {
-  const expensiveCalculation = useMemo(() => {
-    // calcoli costosi qui
-  }, []);
-
-  const handleClick = useCallback(() => {
-    // logica del click
-  }, []);
-
   return (
     <>
-      <HeaderPlain />
-      <div className='headMarginSmall'>
+      <div className='headMarginSmall nomarginTop'>
         <div className="strip">
           <LoopingText
             text='THE PROMPT MASTER'
@@ -49,29 +39,30 @@ export default function Page() {
         </div> */}
       </div>
 
-      <div className='section-content'>
+      <div className='section-content fullheight'>
         <div className='content rich-text-block rich-text-block--newsletter'>
-          <h2 className='tx-center'>Enter your email address<br/>to view the slides.</h2>
+          <p className='tx-center'><strong>Inserisci la tua email<br/>e scarica le slide</strong></p>
+          <h2 className='tx-center'>Il potere dell'<br/>AI GENERATIVA</h2>
           <NewsletterFormSlide 
             listId='143770881076757629' 
-            label='Enter your email address' 
-            submit='Submit!' 
+            label='Inserisci il tuo indirizzo email!' 
+            submit='Iscriviti!' 
             success=''
             error=''
-            speechName='POLIMI'
-            slideLink='/file/polimi/20250401-polimi-1.pdf'
+            speechName='EMPATIK'
+            slideLink='/file/bootega-verde/20250912-bottega-verde-1.pdf'
           />
         </div>
       </div>
       <div className=''>
-        {/* <div className="strip"> 
+        <div className="strip">
           <LoopingText
             text='THE PROMPT MASTER'
             size='big'
             velocity={0.08}
             color='dark'
           />
-        </div> */}
+        </div>
         {/* <div className="strip">
           <LoopingText
             text={`AI WEEK`}
