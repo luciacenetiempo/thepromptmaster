@@ -26,7 +26,7 @@ export default function Page() {
             text='THE PROMPT MASTER'
             size='big'
             velocity={0.08}
-            color='dark'
+            color='dark' 
           />
         </div>
         {/* <div className="strip">
