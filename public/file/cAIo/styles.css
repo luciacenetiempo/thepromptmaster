@@ -1,0 +1,755 @@
+/* CSS Variables per i temi */
+:root {
+  /* Tema Light */
+  --bg: #f0f0f0;
+  --bg-secondary: #e0e0e0;
+  --primary: #2c2c2c;
+  --accent: #ff6b35;
+  --success: #4caf50;
+  --danger: #f44336;
+  --warning: #ff9800;
+  --text: #2c2c2c;
+  --text-light: #666;
+  --border: #ccc;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --hud-bg: rgba(255, 255, 255, 0.9);
+  --overlay-bg: rgba(0, 0, 0, 0.7);
+  
+  /* Font 8bit */
+  --font-main: 'Press Start 2P', monospace;
+  --font-size-small: 12px;
+  --font-size-normal: 16px;
+  --font-size-large: 20px;
+  --font-size-xl: 24px;
+  
+  /* Spacing 8bit */
+  --pixel-size: 4px;
+  --border-width: 2px;
+}
+
+/* Tema Dark */
+.theme-dark {
+  --bg: #1a1a1a;
+  --bg-secondary: #2a2a2a;
+  --primary: #ffffff;
+  --accent: #ff6b35;
+  --success: #4caf50;
+  --danger: #f44336;
+  --warning: #ff9800;
+  --text: #ffffff;
+  --text-light: #cccccc;
+  --border: #444;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --hud-bg: rgba(0, 0, 0, 0.8);
+  --overlay-bg: rgba(0, 0, 0, 0.8);
+}
+
+/* Tema Brand */
+.theme-brand {
+  --bg: #0e0e10;
+  --bg-secondary: #1a1a1c;
+  --primary: #ffffff;
+  --accent: #ffcf33;
+  --success: #35d07f;
+  --danger: #ff5a5f;
+  --warning: #ff9800;
+  --text: #ffffff;
+  --text-light: #cccccc;
+  --border: #333;
+  --shadow: rgba(0, 0, 0, 0.6);
+  --hud-bg: rgba(0, 0, 0, 0.7);
+  --overlay-bg: rgba(0, 0, 0, 0.8);
+}
+
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size-normal);
+  line-height: 1.4;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: 
+    /* Cielo gradiente */
+    linear-gradient(to bottom, #87CEEB 0%, #98D8E8 30%, #B0E0E6 60%, #E0F6FF 100%),
+    /* Nuvole */
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.8) 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(255,255,255,0.6) 0%, transparent 40%),
+    radial-gradient(circle at 40% 70%, rgba(255,255,255,0.4) 0%, transparent 30%);
+  background-size: 100% 100%, 200px 100px, 150px 80px, 180px 90px;
+  background-position: 0 0, 0 0, 100px 50px, 300px 120px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+/* Screen Management */
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.screen.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Home Screen */
+.home-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.game-title {
+  font-size: 28px;
+  color: var(--accent);
+  margin-bottom: 30px;
+  text-shadow: 3px 3px 0 var(--shadow);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.game-subtitle {
+  font-size: var(--font-size-large);
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.game-info {
+  font-size: var(--font-size-normal);
+  color: var(--accent);
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+
+.home-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background: var(--accent);
+  border: var(--border-width) solid var(--primary);
+  color: var(--primary);
+  padding: 20px 40px;
+  cursor: pointer;
+  font-family: var(--font-main);
+  font-size: var(--font-size-normal);
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  min-width: 200px;
+}
+
+.btn:hover {
+  background: var(--primary);
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: inset 0 2px 4px var(--shadow);
+}
+
+.btn-primary {
+  background: var(--success);
+  color: var(--primary);
+}
+
+.btn-secondary {
+  background: var(--bg-secondary);
+  color: var(--text);
+}
+
+/* HUD */
+.hud {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  background: var(--hud-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: var(--border-width) solid var(--border);
+  z-index: 100;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.hud-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: var(--font-size-large);
+  font-weight: bold;
+}
+
+.hud-icon {
+  font-size: 24px;
+}
+
+.hud-btn {
+  background: var(--bg-secondary);
+  border: var(--border-width) solid var(--border);
+  color: var(--text);
+  padding: 12px 18px;
+  cursor: pointer;
+  font-family: var(--font-main);
+  font-size: var(--font-size-normal);
+  transition: all 0.2s ease;
+  border-radius: 0;
+}
+
+.hud-btn:hover {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+.hud-btn[aria-pressed="true"] {
+  background: var(--danger);
+  color: var(--primary);
+}
+
+/* Game Arena */
+#arena {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: crosshair;
+  overflow: hidden;
+  background: 
+    /* Pavimento ufficio */
+    linear-gradient(to bottom, transparent 0%, transparent 70%, #8B4513 70%, #A0522D 100%),
+    /* Pareti laterali */
+    linear-gradient(to right, #D2B48C 0%, transparent 5%, transparent 95%, #D2B48C 100%),
+    /* Illuminazione soffitto */
+    radial-gradient(ellipse at center top, rgba(255,255,255,0.3) 0%, transparent 70%);
+  background-size: 100% 100%, 100% 100%, 100% 200px;
+  background-position: 0 0, 0 0, 0 0;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+/* Elementi grafici dell'ufficio */
+#arena::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    /* Scrivanie */
+    linear-gradient(90deg, transparent 0%, transparent 10%, #8B4513 10%, #8B4513 15%, transparent 15%, transparent 25%, #8B4513 25%, #8B4513 30%, transparent 30%, transparent 40%, #8B4513 40%, #8B4513 45%, transparent 45%, transparent 55%, #8B4513 55%, #8B4513 60%, transparent 60%, transparent 70%, #8B4513 70%, #8B4513 75%, transparent 75%, transparent 85%, #8B4513 85%, #8B4513 90%, transparent 90%),
+    /* Computer sulle scrivanie */
+    linear-gradient(90deg, transparent 0%, transparent 12%, #2C2C2C 12%, #2C2C2C 13%, transparent 13%, transparent 27%, #2C2C2C 27%, #2C2C2C 28%, transparent 28%, transparent 42%, #2C2C2C 42%, #2C2C2C 43%, transparent 43%, transparent 57%, #2C2C2C 57%, #2C2C2C 58%, transparent 58%, transparent 72%, #2C2C2C 72%, #2C2C2C 73%, transparent 73%, transparent 87%, #2C2C2C 87%, #2C2C2C 88%, transparent 88%),
+    /* Schermi dei computer */
+    linear-gradient(90deg, transparent 0%, transparent 12%, #000080 12%, #000080 13%, transparent 13%, transparent 27%, #000080 27%, #000080 28%, transparent 28%, transparent 42%, #000080 42%, #000080 43%, transparent 43%, transparent 57%, #000080 57%, #000080 58%, transparent 58%, transparent 72%, #000080 72%, #000080 73%, transparent 73%, transparent 87%, #000080 87%, #000080 88%, transparent 88%),
+    /* Sedie */
+    linear-gradient(90deg, transparent 0%, transparent 10%, #654321 10%, #654321 15%, transparent 15%, transparent 25%, #654321 25%, #654321 30%, transparent 30%, transparent 40%, #654321 40%, #654321 45%, transparent 45%, transparent 55%, #654321 55%, #654321 60%, transparent 60%, transparent 70%, #654321 70%, #654321 75%, transparent 75%, transparent 85%, #654321 85%, #654321 90%, transparent 90%),
+    /* Piante da ufficio */
+    linear-gradient(90deg, transparent 0%, transparent 5%, #228B22 5%, #228B22 6%, transparent 6%, transparent 20%, #228B22 20%, #228B22 21%, transparent 21%, transparent 35%, #228B22 35%, #228B22 36%, transparent 36%, transparent 50%, #228B22 50%, #228B22 51%, transparent 51%, transparent 65%, #228B22 65%, #228B22 66%, transparent 66%, transparent 80%, #228B22 80%, #228B22 81%, transparent 81%, transparent 95%, #228B22 95%, #228B22 96%, transparent 96%);
+  background-size: 100% 60px, 100% 40px, 100% 20px, 100% 80px, 100% 30px;
+  background-position: 0 calc(100% - 60px), 0 calc(100% - 100px), 0 calc(100% - 120px), 0 calc(100% - 160px), 0 calc(100% - 190px);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Finestre laterali */
+#arena::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    /* Finestre laterali */
+    linear-gradient(90deg, #87CEEB 0%, #87CEEB 5%, transparent 5%, transparent 95%, #87CEEB 95%, #87CEEB 100%),
+    /* Cornici finestre */
+    linear-gradient(90deg, #8B4513 0%, #8B4513 1%, transparent 1%, transparent 4%, #8B4513 4%, #8B4513 5%, transparent 5%, transparent 95%, #8B4513 95%, #8B4513 96%, transparent 96%, transparent 99%, #8B4513 99%, #8B4513 100%);
+  background-size: 100% 100%, 100% 100%;
+  background-position: 0 0, 0 0;
+  background-repeat: no-repeat, no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Elementi decorativi dell'ufficio */
+.office-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.ceiling-light {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #FFD700 0%, #FFA500 50%, #8B4513 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  animation: light-flicker 3s ease-in-out infinite;
+}
+
+@keyframes light-flicker {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+.office-plant {
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  background: 
+    linear-gradient(45deg, #228B22 0%, #32CD32 50%, #90EE90 100%),
+    linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+  background-size: 100% 70%, 100% 30%;
+  background-position: 0 0, 0 70%;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.plant-pot {
+  position: absolute;
+  width: 25px;
+  height: 30px;
+  background: 
+    linear-gradient(45deg, #8B4513 0%, #A0522D 50%, #CD853F 100%),
+    linear-gradient(135deg, #228B22 0%, #32CD32 100%);
+  background-size: 100% 30%, 100% 70%;
+  background-position: 0 0, 0 30%;
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.wall-painting {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  background: 
+    linear-gradient(45deg, #8B4513 0%, #A0522D 100%),
+    linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF6347 100%);
+  background-size: 100% 20%, 100% 80%;
+  background-position: 0 0, 0 20%;
+  border: 2px solid #654321;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+.coffee-machine {
+  position: absolute;
+  width: 35px;
+  height: 45px;
+  background: 
+    linear-gradient(45deg, #2C2C2C 0%, #696969 50%, #A9A9A9 100%),
+    linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  background-size: 100% 80%, 100% 20%;
+  background-position: 0 0, 0 80%;
+  border-radius: 8px 8px 4px 4px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+.coffee-machine::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #000080;
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(0,0,128,0.5);
+}
+
+/* Tazzine */
+.cup {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(3px 3px 6px var(--shadow));
+  animation: float 3s ease-in-out infinite;
+  z-index: 10;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+}
+
+.cup.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cup.fade {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.cup:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.cup:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translate(-50%, -50%) scale(1) translateY(0px) rotate(0deg); 
+  }
+  25% { 
+    transform: translate(-50%, -50%) scale(1.05) translateY(-3px) rotate(1deg); 
+  }
+  50% { 
+    transform: translate(-50%, -50%) scale(1.1) translateY(-8px) rotate(0deg); 
+  }
+  75% { 
+    transform: translate(-50%, -50%) scale(1.05) translateY(-3px) rotate(-1deg); 
+  }
+}
+
+/* Tipi di tazzine */
+.cup.normal {
+  color: #8B4513;
+  text-shadow: 2px 2px 0 #654321, 4px 4px 8px rgba(0,0,0,0.3);
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(139,69,19,0.1) 70%, transparent 100%);
+}
+
+.cup.gold {
+  color: #FFD700;
+  text-shadow: 2px 2px 0 #B8860B, 4px 4px 8px rgba(0,0,0,0.3);
+  background: radial-gradient(circle, rgba(255,215,0,0.4) 0%, rgba(255,215,0,0.1) 70%, transparent 100%);
+  animation: gold-glow 0.5s ease-in-out infinite alternate, float 3s ease-in-out infinite;
+}
+
+@keyframes gold-glow {
+  from { 
+    filter: drop-shadow(3px 3px 6px var(--shadow)) brightness(1) saturate(1);
+    text-shadow: 2px 2px 0 #B8860B, 4px 4px 8px rgba(0,0,0,0.3), 0 0 10px #FFD700;
+  }
+  to { 
+    filter: drop-shadow(3px 3px 6px var(--shadow)) brightness(1.4) saturate(1.5);
+    text-shadow: 2px 2px 0 #B8860B, 4px 4px 8px rgba(0,0,0,0.3), 0 0 20px #FFD700;
+  }
+}
+
+.cup.decaf {
+  color: #DC143C;
+  text-shadow: 2px 2px 0 #8B0000, 4px 4px 8px rgba(0,0,0,0.3);
+  background: radial-gradient(circle, rgba(220,20,60,0.3) 0%, rgba(220,20,60,0.1) 70%, transparent 100%);
+  animation: danger-pulse 0.3s ease-in-out infinite alternate, float 3s ease-in-out infinite;
+}
+
+@keyframes danger-pulse {
+  from { 
+    transform: translate(-50%, -50%) scale(1);
+    filter: drop-shadow(3px 3px 6px var(--shadow)) brightness(1);
+  }
+  to { 
+    transform: translate(-50%, -50%) scale(1.1);
+    filter: drop-shadow(3px 3px 6px var(--shadow)) brightness(1.2);
+  }
+}
+
+.cup.thermo {
+  color: #32CD32;
+  text-shadow: 2px 2px 0 #228B22, 4px 4px 8px rgba(0,0,0,0.3);
+  background: radial-gradient(circle, rgba(50,205,50,0.3) 0%, rgba(50,205,50,0.1) 70%, transparent 100%);
+  animation: thermo-steam 2s ease-in-out infinite, float 3s ease-in-out infinite;
+}
+
+/* Effetto per spawn multipli */
+.cup.multi-spawn {
+  animation: multi-spawn-pop 0.3s ease-out, float 3s ease-in-out infinite;
+}
+
+@keyframes multi-spawn-pop {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes thermo-steam {
+  0%, 100% { 
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    filter: drop-shadow(3px 3px 6px var(--shadow)) brightness(1);
+  }
+  25% { 
+    transform: translate(-50%, -50%) scale(1.05) rotate(2deg);
+    filter: drop-shadow(3px 3px 6px var(--shadow)) brightness(1.1);
+  }
+  50% { 
+    transform: translate(-50%, -50%) scale(1.1) rotate(0deg);
+    filter: drop-shadow(3px 3px 6px var(--shadow)) brightness(1.2);
+  }
+  75% { 
+    transform: translate(-50%, -50%) scale(1.05) rotate(-2deg);
+    filter: drop-shadow(3px 3px 6px var(--shadow)) brightness(1.1);
+  }
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  backdrop-filter: blur(5px);
+}
+
+.overlay-content {
+  background: var(--bg);
+  border: var(--border-width) solid var(--border);
+  padding: 40px;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: 0 8px 32px var(--shadow);
+}
+
+.overlay h2 {
+  font-size: var(--font-size-large);
+  color: var(--accent);
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 0 var(--shadow);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stat-label {
+  font-size: var(--font-size-small);
+  color: var(--text-light);
+}
+
+.stat span:last-child {
+  font-size: var(--font-size-normal);
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.game-over-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* Score Popup */
+.score-popup {
+  position: fixed;
+  pointer-events: none;
+  font-family: var(--font-main);
+  font-size: var(--font-size-normal);
+  font-weight: bold;
+  color: var(--success);
+  text-shadow: 2px 2px 0 var(--shadow);
+  z-index: 150;
+  animation: score-float 1s ease-out forwards;
+}
+
+@keyframes score-float {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px) scale(1.2);
+  }
+}
+
+/* Particles */
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: particle-burst 0.6s ease-out forwards;
+}
+
+@keyframes particle-burst {
+  0% {
+    opacity: 1;
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) translate(var(--dx), var(--dy));
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hud {
+    gap: 15px;
+    padding: 10px 15px;
+  }
+  
+  .hud-item {
+    font-size: var(--font-size-normal);
+  }
+  
+  .hud-icon {
+    font-size: 18px;
+  }
+  
+  .mode-selector {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 200px;
+  }
+  
+  .stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .cup {
+    width: 70px;
+    height: 70px;
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-title {
+    font-size: 20px;
+  }
+  
+  .overlay-content {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .hud {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .cup {
+    animation: none;
+  }
+}
+
+/* Focus styles */
+button:focus-visible, select:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+#arena:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+/* Hidden utility */
+[hidden] {
+  display: none !important;
+}

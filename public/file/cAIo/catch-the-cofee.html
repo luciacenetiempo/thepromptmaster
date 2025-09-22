@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Coffee ☕</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="theme-light">
+        <!-- Pre-game Screen -->
+        <div id="home-screen" class="screen active">
+            <div class="home-content">
+                <h1 class="game-title">☕ CATCH THE COFFEE ☕</h1>
+                <p class="game-subtitle">Clicca le tazzine appena compaiono!</p>
+                <p class="game-info">Modalità Classic - 2:00 minuti</p>
+                
+                <div class="home-buttons">
+                    <button id="play-btn" class="btn btn-primary">GIOCA</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen">
+            <!-- HUD -->
+            <header class="hud">
+                <div class="hud-item">
+                    <span class="hud-icon">⏱</span>
+                    <span id="time-display">2:00</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-icon">⭐</span>
+                    <span id="score-display">0</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-icon">🔥</span>
+                    <span id="combo-display">x1</span>
+                </div>
+                <button id="mute-btn" class="hud-btn" aria-pressed="false" title="Muto">🔊</button>
+                <button id="pause-btn" class="hud-btn" title="Pausa">⏸</button>
+            </header>
+
+            <!-- Game Arena -->
+            <main id="arena" aria-label="Area di gioco" tabindex="0">
+                <!-- Elementi decorativi dell'ufficio -->
+                <div class="office-decoration">
+                    <!-- Lampade da soffitto -->
+                    <div class="ceiling-light" style="left: 15%; top: 10%;"></div>
+                    <div class="ceiling-light" style="left: 50%; top: 8%;"></div>
+                    <div class="ceiling-light" style="left: 85%; top: 12%;"></div>
+                    
+                    <!-- Piante da ufficio -->
+                    <div class="office-plant" style="left: 5%; bottom: 20%;"></div>
+                    <div class="office-plant" style="right: 5%; bottom: 25%;"></div>
+                    
+                    <!-- Vasi con piante -->
+                    <div class="plant-pot" style="left: 20%; bottom: 15%;"></div>
+                    <div class="plant-pot" style="right: 20%; bottom: 18%;"></div>
+                    
+                    <!-- Quadri alle pareti -->
+                    <div class="wall-painting" style="left: 8%; top: 30%;"></div>
+                    <div class="wall-painting" style="right: 8%; top: 35%;"></div>
+                    
+                    <!-- Macchina del caffè -->
+                    <div class="coffee-machine" style="right: 10%; bottom: 10%;"></div>
+                </div>
+            </main>
+
+            <!-- Pause Overlay -->
+            <div id="pause-overlay" class="overlay" hidden>
+                <div class="overlay-content">
+                    <h2>PAUSA</h2>
+                    <button id="resume-btn" class="btn btn-primary">RIPRENDI</button>
+                    <button id="home-btn" class="btn btn-secondary">HOME</button>
+                </div>
+            </div>
+
+            <!-- Game Over Overlay -->
+            <div id="game-over-overlay" class="overlay" hidden>
+                <div class="overlay-content">
+                    <h2>GAME OVER</h2>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-label">Punteggio:</span>
+                            <span id="final-score">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Tazzine prese:</span>
+                            <span id="cups-hit">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Combo massima:</span>
+                            <span id="max-combo">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Precisione:</span>
+                            <span id="accuracy">0%</span>
+                        </div>
+                    </div>
+                    <div class="game-over-buttons">
+                        <button id="play-again-btn" class="btn btn-primary">RIGIOCA</button>
+                        <button id="home-from-gameover-btn" class="btn btn-secondary">HOME</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Score Popup -->
+        <div id="score-popup" class="score-popup" hidden></div>
+
+        <!-- Particles Container -->
+        <div id="particles"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
