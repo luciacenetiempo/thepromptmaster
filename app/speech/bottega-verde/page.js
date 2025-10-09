@@ -50,7 +50,7 @@ export default function Page() {
             success=''
             error=''
             speechName='Bottega Verde'
-            slideLink='/file/bottega-verde/20250926-bottega-verde-2.pdf'
+            slideLink='/file/bottega-verde/20251010-bottega-verde-3.pdf'
           />
         </div>
       </div>
