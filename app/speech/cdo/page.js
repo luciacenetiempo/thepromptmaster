@@ -4,7 +4,7 @@ import LoopingText from '../../../components/LoopingText'
 import NewsletterFormSlide from '../../../components/NewsletterFormSlide';
 
 export const metadata = {  
-  title: "cAIo - The Prompt Master",
+  title: "CDO - The Prompt Master",
   description: "L'intelligenza artificiale come non te l'aspettavi",
   metadataBase: new URL('https://www.thepromptmaster.it'),
   alternates: {
@@ -49,8 +49,8 @@ export default function Page() {
             submit='Iscriviti!' 
             success=''
             error=''
-            speechName='cAIo'
-            slideLink='/file/caio/20250923-caio.pdf'
+            speechName='CDO'
+            slideLink='/file/cdo/20251114-cdo.pdf'
           />
         </div>
       </div>
